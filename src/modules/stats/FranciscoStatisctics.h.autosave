@@ -1,0 +1,21 @@
+#ifndef FRANCISCOSTATISTICS_H
+#define FRANCISCOSTATISTICS_H
+
+class FranciscoStatisctics : public cSimpleModule
+{
+protected:
+    
+};
+
+class FranciscoStatisticsAccess
+{
+	public:
+		FranciscoStatisticsAccess() {
+		}
+
+		FranciscoStatistics* getIfExists() {
+			return dynamic_cast<FranciscoStatistics*>(simulation.getModuleByPath("obstacles"));
+		}
+};
+
+#endif // FRANCISCOSTATISTICS_H

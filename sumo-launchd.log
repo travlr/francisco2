@@ -1,0 +1,4431 @@
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 58307
+DEBUG:root:Handling connection from 127.0.0.1 on port 58307
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-GAV625
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 52841
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52841, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52841 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52841 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52841 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52841 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>0</exit-code>
+	<start>1406766016</start>
+	<end>1406766034</end>
+	<status>Done.</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 58307
+DEBUG:root:Connection from 127.0.0.1 on port 58327
+DEBUG:root:Handling connection from 127.0.0.1 on port 58327
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-5qAJhs
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 56535
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56535, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56535 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56535 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>0</exit-code>
+	<start>1406766153</start>
+	<end>1406766200</end>
+	<status>Done.</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 58327
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 53928
+DEBUG:root:Handling connection from 127.0.0.1 on port 53928
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-egNlaY
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58435
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435 (try 4)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58435 (try 5)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>0</exit-code>
+	<start>1406815811</start>
+	<end>1406815833</end>
+	<status>Done.</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 53928
+WARNING:root:Keyboard interrupt.
+INFO:root:Shutting down.
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 53996
+DEBUG:root:Handling connection from 127.0.0.1 on port 53996
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-BGOmfr
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 34082
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34082, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34082 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34082 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406816924</start>
+	<end>1406816935</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 53996
+DEBUG:root:Connection from 127.0.0.1 on port 54293
+DEBUG:root:Handling connection from 127.0.0.1 on port 54293
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-CILZ5F
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48783
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48783, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48783 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48783 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406817630</start>
+	<end>1406817694</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54293
+DEBUG:root:Connection from 127.0.0.1 on port 54357
+DEBUG:root:Handling connection from 127.0.0.1 on port 54357
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-sDNwBl
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 55419
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 55419, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 55419 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 55419 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406819766</start>
+	<end>1406819790</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54357
+DEBUG:root:Connection from 127.0.0.1 on port 54360
+DEBUG:root:Handling connection from 127.0.0.1 on port 54360
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-804PiH
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 41234
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41234, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41234 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41234 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406819827</start>
+	<end>1406819848</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54360
+DEBUG:root:Connection from 127.0.0.1 on port 54367
+DEBUG:root:Handling connection from 127.0.0.1 on port 54367
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-nd3DWX
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 38055
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38055, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38055 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38055 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820144</start>
+	<end>1406820149</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54367
+DEBUG:root:Connection from 127.0.0.1 on port 54370
+DEBUG:root:Handling connection from 127.0.0.1 on port 54370
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-HI3e0t
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 38722
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38722, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38722 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38722 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820174</start>
+	<end>1406820180</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54370
+DEBUG:root:Connection from 127.0.0.1 on port 54373
+DEBUG:root:Handling connection from 127.0.0.1 on port 54373
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-J3IYdL
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35716
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35716, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35716 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35716 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820203</start>
+	<end>1406820208</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54373
+DEBUG:root:Connection from 127.0.0.1 on port 54377
+DEBUG:root:Handling connection from 127.0.0.1 on port 54377
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-OL93Bs
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 45322
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 4)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 5)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 6)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 7)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 8)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 9)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45322 (try 10)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-1</exit-code>
+	<start>1406820266</start>
+	<end>1406820277</end>
+	<status>Could not connect to SUMO ([Errno 111] Connection refused). Might be protected by a personal firewall or crashed before a connection could be established.</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54377
+DEBUG:root:Connection from 127.0.0.1 on port 54388
+DEBUG:root:Handling connection from 127.0.0.1 on port 54388
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-B0F9vP
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 52929
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52929, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52929 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52929 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820308</start>
+	<end>1406820323</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54388
+DEBUG:root:Connection from 127.0.0.1 on port 54391
+DEBUG:root:Handling connection from 127.0.0.1 on port 54391
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-higAye
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58576
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58576, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58576 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58576 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820340</start>
+	<end>1406820354</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54391
+DEBUG:root:Connection from 127.0.0.1 on port 54396
+DEBUG:root:Handling connection from 127.0.0.1 on port 54396
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-UnGqQi
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 41358
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41358, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41358 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41358 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820377</start>
+	<end>1406820512</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54396
+DEBUG:root:Connection from 127.0.0.1 on port 54412
+DEBUG:root:Handling connection from 127.0.0.1 on port 54412
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-0R6cyt
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 51069
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51069, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51069 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51069 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820601</start>
+	<end>1406820607</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54412
+DEBUG:root:Connection from 127.0.0.1 on port 54416
+DEBUG:root:Handling connection from 127.0.0.1 on port 54416
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-at68my
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 41379
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41379, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41379 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41379 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820646</start>
+	<end>1406820651</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54416
+DEBUG:root:Connection from 127.0.0.1 on port 54419
+DEBUG:root:Handling connection from 127.0.0.1 on port 54419
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-hJeD4T
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48336
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48336, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48336 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48336 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Connection from 127.0.0.1 on port 54426
+DEBUG:root:Handling connection from 127.0.0.1 on port 54426
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-K0TT7J
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 33344
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33344, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33344 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33344 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820882</start>
+	<end>1406820924</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54426
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406820672</start>
+	<end>1406821740</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54419
+DEBUG:root:Connection from 127.0.0.1 on port 54441
+DEBUG:root:Handling connection from 127.0.0.1 on port 54441
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-WhY5Sm
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 52771
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52771, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52771 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52771 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406821769</start>
+	<end>1406821799</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54441
+DEBUG:root:Connection from 127.0.0.1 on port 54445
+DEBUG:root:Handling connection from 127.0.0.1 on port 54445
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-nzTz2s
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 44194
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44194, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44194 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44194 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406821874</start>
+	<end>1406822427</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54445
+DEBUG:root:Connection from 127.0.0.1 on port 54475
+DEBUG:root:Handling connection from 127.0.0.1 on port 54475
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-yW3XF9
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 33526
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33526, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33526 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33526 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Connection from 127.0.0.1 on port 54480
+DEBUG:root:Handling connection from 127.0.0.1 on port 54480
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-SQ5Eqj
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 56134
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56134, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56134 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56134 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406822721</start>
+	<end>1406822727</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54480
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406822453</start>
+	<end>1406822754</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54475
+DEBUG:root:Connection from 127.0.0.1 on port 54483
+DEBUG:root:Handling connection from 127.0.0.1 on port 54483
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-rnIwUe
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 57050
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 57050, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 57050 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 57050 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406822788</start>
+	<end>1406823539</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54483
+DEBUG:root:Connection from 127.0.0.1 on port 54547
+DEBUG:root:Handling connection from 127.0.0.1 on port 54547
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-FO5uZl
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 59364
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59364, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59364 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59364 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406823555</start>
+	<end>1406823561</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54547
+DEBUG:root:Connection from 127.0.0.1 on port 54554
+DEBUG:root:Handling connection from 127.0.0.1 on port 54554
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-teouYH
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 60323
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60323, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60323 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60323 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406824031</start>
+	<end>1406824068</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54554
+DEBUG:root:Connection from 127.0.0.1 on port 54558
+DEBUG:root:Handling connection from 127.0.0.1 on port 54558
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-hYoBvJ
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 44674
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44674, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44674 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44674 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406824079</start>
+	<end>1406824478</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54558
+DEBUG:root:Connection from 127.0.0.1 on port 54576
+DEBUG:root:Handling connection from 127.0.0.1 on port 54576
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-5z3gJ_
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 41562
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41562, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41562 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41562 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406824502</start>
+	<end>1406824550</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 54576
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+WARNING:root:Keyboard interrupt.
+INFO:root:Shutting down.
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 40364
+DEBUG:root:Handling connection from 127.0.0.1 on port 40364
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-OJpwWs
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35593
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35593, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35593 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35593 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35593 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35593 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406827230</start>
+	<end>1406827274</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40364
+DEBUG:root:Connection from 127.0.0.1 on port 40379
+DEBUG:root:Handling connection from 127.0.0.1 on port 40379
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-PORKoS
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 45803
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45803, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45803 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 45803 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406827350</start>
+	<end>1406827368</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40379
+WARNING:root:Keyboard interrupt.
+INFO:root:Shutting down.
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 40407
+DEBUG:root:Handling connection from 127.0.0.1 on port 40407
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-opRv6c
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 52512
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52512, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52512 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52512 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406828146</start>
+	<end>1406828170</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40407
+DEBUG:root:Connection from 127.0.0.1 on port 40413
+DEBUG:root:Handling connection from 127.0.0.1 on port 40413
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-yB4b73
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 39270
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39270, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39270 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39270 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406828335</start>
+	<end>1406828379</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40413
+DEBUG:root:Connection from 127.0.0.1 on port 40424
+DEBUG:root:Handling connection from 127.0.0.1 on port 40424
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-JqiWIo
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 34861
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34861, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34861 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34861 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406828424</start>
+	<end>1406828496</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40424
+DEBUG:root:Connection from 127.0.0.1 on port 40437
+DEBUG:root:Handling connection from 127.0.0.1 on port 40437
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-0vOKxl
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 53053
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53053, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53053 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53053 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406828536</start>
+	<end>1406828633</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40437
+DEBUG:root:Connection from 127.0.0.1 on port 40494
+DEBUG:root:Handling connection from 127.0.0.1 on port 40494
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-i8zo8r
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58146
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58146, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58146 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58146 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406830089</start>
+	<end>1406830287</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40494
+DEBUG:root:Connection from 127.0.0.1 on port 40560
+DEBUG:root:Handling connection from 127.0.0.1 on port 40560
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-9RHK4r
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 60184
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60184, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60184 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 60184 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406830844</start>
+	<end>1406830990</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40560
+DEBUG:root:Connection from 127.0.0.1 on port 40583
+DEBUG:root:Handling connection from 127.0.0.1 on port 40583
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-TWL5xp
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 43282
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43282, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43282 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43282 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406831146</start>
+	<end>1406831212</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40583
+DEBUG:root:Connection from 127.0.0.1 on port 40589
+DEBUG:root:Handling connection from 127.0.0.1 on port 40589
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-3rYS0S
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58140
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58140, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58140 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58140 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406831342</start>
+	<end>1406831368</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40589
+DEBUG:root:Connection from 127.0.0.1 on port 40596
+DEBUG:root:Handling connection from 127.0.0.1 on port 40596
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-8esc3M
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 56330
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56330, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56330 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56330 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406831802</start>
+	<end>1406831869</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40596
+DEBUG:root:Connection from 127.0.0.1 on port 40603
+DEBUG:root:Handling connection from 127.0.0.1 on port 40603
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-lb4paC
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35780
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35780, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35780 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35780 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406832130</start>
+	<end>1406832206</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40603
+DEBUG:root:Connection from 127.0.0.1 on port 40634
+DEBUG:root:Handling connection from 127.0.0.1 on port 40634
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-2ZXh0I
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 41728
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41728, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41728 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 41728 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406832794</start>
+	<end>1406832846</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40634
+DEBUG:root:Connection from 127.0.0.1 on port 40637
+DEBUG:root:Handling connection from 127.0.0.1 on port 40637
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-vRRNXF
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 42488
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42488, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42488 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42488 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406832914</start>
+	<end>1406832933</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40637
+DEBUG:root:Connection from 127.0.0.1 on port 40640
+DEBUG:root:Handling connection from 127.0.0.1 on port 40640
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-kdlLCU
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 56121
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56121, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56121 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56121 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406832968</start>
+	<end>1406832986</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40640
+DEBUG:root:Connection from 127.0.0.1 on port 40643
+DEBUG:root:Handling connection from 127.0.0.1 on port 40643
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-Ewn9E4
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 42158
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42158, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42158 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42158 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406833011</start>
+	<end>1406833028</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40643
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 40684
+DEBUG:root:Handling connection from 127.0.0.1 on port 40684
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-0eYTxJ
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 54383
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54383, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54383 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54383 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406833783</start>
+	<end>1406833880</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40684
+DEBUG:root:Connection from 127.0.0.1 on port 40698
+DEBUG:root:Handling connection from 127.0.0.1 on port 40698
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-cWJ3Yh
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 36877
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 36877, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 36877 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 36877 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406834005</start>
+	<end>1406834178</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40698
+DEBUG:root:Connection from 127.0.0.1 on port 40805
+DEBUG:root:Handling connection from 127.0.0.1 on port 40805
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-6kY01b
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 56636
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56636, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56636 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 56636 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406834553</start>
+	<end>1406834619</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40805
+DEBUG:root:Connection from 127.0.0.1 on port 40811
+DEBUG:root:Handling connection from 127.0.0.1 on port 40811
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-RrDuny
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 54577
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54577, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54577 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54577 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406834911</start>
+	<end>1406834974</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40811
+DEBUG:root:Connection from 127.0.0.1 on port 40815
+DEBUG:root:Handling connection from 127.0.0.1 on port 40815
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-aNzOCl
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 44410
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44410, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44410 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44410 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406835086</start>
+	<end>1406835140</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40815
+DEBUG:root:Connection from 127.0.0.1 on port 40837
+DEBUG:root:Handling connection from 127.0.0.1 on port 40837
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-uhFZeR
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48109
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48109, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48109 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48109 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406835473</start>
+	<end>1406835571</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40837
+DEBUG:root:Connection from 127.0.0.1 on port 40843
+DEBUG:root:Handling connection from 127.0.0.1 on port 40843
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-t4J7WB
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 59387
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59387, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59387 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59387 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406835584</start>
+	<end>1406835603</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40843
+DEBUG:root:Connection from 127.0.0.1 on port 40869
+DEBUG:root:Handling connection from 127.0.0.1 on port 40869
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-5SVrwk
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 59687
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59687, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59687 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59687 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406836564</start>
+	<end>1406836628</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40869
+DEBUG:root:Connection from 127.0.0.1 on port 40878
+DEBUG:root:Handling connection from 127.0.0.1 on port 40878
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-hLcCRD
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48543
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48543, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48543 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48543 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406836893</start>
+	<end>1406836920</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40878
+DEBUG:root:Connection from 127.0.0.1 on port 40886
+DEBUG:root:Handling connection from 127.0.0.1 on port 40886
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-ez9ASm
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 34299
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34299, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34299 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 34299 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837037</start>
+	<end>1406837121</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40886
+DEBUG:root:Connection from 127.0.0.1 on port 40889
+DEBUG:root:Handling connection from 127.0.0.1 on port 40889
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-_Iv64F
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 59879
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59879, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59879 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59879 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Connection from 127.0.0.1 on port 40893
+DEBUG:root:Handling connection from 127.0.0.1 on port 40893
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-OADZUo
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47174
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47174, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47174 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47174 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Connection from 127.0.0.1 on port 40914
+DEBUG:root:Handling connection from 127.0.0.1 on port 40914
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-NldJ9n
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 33795
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33795, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33795 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33795 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837776</start>
+	<end>1406837783</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40914
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837234</start>
+	<end>1406837813</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40893
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837165</start>
+	<end>1406837819</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40889
+DEBUG:root:Connection from 127.0.0.1 on port 40918
+DEBUG:root:Handling connection from 127.0.0.1 on port 40918
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-RYvkWI
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47699
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47699, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47699 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47699 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837831</start>
+	<end>1406837853</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40918
+DEBUG:root:Connection from 127.0.0.1 on port 40930
+DEBUG:root:Handling connection from 127.0.0.1 on port 40930
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-3NmjUd
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 49547
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49547, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49547 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49547 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406837922</start>
+	<end>1406837982</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40930
+DEBUG:root:Connection from 127.0.0.1 on port 40966
+DEBUG:root:Handling connection from 127.0.0.1 on port 40966
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-aLx0eX
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 38304
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38304, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38304 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38304 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406838949</start>
+	<end>1406839058</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40966
+DEBUG:root:Connection from 127.0.0.1 on port 40981
+DEBUG:root:Handling connection from 127.0.0.1 on port 40981
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-K4xdb6
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 40852
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 40852, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 40852 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 40852 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406839132</start>
+	<end>1406839185</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40981
+DEBUG:root:Connection from 127.0.0.1 on port 40995
+DEBUG:root:Handling connection from 127.0.0.1 on port 40995
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-j8jWEk
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 52315
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52315, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52315 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 52315 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406839557</start>
+	<end>1406839610</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 40995
+DEBUG:root:Connection from 127.0.0.1 on port 41030
+DEBUG:root:Handling connection from 127.0.0.1 on port 41030
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 296
+DEBUG:root:Got TraCI command of length 291
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="erlangen.net.xml"/>
+  <copy file="erlangen.rou.xml"/>
+  <copy file="erlangen.poly.xml"/>
+  <copy file="erlangen.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/src/_git/veins/examples/veins/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-ZDDieH
+DEBUG:root:Base dir is /home/prodatalab/src/_git/veins/examples/veins/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 51917
+INFO:root:Starting SUMO (sumo-gui -c erlangen.sumo.cfg) on port 51917, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c erlangen.sumo.cfg) on port 51917 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c erlangen.sumo.cfg) on port 51917 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406840876</start>
+	<end>1406840925</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41030
+DEBUG:root:Connection from 127.0.0.1 on port 41045
+DEBUG:root:Handling connection from 127.0.0.1 on port 41045
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-x75VQI
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 42634
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42634, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42634 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42634 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406841499</start>
+	<end>1406841547</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41045
+DEBUG:root:Connection from 127.0.0.1 on port 41060
+DEBUG:root:Handling connection from 127.0.0.1 on port 41060
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-GILckT
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 37338
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37338, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37338 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37338 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406842566</start>
+	<end>1406842704</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41060
+DEBUG:root:Connection from 127.0.0.1 on port 41066
+DEBUG:root:Handling connection from 127.0.0.1 on port 41066
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-ZV6YN2
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 43939
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43939, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43939 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 43939 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406842931</start>
+	<end>1406842953</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41066
+DEBUG:root:Connection from 127.0.0.1 on port 41074
+DEBUG:root:Handling connection from 127.0.0.1 on port 41074
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-CZZebL
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35553
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35553, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35553 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35553 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843017</start>
+	<end>1406843059</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41074
+DEBUG:root:Connection from 127.0.0.1 on port 41082
+DEBUG:root:Handling connection from 127.0.0.1 on port 41082
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-MO181K
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 38142
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38142, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38142 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38142 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843177</start>
+	<end>1406843196</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41082
+DEBUG:root:Connection from 127.0.0.1 on port 41086
+DEBUG:root:Handling connection from 127.0.0.1 on port 41086
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-aeohnV
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 37203
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37203, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37203 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 37203 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843334</start>
+	<end>1406843349</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41086
+DEBUG:root:Connection from 127.0.0.1 on port 41089
+DEBUG:root:Handling connection from 127.0.0.1 on port 41089
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-qkCTO5
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 44899
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44899, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44899 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 44899 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843462</start>
+	<end>1406843484</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41089
+DEBUG:root:Connection from 127.0.0.1 on port 41094
+DEBUG:root:Handling connection from 127.0.0.1 on port 41094
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-Gj4_F2
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58433
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58433, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58433 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58433 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843561</start>
+	<end>1406843580</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41094
+DEBUG:root:Connection from 127.0.0.1 on port 41098
+DEBUG:root:Handling connection from 127.0.0.1 on port 41098
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-XFRQJk
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 54496
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54496, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54496 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54496 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843752</start>
+	<end>1406843798</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41098
+DEBUG:root:Connection from 127.0.0.1 on port 41109
+DEBUG:root:Handling connection from 127.0.0.1 on port 41109
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-6q509u
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 33824
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33824, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33824 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 33824 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406843927</start>
+	<end>1406843956</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41109
+DEBUG:root:Connection from 127.0.0.1 on port 41279
+DEBUG:root:Handling connection from 127.0.0.1 on port 41279
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-YbqjYu
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35997
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35997, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35997 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35997 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406844877</start>
+	<end>1406844918</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41279
+DEBUG:root:Connection from 127.0.0.1 on port 41345
+DEBUG:root:Handling connection from 127.0.0.1 on port 41345
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-RoRpsE
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 58352
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58352, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58352 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 58352 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406844987</start>
+	<end>1406845020</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41345
+DEBUG:root:Connection from 127.0.0.1 on port 41445
+DEBUG:root:Handling connection from 127.0.0.1 on port 41445
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-YI5tr1
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47420
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47420, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47420 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47420 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406845154</start>
+	<end>1406845228</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41445
+DEBUG:root:Connection from 127.0.0.1 on port 41641
+DEBUG:root:Handling connection from 127.0.0.1 on port 41641
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-EkwVgq
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 42374
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42374, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42374 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 42374 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406845544</start>
+	<end>1406845567</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41641
+DEBUG:root:Connection from 127.0.0.1 on port 41687
+DEBUG:root:Handling connection from 127.0.0.1 on port 41687
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-_PYuJp
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47526
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47526, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47526 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47526 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406845624</start>
+	<end>1406845644</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41687
+DEBUG:root:Logging to sumo-launchd.log
+WARNING:root:Killed.
+INFO:root:Shutting down.
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 41583
+DEBUG:root:Handling connection from 127.0.0.1 on port 41583
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-B2vvcj
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48378
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48378, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48378 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48378 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48378 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48378 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406846061</start>
+	<end>1406846088</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41583
+DEBUG:root:Connection from 127.0.0.1 on port 41620
+DEBUG:root:Handling connection from 127.0.0.1 on port 41620
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-VsQyBk
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 50308
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 50308, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 50308 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 50308 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406846260</start>
+	<end>1406846292</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41620
+DEBUG:root:Connection from 127.0.0.1 on port 41633
+DEBUG:root:Handling connection from 127.0.0.1 on port 41633
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-3FQBv8
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48504
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48504, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48504 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48504 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406846361</start>
+	<end>1406846382</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41633
+DEBUG:root:Connection from 127.0.0.1 on port 41637
+DEBUG:root:Handling connection from 127.0.0.1 on port 41637
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-Y7uC0Q
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 54963
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54963, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54963 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 54963 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406846420</start>
+	<end>1406846469</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41637
+DEBUG:root:Connection from 127.0.0.1 on port 41641
+DEBUG:root:Handling connection from 127.0.0.1 on port 41641
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-H1pf2o
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 48189
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48189, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48189 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 48189 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406846666</start>
+	<end>1406846694</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41641
+DEBUG:root:Connection from 127.0.0.1 on port 41651
+DEBUG:root:Handling connection from 127.0.0.1 on port 41651
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-dX61ty
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47572
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47572, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47572 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47572 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406847074</start>
+	<end>1406847137</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41651
+DEBUG:root:Connection from 127.0.0.1 on port 41697
+DEBUG:root:Handling connection from 127.0.0.1 on port 41697
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-Zrx9D4
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 47371
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47371, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47371 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 47371 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406847821</start>
+	<end>1406847884</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41697
+DEBUG:root:Connection from 127.0.0.1 on port 41716
+DEBUG:root:Handling connection from 127.0.0.1 on port 41716
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-KXgwjn
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 53772
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53772, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53772 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 53772 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406847978</start>
+	<end>1406847994</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 41716
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 51452
+DEBUG:root:Handling connection from 127.0.0.1 on port 51452
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-ZRUjj3
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 39898
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39898, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39898 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39898 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39898 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 39898 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1406901076</start>
+	<end>1406901139</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 51452
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 55236
+DEBUG:root:Handling connection from 127.0.0.1 on port 55236
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-BDQwFE
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 38375
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38375, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38375 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38375 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38375 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 38375 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1407007429</start>
+	<end>1407007725</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 55236
+DEBUG:root:Connection from 127.0.0.1 on port 55261
+DEBUG:root:Handling connection from 127.0.0.1 on port 55261
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-UFOzLp
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 51838
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51838, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51838 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 51838 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1407008159</start>
+	<end>1407008272</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 55261
+DEBUG:root:Connection from 127.0.0.1 on port 55265
+DEBUG:root:Handling connection from 127.0.0.1 on port 55265
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-OA9evQ
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 49252
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49252, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49252 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 49252 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1407008387</start>
+	<end>1407008442</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 55265

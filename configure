@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+import os
+import sys
+from subprocess import check_call
+from logging import warning, error
+from optparse import OptionParser
+import fnmatch
+
+
+VEINS_SRC_DIR = '/home/prodatalab/src/_git/veins'
+
+
+# Start with default flags
+
+out_dir = os.path.join(os.getcwd(), 'out')
+
+makemake_flags = ['-f', '--deep', '-o', 'francisco', '-O', out_dir]
+run_libs = [os.path.join('src', 'francisco')]
+run_neds = ['src']
+
+header_dirs = set()
+
+print
+print "Searching for header directories in", os.path.abspath(os.path.join(os.getcwd(), VEINS_SRC_DIR))
+print
+
+for root, dnames, fnames in os.walk(os.path.abspath(os.path.join(os.getcwd(), VEINS_SRC_DIR))):
+
+    headers = fnmatch.filter(fnames, '*.h')
+    if len(headers):
+        header_dirs.add(root)
+
+
+includes = ['-I' + s for s in header_dirs]
+
+lpath = os.path.abspath(os.path.join(VEINS_SRC_DIR, 'out/gcc-debug/src'))
+
+libs = ['-L' + lpath, '-lveins']
+
+
+#opts = [' -e cc']
+#makemake_flags += opts + includes + libs
+makemake_flags += includes + libs
+
+for flag in makemake_flags:
+    print flag
+
+# Start creating files
+if not os.path.isdir('out'):
+    os.mkdir('out')
+
+f = open(os.path.join('out', 'config.py'), 'w')
+f.write('run_libs = %s\n' % repr(run_libs))
+f.write('run_neds = %s\n' % repr(run_neds))
+f.close()
+
+#check_call(['env', 'opp_makemake'] + makemake_flags, cwd='src')
+check_call(['env', 'opp_makemake'] + makemake_flags)
+
+print 'Configure done. You can now run "make".'

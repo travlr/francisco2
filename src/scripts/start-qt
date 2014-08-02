@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+
+~/qt/Tools/QtCreator/bin/qtcreator &
