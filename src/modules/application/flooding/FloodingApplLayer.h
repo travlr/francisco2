@@ -35,13 +35,21 @@ class FloodingApplLayer : public BaseWaveApplLayer
 {
 	public:
 		virtual void initialize(int stage);
+        virtual void finish();
 		virtual void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj);
 	protected:
 		TraCIMobility* traci;
 		AnnotationManager* annotations;
 		simtime_t lastDroveAt;
 		bool sentMessage;
+
         simsignal_t warningReceived;
+
+        simsignal_t beaconReceivedSignal;
+        simsignal_t newWarningReceivedSignal;
+        simsignal_t warningReceivedSignal;
+        simsignal_t messageReceivedSignal;
+
         FranciscoStatistics* stats;
         vector<WaveShortMessage*> warningMessages;
 

@@ -19,10 +19,11 @@
 //
 
 #include "FloodingApplLayer.h"
+#include <iostream>
 
 using Veins::TraCIMobilityAccess;
 using Veins::AnnotationManagerAccess;
-
+using std::cerr;
 
 Define_Module(FloodingApplLayer)
 
@@ -35,7 +36,11 @@ void FloodingApplLayer::initialize(int stage) {
         stats = FranciscoStatisticsAccess().getIfExists();
         ASSERT(stats);
 
-        warningReceived = registerSignal("warningReceived");
+        beaconReceivedSignal = registerSignal("beaconReceivedSignal");
+        warningReceivedSignal = registerSignal("warningReceivedSignal");
+        messageReceivedSignal = registerSignal("messageReceivedSignal");
+        newWarningReceivedSignal = registerSignal("newWarningReceivedSignal");
+
 
 		sentMessage = false;
 		lastDroveAt = simTime();
@@ -45,21 +50,42 @@ void FloodingApplLayer::initialize(int stage) {
     }
 }
 
+void FloodingApplLayer::finish()
+{
+    for (uint i = 0; i < warningMessages.size(); ++i) {
+        delete warningMessages[i];
+    }
+    warningMessages.clear();;
+}
+
 void FloodingApplLayer::onBeacon(WaveShortMessage* wsm) {
     stats->updateAllBeaconsReceived();
     stats->updateAllMessagesReceived();
+    emit(beaconReceivedSignal, 1);
+    emit(messageReceivedSignal, 1);
 }
 
 void FloodingApplLayer::onData(WaveShortMessage* wsm) {
-    emit(warningReceived, 1);
+    emit(warningReceivedSignal, 1);
+    emit(messageReceivedSignal, 1);
+    stats->updateAllWarningsReceived();
     stats->updateAllMessagesReceived();
     bool messageIsRepeat = false;
 
-    for (uint i = 0; i < warningMessages.size(); ++i)
-        if (wsm->getTreeId() == warningMessages[i]->getTreeId())
+    for (uint i = 0; i < warningMessages.size(); ++i) {
+        cerr << "wsmTreeId: " << wsm->getTreeId() << " warningMessages[" << i << "].treeId: " << warningMessages[i]->getTreeId() << endl;
+        if (wsm->getTreeId() == warningMessages[i]->getTreeId()) {
+//            EV << "[INFO] _________REPEAT MESSAGE_________";
             messageIsRepeat = true;
+        }
+    }
+
+//    cerr << warningMessages.size() << " ";
 
     if (!messageIsRepeat) {
+
+//        cerr << "`";
+
         findHost()->getDisplayString().updateWith("r=16,green");
         annotations->scheduleErase(1, annotations->drawLine(wsm->getSenderPos(), traci->getPositionAt(simTime()), "blue"));
 
@@ -67,8 +93,15 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm) {
             traci->commandChangeRoute(wsm->getWsmData(), 9999);
 
         sendMessage(wsm->getWsmData());
-        stats->updateAllWarningsReceived();
+        stats->updateNewWarningsReceived();
+        emit(newWarningReceivedSignal, 1);
+
+        warningMessages.push_back(wsm->dup());
+
     }
+//    else {
+//        cerr << ".";
+//    }
 }
 
 void FloodingApplLayer::sendMessage(std::string blockedRoadId) {
@@ -96,6 +129,7 @@ void FloodingApplLayer::handlePositionUpdate(cObject* obj) {
 	if (traci->getSpeed() < 1) {
 		if (simTime() - lastDroveAt >= 10) {
 			findHost()->getDisplayString().updateWith("r=16,red");
+            stats->updateNewWarningsReceived();
 			if (!sentMessage) sendMessage(traci->getRoadId());
 		}
 	}

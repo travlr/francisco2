@@ -8,17 +8,24 @@ class FranciscoStatistics : public cSimpleModule
 public:
     ~FranciscoStatistics();
     void updateAllBeaconsReceived();
+    void updateNewWarningsReceived();
     void updateAllWarningsReceived();
     void updateAllMessagesReceived();
 
 protected:
     uint allBeaconsReceived;
+    uint newWarningsReceived;
     uint allWarningsReceived;
     uint allMessagesReceived;
+    bool accidentMode;
+    int numVehicles;
 
     simsignal_t allBeaconsReceivedSignal;
+    simsignal_t allNewWarningsReceivedSignal;
     simsignal_t allWarningsReceivedSignal;
     simsignal_t allMessagesReceivedSignal;
+    simsignal_t percentOfInformedVehiclesSignal;
+    simsignal_t accidentStartTimeSignal;
 
 
 protected:
