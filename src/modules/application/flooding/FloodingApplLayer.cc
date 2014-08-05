@@ -73,7 +73,7 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm) {
     bool messageIsRepeat = false;
 
     for (uint i = 0; i < warningMessages.size(); ++i) {
-        cerr << "wsmTreeId: " << wsm->getTreeId() << " warningMessages[" << i << "].treeId: " << warningMessages[i]->getTreeId() << endl;
+        //cerr << "wsmTreeId: " << wsm->getTreeId() << " warningMessages[" << i << "].treeId: " << warningMessages[i]->getTreeId() << endl;
         if (wsm->getTreeId() == warningMessages[i]->getTreeId()) {
 //            EV << "[INFO] _________REPEAT MESSAGE_________";
             messageIsRepeat = true;

@@ -5,7 +5,7 @@
 			<parameter name="alpha" type="double" value="2.0"/>
 			<parameter name="carrierFrequency" type="double" value="5.890e+9"/>
 		</AnalogueModel>
-		<AnalogueModel type="SimpleObstacleShadowing">
+        <AnalogueModel type="RavObstacleModel">
 			<parameter name="carrierFrequency" type="double" value="5.890e+9"/>
 		</AnalogueModel>
 	</AnalogueModels>
