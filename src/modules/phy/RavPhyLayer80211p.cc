@@ -11,7 +11,7 @@ Define_Module(RavPhyLayer80211p)
 
 void RavPhyLayer80211p::initialize(int stage)
 {
-//    cerr << "[DEBUG] In RavPhyLayer80211p::initialize(int stage)" << endl;
+    //cerr << "[DEBUG] In RavPhyLayer80211p::initialize(int stage)" << endl;
     PhyLayer80211p::initialize(stage);
 }
 
@@ -44,16 +44,16 @@ AnalogueModel* RavPhyLayer80211p::initializeRavObstacleModel(BasePhyLayer::Param
             coreEV << "createPathLossModel(): carrierFrequency set from default value to " << carrierFrequency << endl;
     }
 
-    //RavObstacleControl* obstacleControlP = RavObstacleControlAccess().getIfExists();
+    //RavObstacleControl* roc = RavObstacleControlAccess().getIfExists();
     cModule* mod = simulation.getSystemModule()->getSubmodule("obstacles");
     if (!mod)
-        error("[ERROR] mod is NULL");
-    RavObstacleControl* obstacleControlP = check_and_cast<RavObstacleControl*>(mod);
+        opp_error("[ERROR] mod is NULL");
+    RavObstacleControl* roc = check_and_cast<RavObstacleControl*>(mod);
 
 
-    if (!obstacleControlP)
+    if (!roc)
         opp_error("initializeRavObstacleModel(): cannot find RavObstacleControl module");
-    RavObstacleModel* rom =  new RavObstacleModel(*obstacleControlP, carrierFrequency, useTorus, playgroundSize, coreDebug);
+    RavObstacleModel* rom =  new RavObstacleModel(*roc, carrierFrequency, useTorus, playgroundSize, coreDebug);
     if (!rom)
         cerr << "[ERROR] RavObstacleModel pointer is NULL" << endl;
     return rom;
@@ -62,7 +62,7 @@ AnalogueModel* RavPhyLayer80211p::initializeRavObstacleModel(BasePhyLayer::Param
 AnalogueModel *RavPhyLayer80211p::getAnalogueModelFromName(std::string name, BasePhyLayer::ParameterMap &params)
 {
     if (name == "RavObstacleModel") {
-//        cerr << "[DEBUG] returning initalizeRavObstacleModel(params)" << endl;
+        //cerr << "[DEBUG] returning initalizeRavObstacleModel(params)" << endl;
         return initializeRavObstacleModel(params);
     }
 

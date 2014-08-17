@@ -39,12 +39,15 @@ INCLUDE_PATH = \
     -Isrc/modules/analogue \
     -Isrc/modules/application \
     -Isrc/modules/application/flooding \
+    -Isrc/modules/junctions \
     -Isrc/modules/nic \
     -Isrc/modules/nodes \
     -Isrc/modules/obstacles \
     -Isrc/modules/phy \
+    -Isrc/modules/roadmaps \
     -Isrc/modules/scenario \
     -Isrc/modules/stats \
+    -Isrc/modules/streets \
     -Isrc/scripts
 
 # Additional object and library files to link with
@@ -63,10 +66,15 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 OBJS = \
     $O/src/modules/analogue/RavObstacleModel.o \
     $O/src/modules/application/flooding/FloodingApplLayer.o \
+    $O/src/modules/junctions/Junction.o \
+    $O/src/modules/junctions/JunctionManager.o \
     $O/src/modules/obstacles/RavObstacle.o \
     $O/src/modules/obstacles/RavObstacleControl.o \
     $O/src/modules/phy/RavPhyLayer80211p.o \
-    $O/src/modules/stats/FranciscoStatistics.o
+    $O/src/modules/roadmaps/RoadMapManager.o \
+    $O/src/modules/stats/FranciscoStatistics.o \
+    $O/src/modules/streets/Street.o \
+    $O/src/modules/streets/StreetManager.o
 
 # Message files
 MSGFILES =
@@ -145,139 +153,242 @@ clean:
 	-rm -f src/modules/analogue/*_m.cc src/modules/analogue/*_m.h
 	-rm -f src/modules/application/*_m.cc src/modules/application/*_m.h
 	-rm -f src/modules/application/flooding/*_m.cc src/modules/application/flooding/*_m.h
+	-rm -f src/modules/junctions/*_m.cc src/modules/junctions/*_m.h
 	-rm -f src/modules/nic/*_m.cc src/modules/nic/*_m.h
 	-rm -f src/modules/nodes/*_m.cc src/modules/nodes/*_m.h
 	-rm -f src/modules/obstacles/*_m.cc src/modules/obstacles/*_m.h
 	-rm -f src/modules/phy/*_m.cc src/modules/phy/*_m.h
+	-rm -f src/modules/roadmaps/*_m.cc src/modules/roadmaps/*_m.h
 	-rm -f src/modules/scenario/*_m.cc src/modules/scenario/*_m.h
 	-rm -f src/modules/stats/*_m.cc src/modules/stats/*_m.h
+	-rm -f src/modules/streets/*_m.cc src/modules/streets/*_m.h
 	-rm -f src/scripts/*_m.cc src/scripts/*_m.h
 
 cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc results/*.cc src/*.cc src/modules/*.cc src/modules/analogue/*.cc src/modules/application/*.cc src/modules/application/flooding/*.cc src/modules/nic/*.cc src/modules/nodes/*.cc src/modules/obstacles/*.cc src/modules/phy/*.cc src/modules/scenario/*.cc src/modules/stats/*.cc src/scripts/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc results/*.cc src/*.cc src/modules/*.cc src/modules/analogue/*.cc src/modules/application/*.cc src/modules/application/flooding/*.cc src/modules/junctions/*.cc src/modules/nic/*.cc src/modules/nodes/*.cc src/modules/obstacles/*.cc src/modules/phy/*.cc src/modules/roadmaps/*.cc src/modules/scenario/*.cc src/modules/stats/*.cc src/modules/streets/*.cc src/scripts/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/src/modules/analogue/RavObstacleModel.o: src/modules/analogue/RavObstacleModel.cc \
-  /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
-  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingUtils.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/Signal_.h \
   /home/prodatalab/src/_git/veins/src/base/phyLayer/AnalogueModel.h \
-  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/Obstacle.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
   /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
-  src/modules/analogue/RavObstacleModel.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingBase.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/Interpolation.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
-  src/modules/obstacles/RavObstacle.h \
   /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
-  src/modules/obstacles/RavObstacleControl.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingBase.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
   /home/prodatalab/src/_git/veins/src/base/messages/AirFrame_m.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/Mapping.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h
-$O/src/modules/application/flooding/FloodingApplLayer.o: src/modules/application/flooding/FloodingApplLayer.cc \
-  /home/prodatalab/src/_git/veins/src/base/utils/PassedMessage.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/NetwToMacControlInfo.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
+  src/modules/streets/Street.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Signal_.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Interpolation.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
+  src/modules/obstacles/RavObstacle.h \
+  src/modules/junctions/JunctionManager.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
   /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIConnection.h \
-  /home/prodatalab/src/_git/veins/src/modules/application/ieee80211p/BaseWaveApplLayer.h \
-  /home/prodatalab/src/_git/veins/src/base/connectionManager/ChannelAccess.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseModule.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/SimpleAddress.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseBattery.h \
-  /home/prodatalab/src/_git/veins/src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
-  /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManagerLaunchd.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
+  src/modules/analogue/RavObstacleModel.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingUtils.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
+  src/modules/junctions/Junction.h \
+  src/modules/obstacles/RavObstacleControl.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Mapping.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h
+$O/src/modules/application/flooding/FloodingApplLayer.o: src/modules/application/flooding/FloodingApplLayer.cc \
   /home/prodatalab/src/_git/veins/src/base/utils/HostState.h \
   /home/prodatalab/src/_git/veins/src/modules/obstacle/Obstacle.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
-  src/modules/application/flooding/FloodingApplLayer.h \
-  /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIMobility.h \
-  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
-  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICommandInterface.h \
-  /home/prodatalab/src/_git/veins/src/modules/messages/WaveShortMessage_m.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseBattery.h \
+  /home/prodatalab/src/_git/veins/src/modules/mac/ieee80211p/WaveAppToMac1609_4Interface.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/PassedMessage.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
   /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
-  /home/prodatalab/src/_git/veins/src/modules/utility/Consts80211p.h \
   /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseApplLayer.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICommandInterface.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
+  src/modules/stats/FranciscoStatistics.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
+  /home/prodatalab/src/_git/veins/src/modules/messages/WaveShortMessage_m.h \
+  /home/prodatalab/src/_git/veins/src/modules/application/ieee80211p/BaseWaveApplLayer.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/SimpleAddress.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/NetwToMacControlInfo.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/ChannelAccess.h \
+  /home/prodatalab/src/_git/veins/src/modules/utility/Consts80211p.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseModule.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BatteryAccess.h \
   /home/prodatalab/src/_git/veins/src/base/modules/BaseLayer.h \
   /home/prodatalab/src/_git/veins/src/base/modules/BaseMobility.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseApplLayer.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
-  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
-  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BatteryAccess.h \
-  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
-  src/modules/stats/FranciscoStatistics.h
-$O/src/modules/obstacles/RavObstacle.o: src/modules/obstacles/RavObstacle.cc \
-  /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
-  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
-  src/modules/obstacles/RavObstacle.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
   /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
-  /home/prodatalab/src/_git/veins/src/inet/Coord.h
-$O/src/modules/obstacles/RavObstacleControl.o: src/modules/obstacles/RavObstacleControl.cc \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIMobility.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIConnection.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
+  src/modules/application/flooding/FloodingApplLayer.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h
+$O/src/modules/junctions/Junction.o: src/modules/junctions/Junction.cc \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h
+$O/src/modules/junctions/JunctionManager.o: src/modules/junctions/JunctionManager.cc \
   /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
   /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  src/modules/junctions/JunctionManager.h \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h
+$O/src/modules/obstacles/RavObstacle.o: src/modules/obstacles/RavObstacle.cc \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
   /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
   /home/prodatalab/src/_git/veins/src/inet/Coord.h \
   src/modules/obstacles/RavObstacle.h \
-  src/modules/obstacles/RavObstacleControl.h
-$O/src/modules/phy/RavPhyLayer80211p.o: src/modules/phy/RavPhyLayer80211p.cc \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseMobility.h \
-  src/modules/phy/RavPhyLayer80211p.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
-  /home/prodatalab/src/_git/veins/src/modules/phy/SNRThresholdDecider.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/MacToPhyInterface.h \
-  /home/prodatalab/src/_git/veins/src/modules/utility/Consts80211p.h \
-  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
-  /home/prodatalab/src/_git/veins/src/modules/phy/Decider80211p.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/PhyUtils.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/BasePhyLayer.h \
   /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
-  /home/prodatalab/src/_git/veins/src/modules/analogueModel/JakesFading.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingBase.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/Interpolation.h \
-  src/modules/analogue/RavObstacleModel.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/AnalogueModel.h \
-  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
-  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
-  /home/prodatalab/src/_git/veins/src/base/messages/ChannelSenseRequest_m.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/ChannelInfo.h \
-  /home/prodatalab/src/_git/veins/src/modules/analogueModel/SimplePathlossModel.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BatteryAccess.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h
+$O/src/modules/obstacles/RavObstacleControl.o: src/modules/obstacles/RavObstacleControl.cc \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
   /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingUtils.h \
+  src/modules/obstacles/RavObstacle.h \
+  src/modules/junctions/JunctionManager.h \
+  src/modules/roadmaps/RoadMapManager.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManagerLaunchd.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  /home/prodatalab/src/_git/veins/src/base/messages/AirFrame_m.h \
+  src/modules/streets/Street.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICommandInterface.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingBase.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/Obstacle.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
   src/modules/obstacles/RavObstacleControl.h \
   /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/DeciderToPhyInterface.h \
   /home/prodatalab/src/_git/veins/src/base/phyLayer/Mapping.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseBattery.h \
-  /home/prodatalab/src/_git/veins/src/base/messages/AirFrame_m.h \
-  /home/prodatalab/src/_git/veins/src/modules/mac/ieee80211p/Mac80211pToPhy11pInterface.h \
-  /home/prodatalab/src/_git/veins/src/base/connectionManager/ChannelAccess.h \
-  /home/prodatalab/src/_git/veins/src/base/modules/BaseModule.h \
-  /home/prodatalab/src/_git/veins/src/modules/analogueModel/LogNormalShadowing.h \
-  src/modules/obstacles/RavObstacle.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/BaseDecider.h \
-  /home/prodatalab/src/_git/veins/src/modules/phy/PhyLayer80211p.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIConnection.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Interpolation.h \
   /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/ChannelState.h \
-  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
-  /home/prodatalab/src/_git/veins/src/modules/phy/Decider80211pToPhy80211pInterface.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Signal_.h \
   /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  src/modules/streets/StreetManager.h
+$O/src/modules/phy/RavPhyLayer80211p.o: src/modules/phy/RavPhyLayer80211p.cc \
+  src/modules/phy/RavPhyLayer80211p.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/DeciderToPhyInterface.h \
+  /home/prodatalab/src/_git/veins/src/modules/phy/SNRThresholdDecider.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingUtils.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/BasePhyLayer.h \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/ChannelAccess.h \
+  /home/prodatalab/src/_git/veins/src/modules/analogueModel/SimplePathlossModel.h \
+  /home/prodatalab/src/_git/veins/src/modules/phy/Decider80211p.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
+  src/modules/junctions/JunctionManager.h \
+  src/modules/obstacles/RavObstacle.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManagerLaunchd.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/PhyUtils.h \
+  src/modules/analogue/RavObstacleModel.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MappingBase.h \
+  /home/prodatalab/src/_git/veins/src/base/messages/AirFrame_m.h \
+  /home/prodatalab/src/_git/veins/src/modules/phy/PhyLayer80211p.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  src/modules/streets/Street.h \
   /home/prodatalab/src/_git/veins/src/base/utils/HostState.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/AnalogueModel.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseBattery.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/Obstacle.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/BaseDecider.h \
+  /home/prodatalab/src/_git/veins/src/modules/analogueModel/JakesFading.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/ChannelInfo.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/ChannelState.h \
+  /home/prodatalab/src/_git/veins/src/modules/mac/ieee80211p/Mac80211pToPhy11pInterface.h \
+  src/modules/obstacles/RavObstacleControl.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Mapping.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/MacToPhyInterface.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Interpolation.h \
+  /home/prodatalab/src/_git/veins/src/modules/phy/Decider80211pToPhy80211pInterface.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/Move.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIConnection.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseModule.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BatteryAccess.h \
   /home/prodatalab/src/_git/veins/src/base/phyLayer/Decider.h \
-  /home/prodatalab/src/_git/veins/src/base/phyLayer/Signal_.h
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseMobility.h \
+  /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
+  /home/prodatalab/src/_git/veins/src/base/messages/ChannelSenseRequest_m.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/base/phyLayer/Signal_.h \
+  /home/prodatalab/src/_git/veins/src/modules/analogueModel/LogNormalShadowing.h \
+  /home/prodatalab/src/_git/veins/src/modules/utility/Consts80211p.h
+$O/src/modules/roadmaps/RoadMapManager.o: src/modules/roadmaps/RoadMapManager.cc \
+  /home/prodatalab/src/_git/veins/src/base/utils/FindModule.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/ObstacleControl.h \
+  src/modules/streets/Street.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICommandInterface.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  /home/prodatalab/src/_git/veins/src/modules/obstacle/Obstacle.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIScenarioManager.h \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/NicEntry.h \
+  src/modules/junctions/JunctionManager.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCICoord.h \
+  src/modules/roadmaps/RoadMapManager.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/modules/world/annotations/AnnotationManager.h \
+  src/modules/streets/StreetManager.h \
+  /home/prodatalab/src/_git/veins/src/base/connectionManager/BaseConnectionManager.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIColor.h \
+  /home/prodatalab/src/_git/veins/src/base/modules/BaseWorldUtility.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIBuffer.h \
+  /home/prodatalab/src/_git/veins/src/modules/mobility/traci/TraCIConnection.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h
 $O/src/modules/stats/FranciscoStatistics.o: src/modules/stats/FranciscoStatistics.cc \
   src/modules/stats/FranciscoStatistics.h
+$O/src/modules/streets/Street.o: src/modules/streets/Street.cc \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  src/modules/junctions/JunctionManager.h \
+  src/modules/junctions/Junction.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  src/modules/streets/Street.h
+$O/src/modules/streets/StreetManager.o: src/modules/streets/StreetManager.cc \
+  /home/prodatalab/src/_git/veins/src/base/utils/miximkerneldefs.h \
+  src/modules/streets/Street.h \
+  src/modules/junctions/JunctionManager.h \
+  src/modules/junctions/Junction.h \
+  src/modules/streets/StreetManager.h \
+  /home/prodatalab/src/_git/veins/src/base/utils/MiXiMDefs.h \
+  /home/prodatalab/src/_git/veins/src/inet/Coord.h \
+  /home/prodatalab/src/_git/veins/src/inet/FWMath.h

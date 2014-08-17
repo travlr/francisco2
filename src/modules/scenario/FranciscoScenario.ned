@@ -3,6 +3,7 @@ package src.modules.scenario;
 
 import src.modules.stats.FranciscoStatistics;
 import src.modules.obstacles.RavObstacleControl;
+import src.modules.roadmaps.RoadMapManager;
 
 import org.car2x.veins.base.connectionManager.ConnectionManager;
 import org.car2x.veins.base.modules.BaseWorldUtility;
@@ -18,11 +19,13 @@ network FranciscoScenario
         double playgroundSizeZ @unit(m); // z size of the area the nodes are in (in meters)
         @display("bgb=$playgroundSizeX,$playgroundSizeY");
     submodules:
-        obstacles: RavObstacleControl {
-            @display("p=240,50");
-        }
+//        obstacles: RavObstacleControl {
+//            parameters:
+//                @display("p=240,50");
+//        }
         annotations: AnnotationManager {
-            @display("p=260,50");
+            parameters:
+                @display("p=260,50");
         }
         connectionManager: ConnectionManager {
             parameters:
@@ -39,8 +42,13 @@ network FranciscoScenario
             parameters:
                 @display("p=512,128");
         }
+//        roadmapmgr: RoadMapManager {
+//            parameters:
+//                @display("p=912,128");
+//        }
         stats: FranciscoStatistics {
-            @display("p=440,50");
+            parameters:
+                @display("p=440,50");
         }
 
     connections allowunconnected:

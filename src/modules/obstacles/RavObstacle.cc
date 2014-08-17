@@ -112,41 +112,15 @@ double RavObstacle::calculateAttenuation(const Coord& senderPos, const Coord& re
 			doesIntersect = true;
 			intersectAt.insert(i);
 		}
-
 	}
 
 	// if beam interacts with neither walls nor matter: bail.
     bool senderInside = isPointInRavObstacle(senderPos, *this);
     bool receiverInside = isPointInRavObstacle(receiverPos, *this);
     if (!doesIntersect && !senderInside && !receiverInside) {
-//        cerr << " ...BLOCKED" << endl;
         return 1;
     }
-//    else
-//        cerr << " ...NOT BLOCKED" << endl;
-
-    // BUILDING DOES BLOCK...
-
-	// remember number of walls before messing with intersection points
-	double numWalls = intersectAt.size();
-
-	// for distance calculation, make sure every other pair of points marks transition through matter and void, respectively.
-    if (senderInside)
-        intersectAt.insert(0);
-    if (receiverInside)
-        intersectAt.insert(1);
-	ASSERT((intersectAt.size() % 2) == 0);
-
-	// sum up distances in matter.
-    double fractionInRavObstacle = 0;
-	for (std::multiset<double>::const_iterator i = intersectAt.begin(); i != intersectAt.end(); ) {
-		double p1 = *(i++);
-		double p2 = *(i++);
-        fractionInRavObstacle += (p2 - p1);
-	}
-
-	// calculate attenuation
-	double totalDistance = senderPos.distance(receiverPos);
-    double attenuation = (attenuationPerWall * numWalls) + (attenuationPerMeter * fractionInRavObstacle * totalDistance);
-	return pow(10.0, -attenuation/10.0);
+    else {
+        return 0;
+    }
 }

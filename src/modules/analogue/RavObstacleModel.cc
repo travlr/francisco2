@@ -1,5 +1,6 @@
 #include "RavObstacleModel.h"
 
+
 using Veins::AirFrame;
 
 #define debugEV (ev.isDisabled() || !debug) ? ev : ev << "PhyLayer(RavObstacleModel): "
@@ -27,9 +28,8 @@ double SimplePathlossConstMapping::getValue(const Argument& pos) const
 }
 #endif
 
-RavObstacleModel::RavObstacleModel(RavObstacleControl & obstacleControl, double carrierFrequency, bool useTorus, const Coord & playgroundSize, bool debug)
-    : obstacleControl(obstacleControl)
-    , carrierFrequency(carrierFrequency)
+RavObstacleModel::RavObstacleModel(double carrierFrequency, bool useTorus, const Coord & playgroundSize, bool debug)
+    : carrierFrequency(carrierFrequency)
     , useTorus(useTorus)
     , playgroundSize(playgroundSize)
     , debug(debug)
@@ -41,11 +41,15 @@ RavObstacleModel::RavObstacleModel(RavObstacleControl & obstacleControl, double 
 
 void RavObstacleModel::filterSignal(Veins::AirFrame *frame, const Coord &senderPos, const Coord &receiverPos)
 {
+    /// TODO::: CALCULATE RAV FROM HERE... ALLL OOFFFF ITIIIIITTTTTTTTTTTTTTTT
+
     Signal & s = frame->getSignal();
 
-    double factor = obstacleControl.calculateAttenuation(senderPos, receiverPos);
+//    double factor = obstacleControl.calculateAttenuation(frame, senderPos, receiverPos);
 
-    debugEV << "value is: " << factor << endl;
+//    debugEV << "value is: " << factor << endl;
+
+    double factor = 1;      // TEMPORARY
 
     bool hasFrequency = s.getTransmissionPower()->getDimensionSet().hasDimension(Dimension::frequency);
 

@@ -1,2 +1,8 @@
+src/modules/analogue
 src/modules/application/flooding
+src/modules/junctions
+src/modules/obstacles
+src/modules/phy
+src/modules/roadmaps
 src/modules/stats
+src/modules/streets
