@@ -11,8 +11,6 @@ src/modules/junctions/Junction.cc
 src/modules/junctions/Junction.h
 src/modules/nic/RavNic80211p.ned
 src/modules/nodes/Car.ned
-src/modules/obstacles/RavObstacle.cc
-src/modules/obstacles/RavObstacle.h
 src/modules/obstacles/RavObstacleControl.cc
 src/modules/obstacles/RavObstacleControl.h
 src/modules/obstacles/RavObstacleControl.ned

@@ -1,23 +1,3 @@
-//
-// Copyright (C) 2006-2011 Christoph Sommer <christoph.sommer@uibk.ac.at>
-//
-// Documentation for these modules is at http://veins.car2x.org/
-//
-// This program is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 2 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-//
-
 #include "FloodingApplLayer.h"
 #include <iostream>
 
@@ -27,7 +7,8 @@ using std::cerr;
 
 Define_Module(FloodingApplLayer)
 
-void FloodingApplLayer::initialize(int stage) {
+void FloodingApplLayer::initialize(int stage)
+{
 	BaseWaveApplLayer::initialize(stage);
 	if (stage == 0) {
 		traci = TraCIMobilityAccess().get(getParentModule());
@@ -58,7 +39,8 @@ void FloodingApplLayer::finish()
     warningMessages.clear();;
 }
 
-void FloodingApplLayer::onBeacon(WaveShortMessage* wsm) {
+void FloodingApplLayer::onBeacon(WaveShortMessage* wsm)
+{
     stats->updateAllBeaconsReceived();
     stats->updateAllMessagesReceived();
     emit(beaconReceivedSignal, 1);
@@ -75,18 +57,12 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm)
     bool messageIsRepeat = false;
 
     for (uint i = 0; i < warningMessages.size(); ++i) {
-        //cerr << "wsmTreeId: " << wsm->getTreeId() << " warningMessages[" << i << "].treeId: " << warningMessages[i]->getTreeId() << endl;
         if (wsm->getTreeId() == warningMessages[i]->getTreeId()) {
-//            EV << "[INFO] _________REPEAT MESSAGE_________";
             messageIsRepeat = true;
         }
     }
 
-//    cerr << warningMessages.size() << " ";
-
     if (!messageIsRepeat) {
-
-//        cerr << "`";
 
         findHost()->getDisplayString().updateWith("r=16,green");
         annotations->scheduleErase(1, annotations->drawLine(wsm->getSenderPos(), traci->getPositionAt(simTime()), "blue"));
@@ -101,12 +77,10 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm)
         warningMessages.push_back(wsm->dup());
 
     }
-//    else {
-//        cerr << ".";
-//    }
 }
 
-void FloodingApplLayer::sendMessage(std::string blockedRoadId) {
+void FloodingApplLayer::sendMessage(std::string blockedRoadId)
+{
 	sentMessage = true;
 
 	t_channel channel = dataOnSch ? type_SCH : type_CCH;
@@ -116,17 +90,17 @@ void FloodingApplLayer::sendMessage(std::string blockedRoadId) {
 }
 
 
-void FloodingApplLayer::receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj) {
+void FloodingApplLayer::receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj)
+{
 	Enter_Method_Silent();
 	if (signalID == mobilityStateChangedSignal) {
 		handlePositionUpdate(obj);
 	}
-//	else if (signalID == parkingStateChangedSignal) {
-//		handleParkingUpdate(obj);
-//	}
 }
 
-void FloodingApplLayer::handlePositionUpdate(cObject* obj) {
+
+void FloodingApplLayer::handlePositionUpdate(cObject* obj)
+{
 	BaseWaveApplLayer::handlePositionUpdate(obj);
 
 	// stopped for for at least 10s?
@@ -141,6 +115,9 @@ void FloodingApplLayer::handlePositionUpdate(cObject* obj) {
 		lastDroveAt = simTime();
 	}
 }
-void FloodingApplLayer::sendWSM(WaveShortMessage* wsm) {
+
+
+void FloodingApplLayer::sendWSM(WaveShortMessage* wsm)
+{
 	sendDelayedDown(wsm,individualOffset);
 }

@@ -102,9 +102,6 @@ void DistanceApplLayer::receiveSignal(cComponent* source, simsignal_t signalID, 
     if (signalID == mobilityStateChangedSignal) {
         handlePositionUpdate(obj);
     }
-//	else if (signalID == parkingStateChangedSignal) {
-//		handleParkingUpdate(obj);
-//	}
 }
 
 void DistanceApplLayer::handlePositionUpdate(cObject* obj) {
