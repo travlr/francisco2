@@ -4,19 +4,9 @@
 using std::sscanf;
 
 
-Junction::Junction(cXMLElement* junctionEl)
-    : element(junctionEl)
+Junction::Junction(const std::string &id, const Coord &position)
+    : id(id), position(position)
 {
-    cXMLAttributeMap m = junctionEl->getAttributes();
-    id = m["id"];
-    type = m["type"];
-    double x = -1;
-    double y = -1;
-    sscanf(m["x"].c_str(), "%lf", &x);
-    ASSERT(x != -1);
-    sscanf(m["y"].c_str(), "%lf", &y);
-    ASSERT(y != -1);
-    position = new Coord(x,y);
 }
 
 Junction::~Junction()

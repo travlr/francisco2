@@ -13,6 +13,13 @@ void RavPhyLayer80211p::initialize(int stage)
 {
     //cerr << "[DEBUG] In RavPhyLayer80211p::initialize(int stage)" << endl;
     PhyLayer80211p::initialize(stage);
+
+//    // this is a hack to query traci after fully loaded.
+//    cModule* mod = simulation.getSystemModule()->getSubmodule("roadmapmgr");
+//    if (!mod)
+//        error("[ERROR] could not get roadmapmgr module");
+//    roadMapManager = check_and_cast<RoadMapManager*>(mod);
+//    roadMapManager->loadStreets();
 }
 
 AnalogueModel* RavPhyLayer80211p::initializeRavObstacleModel(BasePhyLayer::ParameterMap & params)
@@ -49,10 +56,11 @@ AnalogueModel* RavPhyLayer80211p::initializeRavObstacleModel(BasePhyLayer::Param
     if (!mod)
         opp_error("[ERROR] mod is NULL");
     RavObstacleControl* roc = check_and_cast<RavObstacleControl*>(mod);
-
-
     if (!roc)
         opp_error("initializeRavObstacleModel(): cannot find RavObstacleControl module");
+
+
+
     RavObstacleModel* rom =  new RavObstacleModel(*roc, carrierFrequency, useTorus, playgroundSize, coreDebug);
     if (!rom)
         cerr << "[ERROR] RavObstacleModel pointer is NULL" << endl;

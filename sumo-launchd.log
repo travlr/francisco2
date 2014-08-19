@@ -1183,3 +1183,109 @@ DEBUG:root:Result: "<?xml version="1.0"?>
 </status>
 "
 DEBUG:root:Closing connection from 127.0.0.1 on port 59780
+DEBUG:root:Logging to sumo-launchd.log
+INFO:root:Listening on port 9999
+DEBUG:root:Connection from 127.0.0.1 on port 47226
+DEBUG:root:Handling connection from 127.0.0.1 on port 47226
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-ELPn2m
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 59870
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59870, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59870 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59870 (try 2)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59870 (try 3)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 59870 (try 4)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1408460495</start>
+	<end>1408460552</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 47226
+DEBUG:root:Connection from 127.0.0.1 on port 47231
+DEBUG:root:Handling connection from 127.0.0.1 on port 47231
+DEBUG:root:Got TraCI message of length 2
+DEBUG:root:Got TraCI command of length 1
+DEBUG:root:Got TraCI command 0x0
+DEBUG:root:Got CMD_GETVERSION
+DEBUG:root:Got TraCI message of length 292
+DEBUG:root:Got TraCI command of length 287
+DEBUG:root:Got TraCI command 0x75
+DEBUG:root:Got CMD_FILE_SEND for "sumo-launchd.launch.xml"
+DEBUG:root:Got CMD_FILE_SEND with data "<launch>
+  <copy file="sanfrancisco.net.xml"/>
+  <copy file="sanfrancisco.rou.xml"/>
+  <copy file="sanfrancisco.poly.xml"/>
+  <copy file="sanfrancisco.sumo.cfg" type="config"/>
+  <basedir path="/home/prodatalab/francisco/"/>
+  <seed value="0"/>
+</launch>
+"
+DEBUG:root:Creating temporary directory...
+DEBUG:root:Temporary dir is /tmp/sumo-launchd-tmp-N5Gcdv
+DEBUG:root:Base dir is /home/prodatalab/francisco/
+DEBUG:root:Seed is 0
+DEBUG:root:Finding free port number...
+DEBUG:root:Claiming lock on port
+DEBUG:root:...found port 35899
+INFO:root:Starting SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35899, seed 0
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35899 (try 1)
+DEBUG:root:Error ([Errno 111] Connection refused)
+DEBUG:root:Connecting to SUMO (sumo-gui -c sanfrancisco.sumo.cfg) on port 35899 (try 2)
+DEBUG:root:Releasing lock on port
+DEBUG:root:Starting proxy mode
+DEBUG:root:Done with proxy mode
+DEBUG:root:Done with proxy mode, killing SUMO
+DEBUG:root:SIGTERM
+INFO:root:Done running SUMO
+DEBUG:root:Cleaning up
+DEBUG:root:Result: "<?xml version="1.0"?>
+<status>
+	<exit-code>-15</exit-code>
+	<start>1408460569</start>
+	<end>1408460618</end>
+	<status>Exited with error code -15</status>
+	<stdout><![CDATA[Loading configuration... done.
+]]></stdout>
+	<stderr><![CDATA[]]></stderr>
+</status>
+"
+DEBUG:root:Closing connection from 127.0.0.1 on port 47231
+WARNING:root:Keyboard interrupt.
+INFO:root:Shutting down.

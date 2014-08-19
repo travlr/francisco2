@@ -65,11 +65,13 @@ void FloodingApplLayer::onBeacon(WaveShortMessage* wsm) {
     emit(messageReceivedSignal, 1);
 }
 
-void FloodingApplLayer::onData(WaveShortMessage* wsm) {
+void FloodingApplLayer::onData(WaveShortMessage* wsm)
+{
     emit(warningReceivedSignal, 1);
     emit(messageReceivedSignal, 1);
     stats->updateAllWarningsReceived();
     stats->updateAllMessagesReceived();
+
     bool messageIsRepeat = false;
 
     for (uint i = 0; i < warningMessages.size(); ++i) {
@@ -112,6 +114,8 @@ void FloodingApplLayer::sendMessage(std::string blockedRoadId) {
 	wsm->setWsmData(blockedRoadId.c_str());
 	sendWSM(wsm);
 }
+
+
 void FloodingApplLayer::receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj) {
 	Enter_Method_Silent();
 	if (signalID == mobilityStateChangedSignal) {

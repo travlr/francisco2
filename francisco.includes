@@ -1,4 +1,5 @@
 src/modules/analogue
+src/modules/application/distance
 src/modules/application/flooding
 src/modules/junctions
 src/modules/obstacles

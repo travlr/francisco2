@@ -13,28 +13,25 @@ class Junction
 {
 
 public:
-    Junction(cXMLElement* junctionEl);
+    Junction(const string & id, const Coord & position);
     ~Junction();
 
     string getId() const { return id; }
-    string getType() const { return type; }
-    Coord* getPosition() const { return position; }
+    Coord getPosition() const { return position; }
 
 protected:
-    cXMLElement* element;
     string id;
-    string type;
-    Coord* position;
-    string incLanes;
-    list<Request> requests;
+    Coord position;
+//    string incLanes;
+//    list<Request> requests;
 };
 
-struct Request
-{
-    string index;
-    string response;
-    string foes;
-    string cont;
-};
+//struct Request
+//{
+//    string index;
+//    string response;
+//    string foes;
+//    string cont;
+//};
 
 #endif // JUNCTION_H

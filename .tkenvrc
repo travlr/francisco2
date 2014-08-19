@@ -1,3 +1,4 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "FranciscoScenario" "FranciscoScenario" "2" "607x338+749+0:normal"
 inspector "Scenario" "Scenario" "2" "607x338+749+0:normal"
 

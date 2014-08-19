@@ -1,7 +1,8 @@
 package src.modules.nodes;
 
 import org.car2x.veins.base.modules.*;
-import src.modules.nic.RavNic80211p;
+//import src.modules.nic.RavNic80211p;
+import org.car2x.veins.modules.nic.Nic80211p;
 
 module Car
 {
@@ -16,7 +17,12 @@ module Car
                 @display("p=60,50");
         }
 
-        nic: RavNic80211p {
+//        nic: RavNic80211p {
+//           parameters:
+//                @display("p=60,166");
+//        }
+
+        nic: Nic80211p {
             parameters:
                 @display("p=60,166");
         }

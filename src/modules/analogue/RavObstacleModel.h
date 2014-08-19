@@ -18,11 +18,11 @@ class RavObstacleModel : public AnalogueModel
 {
 
 public:
-    RavObstacleModel(double carrierFrequency, bool useTorus, const Coord & playgroundSize, bool debug);
+    RavObstacleModel(RavObstacleControl & obstacleControl, double carrierFrequency, bool useTorus, const Coord & playgroundSize, bool debug);
     virtual void filterSignal (AirFrame *frame, const Coord &senderPos, const Coord &receiverPos);
 
 protected:
-//    RavObstacleControl & obstacleControl;
+    RavObstacleControl & obstacleControl;
     double carrierFrequency;
     const bool useTorus;
     const Coord & playgroundSize;

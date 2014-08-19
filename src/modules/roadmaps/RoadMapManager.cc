@@ -1,10 +1,9 @@
-#include "JunctionManager.h"
 #include "Junction.h"
-#include "StreetManager.h"
 #include "Street.h"
 #include "RoadMapManager.h"
 #include <TraCIScenarioManager.h>
 #include <TraCICommandInterface.h>
+#include <TraCICoord.h>
 #include <cxmlelement.h>
 #include <string>
 #include <list>
@@ -19,58 +18,14 @@ using std::set;
 using std::cerr;
 using std::endl;
 using Veins::TraCIScenarioManager;
+using Veins::TraCICoord;
 
 Define_Module(RoadMapManager)
 
 
-Junction *RoadMapManager::getJunctionBetweenStreets(const string & senderRoadId, const string & receiverRoadId)
-{
-    string sid = senderRoadId;
-    string rid = receiverRoadId;
-
-    vector<string> sendersStreetJunctionIds;
-    vector<string> receiversStreetJunctionIds;
-
-    for (uint i = 0; i < streetManager->getStreets()->size(); ++i) {
-        Street* s = (*(streetManager->getStreets()))[i];
-        if (!strcmp(s->getId().c_str(), sid.c_str())) {
-            sendersStreetJunctionIds.push_back(s->getFromJunction()->getId());
-            sendersStreetJunctionIds.push_back(s->getToJunction()->getId());
-        }
-        else if (!strcmp(s->getId().c_str(), rid.c_str())) {
-            receiversStreetJunctionIds.push_back(s->getFromJunction()->getId());
-            receiversStreetJunctionIds.push_back(s->getToJunction()->getId());
-        }
-    }
-
-    // did we get the junctions?
-    if ((sendersStreetJunctionIds.size() != 2) && (receiversStreetJunctionIds.size() != 2))
-        error("[ERROR] could not get the needed junction between streets");
-
-    // find the common junction
-    Junction* commonJunction = NULL;
-
-    for (uint i = 0; i < sendersStreetJunctionIds.size(); ++i) {
-        JunctionMap* map = junctionManager->getJunctionMap();
-        Junction* sj = (*map)[sendersStreetJunctionIds[i]];
-        for (uint j = 0; j < receiversStreetJunctionIds.size(); ++j) {
-            Junction* rj = (*map)[receiversStreetJunctionIds[i]];
-            if (sj->getId() == rj->getId())
-                commonJunction = sj;
-        }
-    }
-//    if (!commonJunction)
-//        error("[ERROR] could not get a common junction for streets %s and %s", senderRoadId.c_str(), receiverRoadId.c_str());
-
-    return commonJunction;
-}
-
 void RoadMapManager::initialize(int stage)
 {
     if (stage == 1) {
-        networkXmlFile = par("networkXmlFile").xmlValue();
-        junctionManager = new JunctionManager;
-        streetManager = new StreetManager;
 
         cModule* mod = simulation.getSystemModule()->getSubmodule("manager");
         if (!mod)
@@ -78,118 +33,61 @@ void RoadMapManager::initialize(int stage)
 
         scenarioManager = check_and_cast<TraCIScenarioManager*>(mod);
 
-        streetsAreLoaded = false;
+        ci = scenarioManager->getCommandInterface();
 
+        streetsAreLoaded = junctionsAreLoaded = false;
+
+        if (ci) {
+            haveCI = true;
+            loadJunctions();
+            loadStreets();
+        }
+        else {
+            haveCI = false;
+            scheduleAt(simTime() + 5, new cMessage("ci"));
+        }
+
+    }
+}
+
+void RoadMapManager::handleMessage(cMessage *msg)
+{
+    if (!strcmp(msg->getName(), "ci")) {
+        cerr << "[DEBUG] In RoadMapManager::handleMessage()" << endl;
+        ci = scenarioManager->getCommandInterface();
         loadJunctions();
-
-//        loadStreets();
+        loadStreets();
     }
 }
 
 void RoadMapManager::finish()
 {
-    delete junctionManager;
-    delete streetManager;
 }
 
 void RoadMapManager::loadJunctions()
 {
-    cXMLElementList junctionEls = networkXmlFile->getChildrenByTagName("junction");
-    for (uint i = 0; i < junctionEls.size(); ++i) {
-        cXMLElement* el = junctionEls[i];
-        junctionManager->addJunction(el);
+    if (junctionsAreLoaded)
+        return;
+
+    junctionIds = ci->getJunctionIds();
+
+    for (list<string>::iterator i = junctionIds.begin(); i != junctionIds.end(); ++i) {
+        string id = *i;
+        Coord position = scenarioManager->traci2omnet(ci->getJunctionPosition(id));
+        Junction* j = new Junction(id, position);
+        junctions.push_back(j);
+        junctionMap[id] = j;
     }
+
+    junctionsAreLoaded = true;
 }
 
-void RoadMapManager::loadNetXmlFile()
-{
-    // since the sumo api does not provide needed values.. improvisation is required
 
-    // get the "start" coords of the shape from the xml file..
-    // find a "start" coord of the shape from the traci server.
-    list<string> laneIdList = scenarioManager->getCommandInterface()->getLaneIds();
-//    set<string> edgeIdSet;
-//    for (list::iterator i = laneIds.begin(); i != laneIds.end(); ++i) {
-//        string laneId = *i;
-//        edgeIdSet.insert(scenarioManager->getCommandInterface()->getLaneEdgeId(laneId));
-//    }
-    cXMLElementList edgeEls = networkXmlFile->getElementsByTagName("edge");
-    for (uint i = 0; i < edgeEls.size(); ++i) {
-        cXMLElement* edgeEl = edgeEls[i];
-        cXMLAttributeMap attrMap = edgeEl->getAttributes();
-        string xmlShape = attrMap["shape"];
+//Junction *RoadMapManager::getJunctionBetweenStreets(const string & senderRoadId, const string & receiverRoadId)
+//{
 
-        Coord startCoord = getStartCoordFromShapeString(xmlShape);
+//}
 
-        Veins::TraCICommandInterface* ci = scenarioManager->getCommandInterface();
-
-        // now that we have a start coord from the xml file.. find a match from traci
-        for (list<string>::iterator i = laneIdList.begin(); i != laneIdList.end(); ++i) {
-            string laneId = *i;
-            string laneEdgeId = ci->getLaneEdgeId(laneId);
-            list<Veins::TraCICoord> laneShapeList = ci->getLaneShape(laneId);
-            Coord coord = scenarioManager->traci2omnet(*(laneShapeList.begin()));
-            if (coord.distance(startCoord) < 2) {
-                // this is a match
-                Street* s = (*(streetManager->getStreetMap()))[laneEdgeId];
-                s->setXmlId(attrMap["id"]);
-                s->setXmlShape(xmlShape);
-                s->setXmlType(attrMap["type"]);
-                s->setFromJunctionId(attrMap["from"]);
-                s->setToJunctionId(attrMap["to"]);
-                Lane* l = (*(s->getLaneMap()))[laneId];
-                cXMLElementList laneEls = edgeEl->getChildrenByTagName("lane");
-                for (uint i = 0; i < laneEls.size(); ++i) {
-                    cXMLElement* laneEl = laneEls[i];
-                    cXMLAttributeMap laneAttrMap = laneEl->getAttributes();
-                    Coord laneStartCoord = getStartCoordFromShapeString(laneAttrMap["shape"]);
-                    if (coord.distance(laneStartCoord) < 2) {
-                        // we have a match
-                        l->xmlId = laneAttrMap["id"];
-                        l->xmlShape = laneAttrMap["shape"];
-                        l->xmlLength = laneAttrMap["length"];
-                    }
-                }
-            }
-
-        }
-
-    }
-}
-
-Coord RoadMapManager::getStartCoordFromShapeString(const string &shapeStr)
-{
-    char* tok;
-    tok = strtok((char*)shapeStr.c_str(), " ");
-
-    vector<string> coordStrs;
-
-    while (tok != NULL) {
-        coordStrs.push_back(string(tok));
-        tok = strtok(NULL, " ");
-    }
-
-    vector<string> coordStrFields;
-    string startCoordX;
-    string startCoordY;
-
-    for (uint i = 0; i < coordStrs.size(); ++i) {
-        string coordStr = coordStrs[i];
-        tok = strtok((char*)coordStr.c_str(), ",");
-
-        while (tok != NULL) {
-            coordStrFields.push_back(tok);
-            tok = strtok(NULL, ",");
-        }
-    }
-
-    for (uint i = 0; i < coordStrFields.size(); ++i) {
-        startCoordX = coordStrFields[0];
-        startCoordY = coordStrFields[1];
-    }
-
-    return Coord(atof(startCoordX.c_str()), atof(startCoordY.c_str()));
-}
 
 
 void RoadMapManager::loadStreets()
@@ -197,32 +95,98 @@ void RoadMapManager::loadStreets()
     if (streetsAreLoaded)
         return;
 
-    Veins::TraCICommandInterface* ci = scenarioManager->getCommandInterface();
+    std::list<string> laneIds = ci->getLaneIds();
 
-    list<string> traciStreetIds = ci->getEdgeIds();
-
-    for (list<string>::iterator i = traciStreetIds.begin(); i != traciStreetIds.end(); ++i) {
-        string traciId = *i;
-        //cerr << "[DEBUG] traciId: " << traciId << endl;
-
-        streetManager->addStreet(traciId);
-    }
-
-    list<string> traciLaneIds = ci->getLaneIds();
-
-    for (list<string>::iterator i = traciLaneIds.begin(); i != traciLaneIds.end(); ++i) {
-
+    for (list<string>::iterator i = laneIds.begin(); i != laneIds.end(); ++i) {
         string laneId = *i;
+        string streetId = ci->getLaneEdgeId(laneId);
+        streetIdSet.insert(streetId);
 
-        string laneEdgeId = ci->getLaneEdgeId(laneId);
+        Street* s;
 
-        streetManager->addLane(laneEdgeId, laneId);
+        // is the lanes edge id already in the street vector?
+        bool alreadyHaveStreet = false;
+        for (uint i = 0; i < streets.size(); ++i) {
+            s = streets[i];
+            if (!strcmp(s->getId().c_str(), streetId.c_str())) {
+                alreadyHaveStreet = true;
+                break;
+            }
+        }
 
+        // add new street and its lanes
+        if (!alreadyHaveStreet) {
+            s = new Street(streetId);
+            streets.push_back(s);
+            streetMap[streetId] = s;
+            cerr << "[DEBUG] new street: " << streetId << endl;
+            s->addLane(laneId);
+            s->setLaneWidth(laneId, ci->getLaneWidth(laneId));
+            s->setLaneShape(laneId, scenarioManager->traci2omnet(ci->getLaneShape(laneId)));
+            //s->setLaneIndex(laneId, ci->getLaneIndex(streetId));
+        }
+
+        // get the street's junctions
+        for (uint i = 0; i < junctions.size(); ++i) {
+
+            Junction* jn = junctions[i];
+            bool junctionCorrelatedWithEdge = false;
+
+            Coord jpos = jn->getPosition();
+
+            Coord startPosition;
+            Coord endPosition;
+
+            Lanes lanes = (*(s->getLanes()));
+            Lane* l;
+
+            if (lanes.size() == 1)
+                l = lanes[0];
+            else
+                error("[DEBUG] there are %u lanes", lanes.size());
+
+            startPosition = l->shapeCoords[0];
+            endPosition = l->shapeCoords[l->shapeCoords.size()-1];
+
+            if (jpos.distance(startPosition) < 10) {
+                s->setFromJunction(jn);
+                junctionCorrelatedWithEdge = true;
+            }
+
+            else if (jpos.distance(endPosition) < 10) {
+                s->setToJunction(jn);
+                junctionCorrelatedWithEdge = true;
+            }
+
+//            for (uint j = 0; j < streets.size(); ++i) {
+//                Street* s = streets[j];
+//                Coord startPosition;
+//                Coord endPosition;
+//                Lanes lanes = (*(s->getLanes()));
+//                for (uint k = 0; k < lanes.size(); ++i) {
+//                    Lane* l = lanes[k];
+//                    if (l->index != 0)
+//                        continue;
+//                    startPosition = l->shapeCoords[0];
+//                    endPosition = l->shapeCoords[l->shapeCoords.size()-1];
+//                }
+
+//                if (jpos.distance(startPosition) < 10) {
+//                    s->setFromJunction(jn);
+//                    junctionCorrelatedWithEdge = true;
+//                }
+//                else if (jpos.distance(endPosition) < 10) {
+//                    s->setToJunction(jn);
+//                    junctionCorrelatedWithEdge = true;
+//                }
+//            }
+
+            if (!junctionCorrelatedWithEdge) {
+                cerr << "[ERROR] junction \"" << jn->getId().c_str() << "\" was not correlated with edge" << endl;
+            }
+        }
     }
-
-//    loadNetXmlFile();
     streetsAreLoaded = true;
-
 }
 
 

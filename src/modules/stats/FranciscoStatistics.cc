@@ -6,9 +6,6 @@ using std::endl;
 Define_Module(FranciscoStatistics)
 
 
-FranciscoStatistics::~FranciscoStatistics()
-{}
-
 
 void FranciscoStatistics::initialize(int stage)
 {
@@ -35,7 +32,8 @@ void FranciscoStatistics::finish()
 
 void FranciscoStatistics::updateAllBeaconsReceived()
 {
-    emit(allBeaconsReceivedSignal, ++allBeaconsReceived);
+    ++allBeaconsReceived;
+    emit(allBeaconsReceivedSignal, allBeaconsReceived);
 }
 
 void FranciscoStatistics::updateNewWarningsReceived()

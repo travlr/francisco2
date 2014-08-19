@@ -6,6 +6,4 @@ simple RoadMapManager
 
         @display("i=block/network2");
         @class(RoadMapManager);
-
-        xml networkXmlFile;
 }

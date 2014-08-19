@@ -1,22 +1,3 @@
-//
-// RavObstacleControl - models obstacles that block radio transmissions
-// Copyright (C) 2010 Christoph Sommer <christoph.sommer@informatik.uni-erlangen.de>
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License
-// as published by the Free Software Foundation; either version 2
-// of the License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-//
-
 #include <sstream>
 #include <map>
 #include <set>
@@ -44,31 +25,22 @@ using Veins::AirFrame;
 #include "RavObstacleControl.h"
 #include "RoadMapManager.h"
 #include "Junction.h"
-#include "JunctionManager.h"
 #include "Street.h"
-#include "StreetManager.h"
 
 #define GRIDCELL_SIZE 1024
 
 
 Define_Module(RavObstacleControl)
 
-
+using Veins::AnnotationManagerAccess;
 
 void RavObstacleControl::initialize(int stage) {
     if (stage == 1)	{
 
-        //cerr << "[DEBUG] IN RavObstacleControl::initialize(int stage)" << endl;
-
-//		debug = par("debug");
-
-		obstacles.clear();
-//		cacheEntries.clear();
-
 		annotations = AnnotationManagerAccess().getIfExists();
-		if (annotations) annotationGroup = annotations->createGroup("obstacles");
+        if (annotations)
+            annotationGroup = annotations->createGroup("obstacles");
 
-        obstaclesXml                                    = par("obstacles");
         streetAngularDifferenceThreshold                = par("streetAngularDifferenceThreshold");
         distanceFromVehicleToStreetProjectionThreshold  = par("distanceFromVehicleToStreetProjectionThreshold");
         distanceOfVehicleFromJunctionThreshold          = par("distanceOfVehicleFromJunctionThreshold");
@@ -77,8 +49,6 @@ void RavObstacleControl::initialize(int stage) {
 
         attenuationState = new AttenuationState;
 
-//		addFromXml(obstaclesXml);
-
         cModule* mod = simulation.getSystemModule()->getSubmodule("roadmapmgr");
         if (!mod)
             error("[ERROR] could not get module roadmapmgr");
@@ -86,13 +56,8 @@ void RavObstacleControl::initialize(int stage) {
 	}
 }
 
+
 void RavObstacleControl::finish() {
-    //    for (RavObstacles::iterator i = obstacles.begin(); i != obstacles.end(); ++i) {
-    //        for (RavObstacleGridRow::iterator j = i->begin(); j != i->end(); ++j) {
-    //			while (j->begin() != j->end()) erase(*j->begin());
-    //		}
-    //	}
-    //	obstacles.clear();
 }
 
 void RavObstacleControl::handleMessage(cMessage *msg) {
@@ -107,87 +72,6 @@ void RavObstacleControl::handleSelfMsg(cMessage *msg) {
     error("RavObstacleControl doesn't handle self-messages");
 }
 
-//void RavObstacleControl::addFromXml(cXMLElement* xml) {
-//	std::string rootTag = xml->getTagName();
-//	ASSERT (rootTag == "obstacles");
-
-//	cXMLElementList list = xml->getChildren();
-//	for (cXMLElementList::const_iterator i = list.begin(); i != list.end(); ++i) {
-//		cXMLElement* e = *i;
-
-//		std::string tag = e->getTagName();
-//		ASSERT(tag == "poly");
-
-//		// <poly id="building#0" type="building" color="#F00" shape="16,0 8,13.8564 -8,13.8564 -16,0 -8,-13.8564 8,-13.8564" />
-//		ASSERT(e->getAttribute("id"));
-//		std::string id = e->getAttribute("id");
-//		ASSERT(e->getAttribute("type"));
-//		std::string type = e->getAttribute("type");
-//		ASSERT(e->getAttribute("color"));
-//		std::string color = e->getAttribute("color");
-//		ASSERT(e->getAttribute("shape"));
-//		std::string shape = e->getAttribute("shape");
-
-//		double attenuationPerWall = 50; /**< in dB */
-//		double attenuationPerMeter = 1; /**< in dB / m */
-//		if (type == "building") { attenuationPerWall = 50; attenuationPerMeter = 1; }
-//		else error("unknown obstacle type: %s", type.c_str());
-//        RavObstacle obs(id, attenuationPerWall, attenuationPerMeter);
-//		std::vector<Coord> sh;
-//		cStringTokenizer st(shape.c_str());
-//		while (st.hasMoreTokens()) {
-//			std::string xy = st.nextToken();
-//			std::vector<double> xya = cStringTokenizer(xy.c_str(), ",").asDoubleVector();
-//			ASSERT(xya.size() == 2);
-//			sh.push_back(Coord(xya[0], xya[1]));
-//		}
-//		obs.setShape(sh);
-//		add(obs);
-
-//	}
-
-//}
-
-//void RavObstacleControl::add(RavObstacle obstacle) {
-//    RavObstacle* o = new RavObstacle(obstacle);
-
-//	size_t fromRow = std::max(0, int(o->getBboxP1().x / GRIDCELL_SIZE));
-//	size_t toRow = std::max(0, int(o->getBboxP2().x / GRIDCELL_SIZE));
-//	size_t fromCol = std::max(0, int(o->getBboxP1().y / GRIDCELL_SIZE));
-//	size_t toCol = std::max(0, int(o->getBboxP2().y / GRIDCELL_SIZE));
-//	for (size_t row = fromRow; row <= toRow; ++row) {
-//		for (size_t col = fromCol; col <= toCol; ++col) {
-//			if (obstacles.size() < col+1) obstacles.resize(col+1);
-//			if (obstacles[col].size() < row+1) obstacles[col].resize(row+1);
-//			(obstacles[col])[row].push_back(o);
-//		}
-//	}
-
-//	// visualize using AnnotationManager
-//	if (annotations) o->visualRepresentation = annotations->drawPolygon(o->getShape(), "red", annotationGroup);
-
-//////    cacheEntries.clear();
-////}
-
-//void RavObstacleControl::erase(const RavObstacle* obstacle) {
-//    for (RavObstacles::iterator i = obstacles.begin(); i != obstacles.end(); ++i) {
-//        for (RavObstacleGridRow::iterator j = i->begin(); j != i->end(); ++j) {
-//            for (RavObstacleGridCell::iterator k = j->begin(); k != j->end(); ) {
-//                RavObstacle* o = *k;
-//				if (o == obstacle) {
-//					k = j->erase(k);
-//				} else {
-//					++k;
-//				}
-//			}
-//		}
-//	}
-
-//	if (annotations && obstacle->visualRepresentation) annotations->erase(obstacle->visualRepresentation);
-//    delete obstacle;
-
-////	cacheEntries.clear();
-//}
 
 double RavObstacleControl::calculateAttenuation(const Veins::AirFrame *frame, const Coord &senderPos, const Coord &receiverPos)
 {
@@ -204,65 +88,43 @@ double RavObstacleControl::calculateAttenuation(const Veins::AirFrame *frame, co
     return 0;
 }
 
+
+
 void RavObstacleControl::initializeAttenuationState(const Veins::AirFrame* frame, const Coord & senderPos, const Coord & receiverPos)
 {
-    if (attenuationState->sharedJunction)
-        attenuationState->sharedJunction = NULL;
+    if (!roadMapManager->getJunctionsAreLoaded())
+        roadMapManager->loadJunctions();
 
     if (!roadMapManager->getStreetsAreLoaded())
         roadMapManager->loadStreets();
 
-    memset(attenuationState->senderIdStr, 0, strlen(attenuationState->senderIdStr));
-    memset(attenuationState->receiverIdStr, 0, strlen(attenuationState->receiverIdStr));
-    memset(attenuationState->senderRoadId, 0, strlen(attenuationState->senderRoadId));
-    memset(attenuationState->receiverRoadId, 0, strlen(attenuationState->receiverRoadId));
     memset(attenuationState, 0, sizeof(*attenuationState));
-
     AttenuationState* as = attenuationState;
 
-////    as->senderIdStr.clear();
-////    as->receiverIdStr.clear();
+    as->frame = frame;
+    as->senderPosition = senderPos;
+    as->receiverPosition = receiverPos;
 
+    // a hack to get the vehicle's id string
     strcpy(as->senderIdStr, getVehicleIdFromCoord(senderPos).c_str());
     strcpy(as->receiverIdStr, getVehicleIdFromCoord(receiverPos).c_str());
 
-    as->senderId = atof(as->senderIdStr);
-    as->receiverId = atof(as->receiverIdStr);
+    as->streetAngle = getStreetAngle(as->senderIdStr, as->receiverIdStr);
 
-////    cerr << "[DEBUG] as->senderId = " << as->senderId << endl;
-////    cerr << "[DEBUG] as->receiverId = " << as->receiverId << endl;
+    strcpy(as->senderRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(as->senderIdStr).c_str());
+    strcpy(as->receiverRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(as->receiverIdStr).c_str());
 
-////    sprintf(as->senderIdStr, "%d", as->senderId);
-////    sprintf(as->receiverIdStr, "%d", as->receiverId);
+    as->senderStreet = roadMapManager->getStreetMap()[as->senderIdStr];
+    as->receiverStreet = roadMapManager->getStreetMap()[as->receiverIdStr];
 
-////    cerr << "[DEBUG] as->senderIdStr: " << as->senderIdStr << endl;
-////    cerr << "[DEBUG] as->receiverIdStr: " << as->receiverIdStr << endl;
+    if (!as->senderStreet)
+        error("[ERROR] could not get senderStreet, streetMap.size(): %d", roadMapManager->getStreetMap().size());
+    if (!as->receiverStreet)
+        error("[ERROR] could not get receiverStreet, streetMap.size(): %d", roadMapManager->getStreetMap().size());
 
-    strcpy(as->senderRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(string(as->senderIdStr)).c_str());
-    strcpy(as->receiverRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(string(as->receiverIdStr)).c_str());
 
-    as->sharedJunction  = roadMapManager->getJunctionBetweenStreets(as->senderRoadId, as->receiverRoadId);
-
-    // get streets
-    as->senderStreet = (*(roadMapManager->getStreetManager()->getStreetMap()))[as->senderRoadId];
-    as->receiverStreet = (*(roadMapManager->getStreetManager()->getStreetMap()))[as->receiverRoadId];
-
-    // get street segments
-    as->senderStreetSegments = as->senderStreet->getStreetSegments();
-    as->receiverStreetSegments = as->receiverStreet->getStreetSegments();
-
-    // get street widths
-    as->senderStreetWidth   = as->senderStreet->getLaneWidth(0);
-    as->receiverStreetWidth = as->receiverStreet->getLaneWidth(0);
-
-    if (as->senderRoadId == as->receiverRoadId)
-        as->areOnSameStreet = true;
-
-    // are on adjacent streets
-    if (as->sharedJunction) {
-        as->areOnAdjacentStreets = true;
-        as->streetAngle = getStreetAngle(as->senderIdStr, as->receiverIdStr);
-    }
+    setSenderVehicleStreetSegment();
+    setReceiverVehicleStreetSegment();
 }
 
 bool RavObstacleControl::vehiclesHaveLineOfSight()
@@ -289,15 +151,15 @@ bool RavObstacleControl::senderVehicleIsInJunction()
     AttenuationState* as = attenuationState;
     string fromId = as->senderStreet->getFromJunction()->getId();
     string toId = as->senderStreet->getToJunction()->getId();
-    Junction* from = (*(roadMapManager->getJunctionManager()->getJunctionMap()))[fromId];
-    Junction* to = (*(roadMapManager->getJunctionManager()->getJunctionMap()))[toId];
+    Junction* from = as->senderStreet->getFromJunction();
+    Junction* to = as->senderStreet->getToJunction();
 
-    if (as->senderPosition.distance(*(from->getPosition())) < distanceOfVehicleFromJunctionThreshold) {
+    if (as->senderPosition.distance(from->getPosition()) < distanceOfVehicleFromJunctionThreshold) {
         as->junctionSenderIsIn = from;
         return true;
     }
 
-    if (as->senderPosition.distance(*(to->getPosition())) < distanceOfVehicleFromJunctionThreshold) {
+    if (as->senderPosition.distance(to->getPosition()) < distanceOfVehicleFromJunctionThreshold) {
         as->junctionSenderIsIn = to;
         return true;
     }
@@ -398,71 +260,6 @@ bool RavObstacleControl::vehicleStreetsAreAdjacent()
 //    d_VC = senderStreet->getS
 
 
-
-
-
-////	// return cached result, if available
-////	CacheKey cacheKey(senderPos, receiverPos);
-////	CacheEntries::const_iterator cacheEntryIter = cacheEntries.find(cacheKey);
-////	if (cacheEntryIter != cacheEntries.end()) return cacheEntryIter->second;
-
-////	// calculate bounding box of transmission
-////	Coord bboxP1 = Coord(std::min(senderPos.x, receiverPos.x), std::min(senderPos.y, receiverPos.y));
-////	Coord bboxP2 = Coord(std::max(senderPos.x, receiverPos.x), std::max(senderPos.y, receiverPos.y));
-
-////	size_t fromRow = std::max(0, int(bboxP1.x / GRIDCELL_SIZE));
-////	size_t toRow = std::max(0, int(bboxP2.x / GRIDCELL_SIZE));
-////	size_t fromCol = std::max(0, int(bboxP1.y / GRIDCELL_SIZE));
-////	size_t toCol = std::max(0, int(bboxP2.y / GRIDCELL_SIZE));
-
-////    std::set<RavObstacle*> processedRavObstacles;
-////	double factor = 1;
-////	for (size_t col = fromCol; col <= toCol; ++col) {
-////		if (col >= obstacles.size()) break;
-////		for (size_t row = fromRow; row <= toRow; ++row) {
-////			if (row >= obstacles[col].size()) break;
-////            const RavObstacleGridCell& cell = (obstacles[col])[row];
-////            for (RavObstacleGridCell::const_iterator k = cell.begin(); k != cell.end(); ++k) {
-
-////                RavObstacle* o = *k;
-
-////                if (processedRavObstacles.find(o) != processedRavObstacles.end())
-////                    continue;
-////                processedRavObstacles.insert(o);
-
-////				// bail if bounding boxes cannot overlap
-////				if (o->getBboxP2().x < bboxP1.x) continue;
-////				if (o->getBboxP1().x > bboxP2.x) continue;
-////				if (o->getBboxP2().y < bboxP1.y) continue;
-////				if (o->getBboxP1().y > bboxP2.y) continue;
-
-////				double factorOld = factor;
-
-////				factor *= o->calculateAttenuation(senderPos, receiverPos);
-
-////				// draw a "hit!" bubble
-////				if (annotations && (factor != factorOld)) annotations->drawBubble(o->getBboxP1(), "hit");
-
-////				// bail if attenuation is already extremely high
-////				if (factor < 1e-30) break;
-
-////			}
-////		}
-////	}
-
-////	// cache result
-////	if (cacheEntries.size() >= 1000) cacheEntries.clear();
-////	cacheEntries[cacheKey] = factor;
-
-//////    if (factor != 1)
-////        //cerr << " ...IS  BLOCKED" << endl;
-//////    else
-//////        cerr << "sender: " << senderPos << "and receiver: " << receiverPos << " ...NOT BLOCKED" << endl;
-
-////    cerr << factor << endl;
-
-//    //	return factor;
-//}
 
 
 
@@ -570,10 +367,13 @@ void RavObstacleControl::setSenderVehicleStreetSegment()
 
     Coord sp = as->senderPosition;
 
-    for (uint i = 0; i < as->senderStreetSegments->size(); ++i) {
-        StreetSegment* ss = (*(as->senderStreetSegments))[i];
+    StreetSegments &sss = as->senderStreet->getStreetSegments();
 
-        // POINT_IS_IN_BOUNDING_BOX IS WRONG HERE !!!!!
+    cerr << "[DEEEEEBBBBBBBBUUUUUUUUUUGGGGGGG] " << sss.size() << std::endl;
+
+    //for (uint i = 0; i < as->senderStreet->getStreetSegments()->size(); ++i) {
+    for (uint i = 0; i < sss.size(); ++i) {
+        StreetSegment* ss = sss[i];
         if (pointIsInBoundingBox(sp, ss->startPosition, ss->endPosition))
                 as->senderStreetSegment = ss;
     }
@@ -585,8 +385,10 @@ void RavObstacleControl::setReceiverVehicleStreetSegment()
 
     Coord sp = as->receiverPosition;
 
-    for (uint i = 0; i < as->receiverStreetSegments->size(); ++i) {
-        StreetSegment* ss = (*(as->receiverStreetSegments))[i];
+    StreetSegments rss = as->receiverStreet->getStreetSegments();
+
+    for (uint i = 0; i < rss.size(); ++i) {
+        StreetSegment* ss = rss[i];
         if (pointIsInBoundingBox(sp, ss->startPosition, ss->endPosition))
                 as->receiverStreetSegment = ss;
     }

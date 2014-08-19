@@ -9,106 +9,112 @@ using std::vector;
 using std::map;
 #include <utility>
 using std::pair;
+#include <list>
+using std::list;
 #include <cstdlib>
 
 #include <cxmlelement.h>
 #include <Coord.h>
 #include "Junction.h"
-#include "JunctionManager.h"
 
-struct Segment
+
+struct Lane
+{
+    string id;
+
+    vector<Coord> shapeCoords;
+
+    int index;
+
+    double width;
+
+
+    Lane(const string & id) : id(id) {}
+    ~Lane() {}
+};
+
+struct StreetSegment
 {
     Coord startPosition;
     Coord endPosition;
 };
 
-typedef Segment StreetSegment;
-typedef Segment LaneSegment;
-typedef vector<StreetSegment*> StreetSegments;
-typedef vector<LaneSegment*> LaneSegments;
-
-struct Lane
-{
-    string traciId;
-    string xmlId;
-
-    string traciShape;
-    string xmlShape;
-
-    string xmlIndex;
-
-    string xmlLength;
-
-    LaneSegments laneSegments;
-
-    double width;
-
-
-    Lane(const string & traciLaneId) : traciId(traciLaneId) {}
-    ~Lane()
-    {
-        for (uint i = 0; i < laneSegments.size(); ++i)
-            delete laneSegments[i];
-    }
-};
-
-
 
 typedef vector<Lane*> Lanes;
 typedef map<string,Lane*> LaneMap;
-
-
+typedef vector<StreetSegment*> StreetSegments;
 
 class Street
 {
 public:
-    Street(const string & traciId);
+    Street(const string & id);
     ~Street();
 
     Lanes*      getLanes()   { return &lanes; }
     LaneMap*    getLaneMap() { return &laneMap; }
 
-    string      getId() { return traciId; }
+    string      getId() { return id; }
+
+    void        addLane(const std::string & laneId);
+
+    void        setLaneWidth(const string & laneId, double width) { laneMap[laneId]->width = width; }
+
+    void        setLaneShape(const string & laneId, const list<Coord> & shapeList);
+
+    void        setLaneIndex(const string & laneId, int index) { laneMap[laneId]->index = index; }
+
 
     Junction*   getFromJunction() { return fromJunction; }
+    void        setFromJunction(Junction* fromJunction) { this->fromJunction = fromJunction; }
     Junction*   getToJunction() { return toJunction; }
+    void        setToJunction(Junction* toJunction) { this->toJunction = toJunction; }
 
-    StreetSegments* getStreetSegments() { return &streetSegments; }
+    StreetSegments & getStreetSegments() { return streetSegments; }
 
-    double getLaneWidth(int index) { return lanes[index]->width; }
+//    double getLaneWidth(int index) { return lanes[index]->width; }
 
-    void setLaneTraciShape(int index, const string & traciLaneShape) { lanes[index]->traciShape = traciLaneShape; }
+//    void setLaneTraciShape(int index, const string & traciLaneShape) { lanes[index]->traciShape = traciLaneShape; }
 
-    void setXmlId(const string & xmlId) { this->xmlId = xmlId; }
+//    void setXmlId(const string & xmlId) { this->xmlId = xmlId; }
 
-    void setXmlShape(const string & xmlShape) { this->xmlShape = xmlShape; }
+//    void setXmlShape(const string & xmlShape) { this->xmlShape = xmlShape; }
 
-    void setXmlType(const string & xmlType) { this->xmlType = xmlType; }
+//    void setXmlType(const string & xmlType) { this->xmlType = xmlType; }
 
-    void setFromJunctionId(const string & fromJunctionId) { this->fromJunctionId = fromJunctionId; }
+//    void setFromJunctionId(const string & fromJunctionId) { this->fromJunctionId = fromJunctionId; }
 
-    void setToJunctionId(const string & toJunctionId) { this->toJunctionId = toJunctionId; }
+//    void setToJunctionId(const string & toJunctionId) { this->toJunctionId = toJunctionId; }
 
 
 protected:
-    string traciId;
-    string xmlId;
+    string id;
 
-    string xmlShape;
-    string traciShape;
-
-    string xmlType;
-
-    Lanes  lanes;
+    Lanes lanes;
     LaneMap laneMap;
-
-    string fromJunctionId;
-    string toJunctionId;
 
     Junction* fromJunction;
     Junction* toJunction;
 
     StreetSegments streetSegments;
+
+//    string traciId;
+//    string xmlId;
+
+//    string xmlShape;
+//    string traciShape;
+
+//    string xmlType;
+
+//    Lanes  lanes;
+//    LaneMap laneMap;
+
+//    string fromJunctionId;
+//    string toJunctionId;
+
+//    Junction* fromJunction;
+//    Junction* toJunction;
+
+//    StreetSegments streetSegments;
 
 
 

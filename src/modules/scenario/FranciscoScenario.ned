@@ -2,13 +2,13 @@
 package src.modules.scenario;
 
 import src.modules.stats.FranciscoStatistics;
-import src.modules.obstacles.RavObstacleControl;
-import src.modules.roadmaps.RoadMapManager;
+//import src.modules.obstacles.RavObstacleControl;
+//import src.modules.roadmaps.RoadMapManager;
 
 import org.car2x.veins.base.connectionManager.ConnectionManager;
 import org.car2x.veins.base.modules.BaseWorldUtility;
 import org.car2x.veins.modules.mobility.traci.TraCIScenarioManagerLaunchd;
-//import org.car2x.veins.modules.obstacle.ObstacleControl;
+import org.car2x.veins.modules.obstacle.ObstacleControl;
 import org.car2x.veins.modules.world.annotations.AnnotationManager;
 
 network FranciscoScenario
@@ -19,10 +19,14 @@ network FranciscoScenario
         double playgroundSizeZ @unit(m); // z size of the area the nodes are in (in meters)
         @display("bgb=$playgroundSizeX,$playgroundSizeY");
     submodules:
-//        obstacles: RavObstacleControl {
+//         obstacles: RavObstacleControl {
 //            parameters:
 //                @display("p=240,50");
-//        }
+//         }
+        obstacles: ObstacleControl {
+            parameters:
+                @display("p=240,50");
+        }
         annotations: AnnotationManager {
             parameters:
                 @display("p=260,50");

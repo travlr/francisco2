@@ -1,16 +1,14 @@
 out/config.py
-results/nodebug-0.sca
-results/nodebug-0.vci
-results/nodebug-0.vec
 src/modules/analogue/RavObstacleModel.cc
 src/modules/analogue/RavObstacleModel.h
+src/modules/application/distance/DistanceApplLayer.cc
+src/modules/application/distance/DistanceApplLayer.h
+src/modules/application/distance/DistanceApplLayer.ned
 src/modules/application/flooding/FloodingApplLayer.cc
 src/modules/application/flooding/FloodingApplLayer.h
 src/modules/application/flooding/FloodingApplLayer.ned
 src/modules/junctions/Junction.cc
 src/modules/junctions/Junction.h
-src/modules/junctions/JunctionManager.cc
-src/modules/junctions/JunctionManager.h
 src/modules/nic/RavNic80211p.ned
 src/modules/nodes/Car.ned
 src/modules/obstacles/RavObstacle.cc
@@ -28,8 +26,8 @@ src/modules/scenario/FranciscoScenario.ned
 src/modules/stats/FranciscoStatistics.cc
 src/modules/stats/FranciscoStatistics.h
 src/modules/stats/FranciscoStatistics.ned
-src/modules/streets/StreetManager.cc
-src/modules/streets/StreetManager.h
+src/modules/streets/Street.cc
+src/modules/streets/Street.h
 src/scripts/fix-trips-file.py
 src/package.ned
 config.xml
@@ -64,5 +62,3 @@ valencia.rou.xml
 valencia.sumo-netcheck.selection.txt
 valencia.sumo.cfg
 valencia.trips.xml
-src/modules/streets/Street.h
-src/modules/streets/Street.cc

@@ -37,6 +37,11 @@ class FloodingApplLayer : public BaseWaveApplLayer
 		virtual void initialize(int stage);
         virtual void finish();
 		virtual void receiveSignal(cComponent* source, simsignal_t signalID, cObject* obj);
+        virtual void handlePositionUpdate(cObject* obj);
+        virtual void sendWSM(WaveShortMessage* wsm);
+        virtual void onBeacon(WaveShortMessage* wsm);
+        virtual void onData(WaveShortMessage* wsm);
+
 	protected:
 		TraCIMobility* traci;
 		AnnotationManager* annotations;
@@ -54,11 +59,8 @@ class FloodingApplLayer : public BaseWaveApplLayer
         vector<WaveShortMessage*> warningMessages;
 
 	protected:
-		virtual void onBeacon(WaveShortMessage* wsm);
-		virtual void onData(WaveShortMessage* wsm);
 		void sendMessage(std::string blockedRoadId);
-		virtual void handlePositionUpdate(cObject* obj);
-		virtual void sendWSM(WaveShortMessage* wsm);
+
 };
 
 #endif

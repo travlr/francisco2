@@ -6,7 +6,6 @@ class FranciscoStatistics : public cSimpleModule
 {
 
 public:
-    ~FranciscoStatistics();
     void updateAllBeaconsReceived();
     void updateNewWarningsReceived();
     void updateAllWarningsReceived();
