@@ -1,0 +1,24 @@
+Setting Up the Shell Environment To Build and Run Veins and Francisco2 
+=======================================================================
+
+ 1. From the command line terminal, change directories to the francsico2 repository.
+ 2. run `git pull` to update the francisco2 repository.
+ 3. Add the file path of francisco2/src/scripts to the PATH environment variable. 
+        `$ export PATH=<path-to-scripts>:$PATH`
+ 5. open the 'setenv' file in a text editor.
+ 6. change the OMNET_SRC_DIR; SUMO_HOME; VEINS_SRC_DIR variables to the paths where they are located.
+ 7. save and close 'setenv'
+ 8. now update the environment by sourcing the 'setenv' file (this environment must be enabled whenever working with this project)
+        `$ source setenv`
+ 9. Now the environment is also setup for building veins, so change directories again to its source repository and build it.
+        `$ make clean`
+        `$ ./configure`
+        `$ make`
+10. change directories back to the francisco2 repository.
+11. build francisco2
+        `$ make clean`
+        `$ ./configure`
+        `$ make`
+12. start the SUMO server to run simulations
+        `$ start-sumo`
+13. run the simulator by calling ./francisco from the command-line or by using an IDE including the omnet IDE.
