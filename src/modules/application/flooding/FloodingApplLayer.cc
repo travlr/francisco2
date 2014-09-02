@@ -1,5 +1,7 @@
 #include "FloodingApplLayer.h"
 #include <iostream>
+#include <cstdio>
+#include <cstring>
 
 using Veins::TraCIMobilityAccess;
 using Veins::AnnotationManagerAccess;
@@ -11,6 +13,9 @@ void FloodingApplLayer::initialize(int stage)
 {
 	BaseWaveApplLayer::initialize(stage);
 	if (stage == 0) {
+
+        accidentCount = par("accidentCount").longValue();
+
 		traci = TraCIMobilityAccess().get(getParentModule());
 		annotations = AnnotationManagerAccess().getIfExists();
 		ASSERT(annotations);
@@ -22,8 +27,7 @@ void FloodingApplLayer::initialize(int stage)
         messageReceivedSignal = registerSignal("messageReceivedSignal");
         newWarningReceivedSignal = registerSignal("newWarningReceivedSignal");
 
-
-		sentMessage = false;
+        sentMessage = false;
 		lastDroveAt = simTime();
 	}
     else if (stage == 1) {
@@ -70,7 +74,10 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm)
         if (traci->getRoadId()[0] != ':')
             traci->commandChangeRoute(wsm->getWsmData(), 9999);
 
-        sendMessage(wsm->getWsmData());
+        cerr << "[DEBUG] wsm->getTreeId(): " << wsm->getTreeId();
+
+        sendWSM(wsm->dup());
+
         stats->updateNewWarningsReceived();
         emit(newWarningReceivedSignal, 1);
 
@@ -79,10 +86,8 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm)
     }
 }
 
-void FloodingApplLayer::sendMessage(std::string blockedRoadId)
+void FloodingApplLayer::sendNewWarningMessage(std::string blockedRoadId)
 {
-	sentMessage = true;
-
 	t_channel channel = dataOnSch ? type_SCH : type_CCH;
 	WaveShortMessage* wsm = prepareWSM("data", dataLengthBits, channel, dataPriority, -1,2);
 	wsm->setWsmData(blockedRoadId.c_str());
@@ -104,11 +109,28 @@ void FloodingApplLayer::handlePositionUpdate(cObject* obj)
 	BaseWaveApplLayer::handlePositionUpdate(obj);
 
 	// stopped for for at least 10s?
-	if (traci->getSpeed() < 1) {
+    if ((!sentMessage) && (traci->getSpeed() < 1)) {
 		if (simTime() - lastDroveAt >= 10) {
+
+            // HACK to fix stack's broken implementation
+
+            if (stats->getNumberOfAccidentsOccurred() == accidentCount) {
+                lastDroveAt = simTime();
+                return;
+            }
+            else {
+                stats->incrementAccidentOccurred();
+            }
+
+            // END HACK
+
 			findHost()->getDisplayString().updateWith("r=16,red");
+
             stats->updateNewWarningsReceived();
-			if (!sentMessage) sendMessage(traci->getRoadId());
+
+            sendNewWarningMessage(traci->getRoadId());
+
+            sentMessage = true;
 		}
 	}
 	else {

@@ -22,7 +22,7 @@ public:
     virtual void onData(WaveShortMessage* wsm);
 
 protected:
-    void sendMessage(std::string blockedRoadId);
+    void sendNewWarningMessage(std::string blockedRoadId);
 
 
 protected:
@@ -31,6 +31,7 @@ protected:
     simtime_t lastDroveAt;
     bool sentMessage;
     double distanceThreshold;
+    int accidentCount;
 
     simsignal_t warningReceived;
 

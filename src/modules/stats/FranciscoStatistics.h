@@ -11,21 +11,24 @@ public:
     void updateAllWarningsReceived();
     void updateAllMessagesReceived();
 
+    int getNumberOfAccidentsOccurred() { return numAccidentsOccurred; }
+    void incrementAccidentOccurred();
+
 protected:
     uint allBeaconsReceived;
     uint newWarningsReceived;
     uint allWarningsReceived;
     uint allMessagesReceived;
-    bool accidentMode;
-    int numVehicles;
+//    bool accidentMode;
+//    int numVehicles;
+
+    int numAccidentsOccurred;
 
     simsignal_t allBeaconsReceivedSignal;
     simsignal_t allNewWarningsReceivedSignal;
     simsignal_t allWarningsReceivedSignal;
     simsignal_t allMessagesReceivedSignal;
-    simsignal_t percentOfInformedVehiclesSignal;
-    simsignal_t accidentStartTimeSignal;
-
+    simsignal_t numAccidentsSignal;
 
 protected:
     virtual void initialize(int stage);

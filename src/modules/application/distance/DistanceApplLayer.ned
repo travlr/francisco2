@@ -9,6 +9,7 @@ simple DistanceApplLayer extends BaseWaveApplLayer
     @display("i=block/app2");
 
     double distanceThreshold = default(30.0);
+    int accidentCount = default(1);
 
     @signal[warningReceivedSignal](type=long);
     @statistic[warningReceivedSignal](record=count,vector; description="Warning Received");
@@ -18,7 +19,6 @@ simple DistanceApplLayer extends BaseWaveApplLayer
 
     @signal[messageReceivedSignal](type=long);
     @statistic[messageReceivedSignal](record=count,vector; description="Message Received");
-
 
     @signal[newWarningReceivedSignal](type=long);
     @statistic[newWarningReceivedSignal](record=count,vector; description="New Warning Received");

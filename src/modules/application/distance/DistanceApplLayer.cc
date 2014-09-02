@@ -17,6 +17,7 @@ void DistanceApplLayer::initialize(int stage) {
     if (stage == 0) {
 
         distanceThreshold = par("distanceThreshold").doubleValue();
+        accidentCount = par("accidentCount").longValue();
 
         traci = TraCIMobilityAccess().get(getParentModule());
 //		annotations = AnnotationManagerAccess().getIfExists();
@@ -83,13 +84,13 @@ void DistanceApplLayer::onData(WaveShortMessage *wsm)
         rebroadcast = true;
 
     if (rebroadcast) {
-        sendMessage(dMinMessage->getWsmData());
+        sendWSM(dMinMessage->dup());
 
     }
 }
 
 
-void DistanceApplLayer::sendMessage(std::string blockedRoadId)
+void DistanceApplLayer::sendNewWarningMessage(std::string blockedRoadId)
 {
     t_channel channel = dataOnSch ? type_SCH : type_CCH;
     WaveShortMessage* wsm = prepareWSM("data", dataLengthBits, channel, dataPriority, -1,2);
@@ -104,15 +105,34 @@ void DistanceApplLayer::receiveSignal(cComponent* source, simsignal_t signalID, 
     }
 }
 
-void DistanceApplLayer::handlePositionUpdate(cObject* obj) {
+void DistanceApplLayer::handlePositionUpdate(cObject* obj)
+{
     BaseWaveApplLayer::handlePositionUpdate(obj);
 
     // stopped for for at least 10s?
-    if (traci->getSpeed() < 1) {
+    if ((!sentMessage) && (traci->getSpeed() < 1)) {
+
         if (simTime() - lastDroveAt >= 10) {
+
+            // HACK to fix stack's broken implementation
+
+            if (stats->getNumberOfAccidentsOccurred() == accidentCount) {
+                lastDroveAt = simTime();
+                return;
+            }
+            else {
+                stats->incrementAccidentOccurred();
+            }
+
+            // END HACK
+
             findHost()->getDisplayString().updateWith("r=16,red");
+
             stats->updateNewWarningsReceived();
-            if (!sentMessage) sendMessage(traci->getRoadId());
+
+            sendNewWarningMessage(traci->getRoadId());
+
+            sentMessage = true;
         }
     }
     else {

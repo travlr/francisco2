@@ -19,10 +19,6 @@ simple FranciscoStatistics
         @signal[allMessagesReceivedSignal](type=long);
         @statistic[allMessagesReceivedSignal](record=count,vector; description="All Messages Received");
 
-        @signal[accidentStartTimeSignal](type=long);
-        @statistic[accidentStartTimeSignal](record=count,vector; description="Accident Start Time");
-
-        @signal[percentOfInformedVehiclesSignal](type="double");
-        @statistic[percentOfInformedVehiclesSignal](record=count,vector; description="Percent Of Informed Vehicles");
-
+        //@signal[numAccidentsSignal](type=long);
+        //@statistic[numAccidentsSignal](record=count,vector; description="Number Of Occurred Accidents");
 }

@@ -14,13 +14,14 @@ void FranciscoStatistics::initialize(int stage)
         allNewWarningsReceivedSignal = registerSignal("allNewWarningsReceivedSignal");
         allWarningsReceivedSignal = registerSignal("allWarningsReceivedSignal");
         allMessagesReceivedSignal = registerSignal("allMessagesReceivedSignal");
-        accidentStartTimeSignal = registerSignal("accidentStartTimeSignal");
-        percentOfInformedVehiclesSignal = registerSignal("percentOfInformedVehiclesSignal");
+//        accidentStartTimeSignal = registerSignal("accidentStartTimeSignal");
+//        percentOfInformedVehiclesSignal = registerSignal("percentOfInformedVehiclesSignal");
 
         allBeaconsReceived = allWarningsReceived = newWarningsReceived = allMessagesReceived = 0;
-        accidentMode = false;
+//        accidentMode = false;
 
-        numVehicles = 20;
+//        numVehicles = 20;
+        numAccidentsOccurred = 0;
     }
 }
 
@@ -38,15 +39,11 @@ void FranciscoStatistics::updateAllBeaconsReceived()
 
 void FranciscoStatistics::updateNewWarningsReceived()
 {
-    if (!accidentMode) {
-
-        emit(accidentStartTimeSignal, 1);
-
-        accidentMode = true;
-    }
+//    if (!accidentMode) {
+//        accidentMode = true;
+//    }
     ++newWarningsReceived;
     emit(allNewWarningsReceivedSignal, newWarningsReceived);
-    emit(percentOfInformedVehiclesSignal, newWarningsReceived / numVehicles);
 //    cerr << "num warnings: " << newWarningsReceived << simTime().str() << endl;
 }
 
@@ -60,4 +57,7 @@ void FranciscoStatistics::updateAllMessagesReceived()
     emit(allMessagesReceivedSignal, ++allMessagesReceived);
 }
 
-
+void FranciscoStatistics::incrementAccidentOccurred()
+{
+    emit(numAccidentsSignal, ++numAccidentsOccurred);
+}

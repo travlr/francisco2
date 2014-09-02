@@ -23,12 +23,12 @@ class FloodingApplLayer : public BaseWaveApplLayer
         virtual void onData(WaveShortMessage* wsm);
 
 	protected:
+        int accidentCount;
+
 		TraCIMobility* traci;
 		AnnotationManager* annotations;
 		simtime_t lastDroveAt;
-		bool sentMessage;
-
-        simsignal_t warningReceived;
+        bool sentMessage;
 
         simsignal_t beaconReceivedSignal;
         simsignal_t newWarningReceivedSignal;
@@ -39,7 +39,7 @@ class FloodingApplLayer : public BaseWaveApplLayer
         vector<WaveShortMessage*> warningMessages;
 
 	protected:
-		void sendMessage(std::string blockedRoadId);
+        void sendNewWarningMessage(std::string blockedRoadId);
 
 };
 
