@@ -1,5 +1,5 @@
 
-FRANCISCO_SRC_DIR=~/francisco
+FRANCISCO_SRC_DIR=~/francisco2
 FRANCISCO_INCLUDE_DIRS=$(get-all-include-dirs --delimeter : ${FRANCISCO_SRC_DIR}/src)
 
 OMNET_SRC_DIR=~/src/_omnetpp-4.4.1
