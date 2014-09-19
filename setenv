@@ -2,7 +2,7 @@
 FRANCISCO_SRC_DIR=~/francisco
 FRANCISCO_INCLUDE_DIRS=$(get-all-include-dirs --delimeter : ${FRANCISCO_SRC_DIR}/src)
 
-OMNET_SRC_DIR=~/src/_omnetpp-4.2.2
+OMNET_SRC_DIR=~/src/_omnetpp-4.4.1
 OMNET_BIN_DIR=${OMNET_SRC_DIR}/bin
 OMNET_LIB_DIR=${OMNET_SRC_DIR}/lib
 OMNET_INCLUDE_DIR=${OMNET_SRC_DIR}/include 

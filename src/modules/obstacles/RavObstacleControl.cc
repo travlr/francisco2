@@ -111,8 +111,8 @@ void RavObstacleControl::initializeAttenuationState(const Veins::AirFrame* frame
 
     as->streetAngle = getStreetAngle(as->senderIdStr, as->receiverIdStr);
 
-    strcpy(as->senderRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(as->senderIdStr).c_str());
-    strcpy(as->receiverRoadId, scenarioManager->getCommandInterface()->getVehicleRoadId(as->receiverIdStr).c_str());
+    strcpy(as->senderRoadId, scenarioManager->getCommandInterface()->getEdgeId(as->senderIdStr).c_str());
+    strcpy(as->receiverRoadId, scenarioManager->getCommandInterface()->getEdgeId(as->receiverIdStr).c_str());
 
     as->senderStreet = roadMapManager->getStreetMap()[as->senderIdStr];
     as->receiverStreet = roadMapManager->getStreetMap()[as->receiverIdStr];

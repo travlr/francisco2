@@ -12,10 +12,10 @@ die () {
 
 usage() {
 
-    echo "./$(basename "$0") <name-of-city-or-map-region> <name-of-osm-file>"
+    echo "./$(basename "$0") <name-of-city-or-map-region> <name-of-osm-file> <numberOfVehicles>"
 }
 
-[ "$#" -eq 2 ] || die "2 arguments required, $# provided"
+[ "$#" -eq 3 ] || die "3 arguments required, $# provided"
 
 if [[ ! -f ${2} ]]; then
 
@@ -42,7 +42,7 @@ echo "#    Running randomTrips.py            #"
 echo "########################################"
 
 
-${SUMO_HOME}/tools/trip/randomTrips.py -n ${1}.net.xml -o ${1}.trips.xml
+${SUMO_HOME}/tools/trip/randomTrips.py -n ${1}.net.xml -o ${1}.trips.xml -e ${3}
 
 
 echo "#########################################"

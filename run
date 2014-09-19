@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import sys, os
+from subprocess import check_call
+
+
+def transform_map_files():
+
+    numStr = ""
+    mapName = ""
+    if not os.path.isfile('omnetpp.ini'):
+        print "[ERROR] omnetpp.ini does not exist"
+        sys.exit(1)
+    iniFile = open("omnetpp.ini", 'r')
+    lines = iniFile.read().split('\n')
+    iniFile.close()
+    for line in lines:
+        if ".numVehicles" in line:
+            numStr = line.split("=")[1]
+            # call the transorm script
+        if "launchConfig" in line:
+            mapName = line.split("=")[1].split('"')[1].split('.')[0]
+
+    osmName = mapName + '.osm'
+
+    if not os.path.isfile(osmName):
+        print "[ERROR] %s does not exist" % osmName
+        sys.exit(1)
+
+    fPath = os.path.join(os.getcwd(), 'src/scripts/convert_osm')
+
+    print 'fPath:', fPath
+
+    check_call([fPath, mapName, osmName, numStr])
+
+
+
+
+if __name__ == '__main__':
+
+    transform_map_files()
+    check_call(['./francisco'])

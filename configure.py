@@ -8,9 +8,11 @@ from optparse import OptionParser
 import fnmatch
 
 
-VEINS_SRC_DIR = '/home/prodatalab/src/_git/veins'
+def transform_map_files():
 
-os.environ['SUMO_HOME'] = '/home/prodatalab/src/sumo-0.21.0'
+
+
+VEINS_SRC_DIR = '/home/prodatalab/src/_git/veins'
 
 
 # Start with default flags

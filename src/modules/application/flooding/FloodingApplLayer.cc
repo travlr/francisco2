@@ -74,7 +74,7 @@ void FloodingApplLayer::onData(WaveShortMessage* wsm)
         if (traci->getRoadId()[0] != ':')
             traci->commandChangeRoute(wsm->getWsmData(), 9999);
 
-        cerr << "[DEBUG] wsm->getTreeId(): " << wsm->getTreeId();
+//        cerr << "[DEBUG] wsm->getTreeId(): " << wsm->getTreeId();
 
         sendWSM(wsm->dup());
 

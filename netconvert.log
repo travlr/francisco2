@@ -1,0 +1,97 @@
+Warning: The vehicle class 'transport' is deprecated, use 'truck' instead.
+Warning: The vehicle class 'lightrail' is deprecated, use 'tram' instead.
+Warning: The vehicle class 'cityrail' is deprecated, use 'rail_urban' instead.
+Warning: The vehicle class 'rail_slow' is deprecated, use 'rail' instead.
+Warning: The vehicle class 'rail_fast' is deprecated, use 'rail_electric' instead.
+Parsing nodes from osm-file 'sanfrancisco.osm'... done.
+Parsing edges from osm-file 'sanfrancisco.osm'... done.
+Removing duplicate edges... done.
+Parsing relations from osm-file 'sanfrancisco.osm'... 
+Warning: No way found for reference '87235206' in relation '1323199'
+Warning: No way found for reference '89802446' in relation '1323199'
+Warning: Ignoring restriction relation '1323199' with unknown from-way.
+Warning: Ignoring restriction relation '1323199' with unknown to-way.
+Warning: No way found for reference '89802410' in relation '1323202'
+Warning: No way found for reference '89802416' in relation '1323202'
+Warning: Ignoring restriction relation '1323202' with unknown from-way.
+Warning: Ignoring restriction relation '1323202' with unknown to-way.
+Warning: No way found for reference '87235213' in relation '1298384'
+Warning: No way found for reference '35976572' in relation '1298384'
+Warning: Ignoring restriction relation '1298384' with unknown from-way.
+Warning: Ignoring restriction relation '1298384' with unknown to-way.
+Warning: No way found for reference '43942477' in relation '1298389'
+Warning: No way found for reference '35976572' in relation '1298389'
+Warning: Ignoring restriction relation '1298389' with unknown from-way.
+Warning: Ignoring restriction relation '1298389' with unknown to-way.
+Warning: No way found for reference '43942477' in relation '1298396'
+Warning: No way found for reference '87235206' in relation '1298396'
+Warning: Ignoring restriction relation '1298396' with unknown from-way.
+Warning: Ignoring restriction relation '1298396' with unknown to-way.
+Warning: No way found for reference '286188526' in relation '3795268'
+Warning: No way found for reference '286188737' in relation '3795268'
+Warning: Ignoring restriction relation '3795268' with unknown from-way.
+Warning: Ignoring restriction relation '3795268' with unknown to-way.
+Warning: No way found for reference '286188737' in relation '3795269'
+Warning: Ignoring restriction relation '3795269' with unknown to-way.
+Warning: No way found for reference '133856238' in relation '3796245'
+Warning: Ignoring restriction relation '3796245' with unknown from-way.
+Warning: No way found for reference '133856239' in relation '3796247'
+Warning: Ignoring restriction relation '3796247' with unknown to-way.
+Warning: No way found for reference '158602268' in relation '3796246'
+Warning: No way found for reference '133856239' in relation '3796246'
+Warning: Ignoring restriction relation '3796246' with unknown from-way.
+Warning: Ignoring restriction relation '3796246' with unknown to-way.
+done.
+ Import done:
+   239 nodes loaded.
+   33 types loaded.
+   554 edges loaded.
+Proj projection parameters used: '+proj=utm +zone=10 +ellps=WGS84 +datum=WGS84 +units=m +no_defs'.
+Removing self-loops... done.
+Finding isolated roads... done.
+Joining junction clusters... done.
+ Joined 5 junction cluster(s).
+Removing empty nodes... done.
+   41 nodes removed.
+Moving network to origin... done.
+Joining similar edges... done.
+Guessing and setting on-/off-ramps... done.
+Computing turning directions... done.
+Sorting nodes' edges... done.
+Computing node shapes... done.
+Computing edge shapes... done.
+Computing node types... done.
+Computing priorities... done.
+Computing approached edges... done.
+Computing approaching lanes... done.
+Dividing of lanes on approached lanes... done.
+Processing turnarounds... done.
+Rechecking of lane endings... done.
+Assigning nodes to traffic lights... done.
+Computing traffic light control information... done.
+Computing node logics... done.
+Computing traffic light logics... 
+Warning: The traffic light '2381817268' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '2381817268'
+Warning: The traffic light '2381817271' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '2381817271'
+Warning: The traffic light '2381817274' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '2381817274'
+Warning: The traffic light '258916776' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '258916776'
+Warning: The traffic light '65289501' does not control any links; it will not be build.
+Warning: Could not build program '0' for traffic light '65289501'
+done.
+ 7 traffic light(s) computed.
+Building inner edges... done.
+-----------------------------------------------------
+Summary:
+ Node type statistics:
+  Unregulated junctions       : 4
+  Priority junctions          : 186
+  Right-before-left junctions : 0
+ Network boundaries:
+  Original boundary  : -122.51,37.73,-122.48,37.77
+  Applied offset     : -543214.36,-4176511.46
+  Converted boundary : 0.00,0.00,2873.99,3361.49
+-----------------------------------------------------

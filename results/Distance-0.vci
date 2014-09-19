@@ -1,1312 +1,1502 @@
-file 2538599 1409691133                                         
+file 1020198 1411137819                                         
 version 2
-run Distance-0-20140902-14:50:54-18680
+run Distance-0-20140919-08:43:08-23824
 attr configname Distance
-attr datetime 20140902-14:50:54
+attr datetime 20140919-08:43:08
 attr experiment Distance
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network src.modules.scenario.FranciscoScenario
-attr processid 18680
+attr processid 23824
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-vector 10  FranciscoScenario.node[0].veinsmobility  posx  ETV
-vector 11  FranciscoScenario.node[0].veinsmobility  posy  ETV
-vector 12  FranciscoScenario.node[0].veinsmobility  speed  ETV
-vector 13  FranciscoScenario.node[0].veinsmobility  acceleration  ETV
-vector 14  FranciscoScenario.node[0].veinsmobility  co2emission  ETV
-vector 21  FranciscoScenario.node[1].veinsmobility  posx  ETV
-vector 22  FranciscoScenario.node[1].veinsmobility  posy  ETV
-vector 32  FranciscoScenario.node[2].veinsmobility  posx  ETV
-vector 33  FranciscoScenario.node[2].veinsmobility  posy  ETV
-vector 43  FranciscoScenario.node[3].veinsmobility  posx  ETV
-vector 44  FranciscoScenario.node[3].veinsmobility  posy  ETV
-vector 54  FranciscoScenario.node[4].veinsmobility  posx  ETV
-vector 55  FranciscoScenario.node[4].veinsmobility  posy  ETV
-vector 65  FranciscoScenario.node[5].veinsmobility  posx  ETV
-vector 66  FranciscoScenario.node[5].veinsmobility  posy  ETV
-vector 76  FranciscoScenario.node[6].veinsmobility  posx  ETV
-vector 77  FranciscoScenario.node[6].veinsmobility  posy  ETV
-vector 87  FranciscoScenario.node[7].veinsmobility  posx  ETV
-vector 88  FranciscoScenario.node[7].veinsmobility  posy  ETV
-vector 98  FranciscoScenario.node[8].veinsmobility  posx  ETV
-vector 99  FranciscoScenario.node[8].veinsmobility  posy  ETV
-vector 109  FranciscoScenario.node[9].veinsmobility  posx  ETV
-vector 110  FranciscoScenario.node[9].veinsmobility  posy  ETV
-vector 120  FranciscoScenario.node[10].veinsmobility  posx  ETV
-vector 121  FranciscoScenario.node[10].veinsmobility  posy  ETV
-vector 131  FranciscoScenario.node[11].veinsmobility  posx  ETV
-vector 132  FranciscoScenario.node[11].veinsmobility  posy  ETV
-vector 142  FranciscoScenario.node[12].veinsmobility  posx  ETV
-vector 143  FranciscoScenario.node[12].veinsmobility  posy  ETV
-vector 153  FranciscoScenario.node[13].veinsmobility  posx  ETV
-vector 154  FranciscoScenario.node[13].veinsmobility  posy  ETV
-vector 164  FranciscoScenario.node[14].veinsmobility  posx  ETV
-vector 165  FranciscoScenario.node[14].veinsmobility  posy  ETV
-vector 175  FranciscoScenario.node[15].veinsmobility  posx  ETV
-vector 176  FranciscoScenario.node[15].veinsmobility  posy  ETV
-vector 186  FranciscoScenario.node[16].veinsmobility  posx  ETV
-vector 187  FranciscoScenario.node[16].veinsmobility  posy  ETV
-vector 197  FranciscoScenario.node[17].veinsmobility  posx  ETV
-vector 198  FranciscoScenario.node[17].veinsmobility  posy  ETV
-vector 208  FranciscoScenario.node[18].veinsmobility  posx  ETV
-vector 209  FranciscoScenario.node[18].veinsmobility  posy  ETV
-vector 219  FranciscoScenario.node[19].veinsmobility  posx  ETV
-vector 220  FranciscoScenario.node[19].veinsmobility  posy  ETV
-vector 230  FranciscoScenario.node[20].veinsmobility  posx  ETV
-vector 231  FranciscoScenario.node[20].veinsmobility  posy  ETV
-vector 241  FranciscoScenario.node[21].veinsmobility  posx  ETV
-vector 242  FranciscoScenario.node[21].veinsmobility  posy  ETV
-vector 252  FranciscoScenario.node[22].veinsmobility  posx  ETV
-vector 253  FranciscoScenario.node[22].veinsmobility  posy  ETV
-vector 263  FranciscoScenario.node[23].veinsmobility  posx  ETV
-vector 264  FranciscoScenario.node[23].veinsmobility  posy  ETV
-vector 274  FranciscoScenario.node[24].veinsmobility  posx  ETV
-vector 275  FranciscoScenario.node[24].veinsmobility  posy  ETV
-vector 285  FranciscoScenario.node[25].veinsmobility  posx  ETV
-vector 286  FranciscoScenario.node[25].veinsmobility  posy  ETV
-vector 296  FranciscoScenario.node[26].veinsmobility  posx  ETV
-vector 297  FranciscoScenario.node[26].veinsmobility  posy  ETV
-vector 307  FranciscoScenario.node[27].veinsmobility  posx  ETV
-vector 308  FranciscoScenario.node[27].veinsmobility  posy  ETV
-vector 318  FranciscoScenario.node[28].veinsmobility  posx  ETV
-vector 319  FranciscoScenario.node[28].veinsmobility  posy  ETV
-vector 329  FranciscoScenario.node[29].veinsmobility  posx  ETV
-vector 330  FranciscoScenario.node[29].veinsmobility  posy  ETV
-vector 340  FranciscoScenario.node[30].veinsmobility  posx  ETV
-vector 341  FranciscoScenario.node[30].veinsmobility  posy  ETV
-vector 351  FranciscoScenario.node[31].veinsmobility  posx  ETV
-vector 352  FranciscoScenario.node[31].veinsmobility  posy  ETV
-vector 362  FranciscoScenario.node[32].veinsmobility  posx  ETV
-vector 363  FranciscoScenario.node[32].veinsmobility  posy  ETV
-vector 373  FranciscoScenario.node[33].veinsmobility  posx  ETV
-vector 374  FranciscoScenario.node[33].veinsmobility  posy  ETV
-vector 384  FranciscoScenario.node[34].veinsmobility  posx  ETV
-vector 385  FranciscoScenario.node[34].veinsmobility  posy  ETV
-vector 395  FranciscoScenario.node[35].veinsmobility  posx  ETV
-vector 396  FranciscoScenario.node[35].veinsmobility  posy  ETV
-vector 406  FranciscoScenario.node[36].veinsmobility  posx  ETV
-vector 407  FranciscoScenario.node[36].veinsmobility  posy  ETV
-vector 417  FranciscoScenario.node[37].veinsmobility  posx  ETV
-vector 418  FranciscoScenario.node[37].veinsmobility  posy  ETV
-vector 428  FranciscoScenario.node[38].veinsmobility  posx  ETV
-vector 429  FranciscoScenario.node[38].veinsmobility  posy  ETV
-vector 439  FranciscoScenario.node[39].veinsmobility  posx  ETV
-vector 440  FranciscoScenario.node[39].veinsmobility  posy  ETV
-vector 450  FranciscoScenario.node[40].veinsmobility  posx  ETV
-vector 451  FranciscoScenario.node[40].veinsmobility  posy  ETV
-vector 23  FranciscoScenario.node[1].veinsmobility  speed  ETV
-vector 461  FranciscoScenario.node[41].veinsmobility  posx  ETV
-vector 462  FranciscoScenario.node[41].veinsmobility  posy  ETV
-vector 472  FranciscoScenario.node[42].veinsmobility  posx  ETV
-vector 473  FranciscoScenario.node[42].veinsmobility  posy  ETV
-vector 24  FranciscoScenario.node[1].veinsmobility  acceleration  ETV
-vector 25  FranciscoScenario.node[1].veinsmobility  co2emission  ETV
-vector 34  FranciscoScenario.node[2].veinsmobility  speed  ETV
-vector 45  FranciscoScenario.node[3].veinsmobility  speed  ETV
-vector 56  FranciscoScenario.node[4].veinsmobility  speed  ETV
-vector 67  FranciscoScenario.node[5].veinsmobility  speed  ETV
-vector 78  FranciscoScenario.node[6].veinsmobility  speed  ETV
-vector 89  FranciscoScenario.node[7].veinsmobility  speed  ETV
-vector 100  FranciscoScenario.node[8].veinsmobility  speed  ETV
-vector 111  FranciscoScenario.node[9].veinsmobility  speed  ETV
-vector 122  FranciscoScenario.node[10].veinsmobility  speed  ETV
-vector 133  FranciscoScenario.node[11].veinsmobility  speed  ETV
-vector 144  FranciscoScenario.node[12].veinsmobility  speed  ETV
-vector 155  FranciscoScenario.node[13].veinsmobility  speed  ETV
-vector 166  FranciscoScenario.node[14].veinsmobility  speed  ETV
-vector 177  FranciscoScenario.node[15].veinsmobility  speed  ETV
-vector 188  FranciscoScenario.node[16].veinsmobility  speed  ETV
-vector 199  FranciscoScenario.node[17].veinsmobility  speed  ETV
-vector 210  FranciscoScenario.node[18].veinsmobility  speed  ETV
-vector 221  FranciscoScenario.node[19].veinsmobility  speed  ETV
-vector 232  FranciscoScenario.node[20].veinsmobility  speed  ETV
-vector 243  FranciscoScenario.node[21].veinsmobility  speed  ETV
-vector 254  FranciscoScenario.node[22].veinsmobility  speed  ETV
-vector 265  FranciscoScenario.node[23].veinsmobility  speed  ETV
-vector 276  FranciscoScenario.node[24].veinsmobility  speed  ETV
-vector 287  FranciscoScenario.node[25].veinsmobility  speed  ETV
-vector 298  FranciscoScenario.node[26].veinsmobility  speed  ETV
-vector 309  FranciscoScenario.node[27].veinsmobility  speed  ETV
-vector 320  FranciscoScenario.node[28].veinsmobility  speed  ETV
-vector 331  FranciscoScenario.node[29].veinsmobility  speed  ETV
-vector 342  FranciscoScenario.node[30].veinsmobility  speed  ETV
-vector 353  FranciscoScenario.node[31].veinsmobility  speed  ETV
-vector 364  FranciscoScenario.node[32].veinsmobility  speed  ETV
-vector 375  FranciscoScenario.node[33].veinsmobility  speed  ETV
-vector 386  FranciscoScenario.node[34].veinsmobility  speed  ETV
-vector 397  FranciscoScenario.node[35].veinsmobility  speed  ETV
-vector 408  FranciscoScenario.node[36].veinsmobility  speed  ETV
-vector 419  FranciscoScenario.node[37].veinsmobility  speed  ETV
-vector 430  FranciscoScenario.node[38].veinsmobility  speed  ETV
-vector 441  FranciscoScenario.node[39].veinsmobility  speed  ETV
-vector 452  FranciscoScenario.node[40].veinsmobility  speed  ETV
-vector 35  FranciscoScenario.node[2].veinsmobility  acceleration  ETV
-vector 36  FranciscoScenario.node[2].veinsmobility  co2emission  ETV
-vector 46  FranciscoScenario.node[3].veinsmobility  acceleration  ETV
-vector 47  FranciscoScenario.node[3].veinsmobility  co2emission  ETV
-vector 57  FranciscoScenario.node[4].veinsmobility  acceleration  ETV
-vector 58  FranciscoScenario.node[4].veinsmobility  co2emission  ETV
-vector 68  FranciscoScenario.node[5].veinsmobility  acceleration  ETV
-vector 69  FranciscoScenario.node[5].veinsmobility  co2emission  ETV
-vector 79  FranciscoScenario.node[6].veinsmobility  acceleration  ETV
-vector 80  FranciscoScenario.node[6].veinsmobility  co2emission  ETV
-vector 90  FranciscoScenario.node[7].veinsmobility  acceleration  ETV
-vector 91  FranciscoScenario.node[7].veinsmobility  co2emission  ETV
-vector 101  FranciscoScenario.node[8].veinsmobility  acceleration  ETV
-vector 102  FranciscoScenario.node[8].veinsmobility  co2emission  ETV
-vector 112  FranciscoScenario.node[9].veinsmobility  acceleration  ETV
-vector 113  FranciscoScenario.node[9].veinsmobility  co2emission  ETV
-vector 123  FranciscoScenario.node[10].veinsmobility  acceleration  ETV
-vector 124  FranciscoScenario.node[10].veinsmobility  co2emission  ETV
-vector 134  FranciscoScenario.node[11].veinsmobility  acceleration  ETV
-vector 135  FranciscoScenario.node[11].veinsmobility  co2emission  ETV
-vector 145  FranciscoScenario.node[12].veinsmobility  acceleration  ETV
-vector 146  FranciscoScenario.node[12].veinsmobility  co2emission  ETV
-vector 156  FranciscoScenario.node[13].veinsmobility  acceleration  ETV
-vector 157  FranciscoScenario.node[13].veinsmobility  co2emission  ETV
-vector 167  FranciscoScenario.node[14].veinsmobility  acceleration  ETV
-vector 168  FranciscoScenario.node[14].veinsmobility  co2emission  ETV
-vector 178  FranciscoScenario.node[15].veinsmobility  acceleration  ETV
-vector 179  FranciscoScenario.node[15].veinsmobility  co2emission  ETV
-vector 189  FranciscoScenario.node[16].veinsmobility  acceleration  ETV
-vector 190  FranciscoScenario.node[16].veinsmobility  co2emission  ETV
-vector 200  FranciscoScenario.node[17].veinsmobility  acceleration  ETV
-vector 201  FranciscoScenario.node[17].veinsmobility  co2emission  ETV
-vector 211  FranciscoScenario.node[18].veinsmobility  acceleration  ETV
-vector 212  FranciscoScenario.node[18].veinsmobility  co2emission  ETV
-vector 222  FranciscoScenario.node[19].veinsmobility  acceleration  ETV
-vector 223  FranciscoScenario.node[19].veinsmobility  co2emission  ETV
-vector 233  FranciscoScenario.node[20].veinsmobility  acceleration  ETV
-vector 234  FranciscoScenario.node[20].veinsmobility  co2emission  ETV
-vector 244  FranciscoScenario.node[21].veinsmobility  acceleration  ETV
-vector 245  FranciscoScenario.node[21].veinsmobility  co2emission  ETV
-vector 255  FranciscoScenario.node[22].veinsmobility  acceleration  ETV
-vector 256  FranciscoScenario.node[22].veinsmobility  co2emission  ETV
-vector 266  FranciscoScenario.node[23].veinsmobility  acceleration  ETV
-vector 267  FranciscoScenario.node[23].veinsmobility  co2emission  ETV
-vector 277  FranciscoScenario.node[24].veinsmobility  acceleration  ETV
-vector 278  FranciscoScenario.node[24].veinsmobility  co2emission  ETV
-vector 288  FranciscoScenario.node[25].veinsmobility  acceleration  ETV
-vector 289  FranciscoScenario.node[25].veinsmobility  co2emission  ETV
-vector 299  FranciscoScenario.node[26].veinsmobility  acceleration  ETV
-vector 300  FranciscoScenario.node[26].veinsmobility  co2emission  ETV
-vector 310  FranciscoScenario.node[27].veinsmobility  acceleration  ETV
-vector 311  FranciscoScenario.node[27].veinsmobility  co2emission  ETV
-vector 321  FranciscoScenario.node[28].veinsmobility  acceleration  ETV
-vector 322  FranciscoScenario.node[28].veinsmobility  co2emission  ETV
-vector 332  FranciscoScenario.node[29].veinsmobility  acceleration  ETV
-vector 333  FranciscoScenario.node[29].veinsmobility  co2emission  ETV
-vector 343  FranciscoScenario.node[30].veinsmobility  acceleration  ETV
-vector 344  FranciscoScenario.node[30].veinsmobility  co2emission  ETV
-vector 354  FranciscoScenario.node[31].veinsmobility  acceleration  ETV
-vector 355  FranciscoScenario.node[31].veinsmobility  co2emission  ETV
-vector 365  FranciscoScenario.node[32].veinsmobility  acceleration  ETV
-vector 366  FranciscoScenario.node[32].veinsmobility  co2emission  ETV
-vector 376  FranciscoScenario.node[33].veinsmobility  acceleration  ETV
-vector 377  FranciscoScenario.node[33].veinsmobility  co2emission  ETV
-vector 387  FranciscoScenario.node[34].veinsmobility  acceleration  ETV
-vector 388  FranciscoScenario.node[34].veinsmobility  co2emission  ETV
-vector 398  FranciscoScenario.node[35].veinsmobility  acceleration  ETV
-vector 399  FranciscoScenario.node[35].veinsmobility  co2emission  ETV
-vector 409  FranciscoScenario.node[36].veinsmobility  acceleration  ETV
-vector 410  FranciscoScenario.node[36].veinsmobility  co2emission  ETV
-vector 420  FranciscoScenario.node[37].veinsmobility  acceleration  ETV
-vector 421  FranciscoScenario.node[37].veinsmobility  co2emission  ETV
-vector 431  FranciscoScenario.node[38].veinsmobility  acceleration  ETV
-vector 432  FranciscoScenario.node[38].veinsmobility  co2emission  ETV
-vector 442  FranciscoScenario.node[39].veinsmobility  acceleration  ETV
-vector 443  FranciscoScenario.node[39].veinsmobility  co2emission  ETV
-vector 453  FranciscoScenario.node[40].veinsmobility  acceleration  ETV
-vector 454  FranciscoScenario.node[40].veinsmobility  co2emission  ETV
-vector 463  FranciscoScenario.node[41].veinsmobility  speed  ETV
-vector 474  FranciscoScenario.node[42].veinsmobility  speed  ETV
-vector 464  FranciscoScenario.node[41].veinsmobility  acceleration  ETV
-vector 465  FranciscoScenario.node[41].veinsmobility  co2emission  ETV
-vector 475  FranciscoScenario.node[42].veinsmobility  acceleration  ETV
-vector 476  FranciscoScenario.node[42].veinsmobility  co2emission  ETV
-vector 483  FranciscoScenario.node[43].veinsmobility  posx  ETV
-vector 484  FranciscoScenario.node[43].veinsmobility  posy  ETV
-vector 485  FranciscoScenario.node[43].veinsmobility  speed  ETV
-vector 486  FranciscoScenario.node[43].veinsmobility  acceleration  ETV
-vector 487  FranciscoScenario.node[43].veinsmobility  co2emission  ETV
-vector 494  FranciscoScenario.node[44].veinsmobility  posx  ETV
-vector 495  FranciscoScenario.node[44].veinsmobility  posy  ETV
-vector 505  FranciscoScenario.node[45].veinsmobility  posx  ETV
-vector 506  FranciscoScenario.node[45].veinsmobility  posy  ETV
-vector 516  FranciscoScenario.node[46].veinsmobility  posx  ETV
-vector 517  FranciscoScenario.node[46].veinsmobility  posy  ETV
-vector 527  FranciscoScenario.node[47].veinsmobility  posx  ETV
-vector 528  FranciscoScenario.node[47].veinsmobility  posy  ETV
-vector 538  FranciscoScenario.node[48].veinsmobility  posx  ETV
-vector 539  FranciscoScenario.node[48].veinsmobility  posy  ETV
-vector 549  FranciscoScenario.node[49].veinsmobility  posx  ETV
-vector 550  FranciscoScenario.node[49].veinsmobility  posy  ETV
-vector 496  FranciscoScenario.node[44].veinsmobility  speed  ETV
-vector 507  FranciscoScenario.node[45].veinsmobility  speed  ETV
-vector 518  FranciscoScenario.node[46].veinsmobility  speed  ETV
-vector 529  FranciscoScenario.node[47].veinsmobility  speed  ETV
-vector 540  FranciscoScenario.node[48].veinsmobility  speed  ETV
-vector 551  FranciscoScenario.node[49].veinsmobility  speed  ETV
-vector 560  FranciscoScenario.node[50].veinsmobility  posx  ETV
-vector 561  FranciscoScenario.node[50].veinsmobility  posy  ETV
-vector 497  FranciscoScenario.node[44].veinsmobility  acceleration  ETV
-vector 498  FranciscoScenario.node[44].veinsmobility  co2emission  ETV
-vector 508  FranciscoScenario.node[45].veinsmobility  acceleration  ETV
-vector 509  FranciscoScenario.node[45].veinsmobility  co2emission  ETV
-vector 519  FranciscoScenario.node[46].veinsmobility  acceleration  ETV
-vector 520  FranciscoScenario.node[46].veinsmobility  co2emission  ETV
-vector 530  FranciscoScenario.node[47].veinsmobility  acceleration  ETV
-vector 531  FranciscoScenario.node[47].veinsmobility  co2emission  ETV
-vector 541  FranciscoScenario.node[48].veinsmobility  acceleration  ETV
-vector 542  FranciscoScenario.node[48].veinsmobility  co2emission  ETV
-vector 552  FranciscoScenario.node[49].veinsmobility  acceleration  ETV
-vector 553  FranciscoScenario.node[49].veinsmobility  co2emission  ETV
-vector 571  FranciscoScenario.node[51].veinsmobility  posx  ETV
-vector 572  FranciscoScenario.node[51].veinsmobility  posy  ETV
-vector 562  FranciscoScenario.node[50].veinsmobility  speed  ETV
-vector 563  FranciscoScenario.node[50].veinsmobility  acceleration  ETV
-vector 564  FranciscoScenario.node[50].veinsmobility  co2emission  ETV
-vector 573  FranciscoScenario.node[51].veinsmobility  speed  ETV
-vector 574  FranciscoScenario.node[51].veinsmobility  acceleration  ETV
-vector 575  FranciscoScenario.node[51].veinsmobility  co2emission  ETV
-vector 582  FranciscoScenario.node[52].veinsmobility  posx  ETV
-vector 583  FranciscoScenario.node[52].veinsmobility  posy  ETV
-vector 584  FranciscoScenario.node[52].veinsmobility  speed  ETV
-vector 585  FranciscoScenario.node[52].veinsmobility  acceleration  ETV
-vector 586  FranciscoScenario.node[52].veinsmobility  co2emission  ETV
-vector 593  FranciscoScenario.node[53].veinsmobility  posx  ETV
-vector 594  FranciscoScenario.node[53].veinsmobility  posy  ETV
-vector 595  FranciscoScenario.node[53].veinsmobility  speed  ETV
-vector 596  FranciscoScenario.node[53].veinsmobility  acceleration  ETV
-vector 597  FranciscoScenario.node[53].veinsmobility  co2emission  ETV
-vector 604  FranciscoScenario.node[54].veinsmobility  posx  ETV
-vector 605  FranciscoScenario.node[54].veinsmobility  posy  ETV
-vector 606  FranciscoScenario.node[54].veinsmobility  speed  ETV
-vector 607  FranciscoScenario.node[54].veinsmobility  acceleration  ETV
-vector 608  FranciscoScenario.node[54].veinsmobility  co2emission  ETV
-vector 615  FranciscoScenario.node[55].veinsmobility  posx  ETV
-vector 616  FranciscoScenario.node[55].veinsmobility  posy  ETV
-vector 617  FranciscoScenario.node[55].veinsmobility  speed  ETV
-vector 618  FranciscoScenario.node[55].veinsmobility  acceleration  ETV
-vector 619  FranciscoScenario.node[55].veinsmobility  co2emission  ETV
-vector 626  FranciscoScenario.node[56].veinsmobility  posx  ETV
-vector 627  FranciscoScenario.node[56].veinsmobility  posy  ETV
-vector 628  FranciscoScenario.node[56].veinsmobility  speed  ETV
-vector 637  FranciscoScenario.node[57].veinsmobility  posx  ETV
-vector 638  FranciscoScenario.node[57].veinsmobility  posy  ETV
-vector 629  FranciscoScenario.node[56].veinsmobility  acceleration  ETV
-vector 630  FranciscoScenario.node[56].veinsmobility  co2emission  ETV
-vector 639  FranciscoScenario.node[57].veinsmobility  speed  ETV
-vector 640  FranciscoScenario.node[57].veinsmobility  acceleration  ETV
-vector 641  FranciscoScenario.node[57].veinsmobility  co2emission  ETV
-vector 648  FranciscoScenario.node[58].veinsmobility  posx  ETV
-vector 649  FranciscoScenario.node[58].veinsmobility  posy  ETV
-vector 650  FranciscoScenario.node[58].veinsmobility  speed  ETV
-vector 651  FranciscoScenario.node[58].veinsmobility  acceleration  ETV
-vector 652  FranciscoScenario.node[58].veinsmobility  co2emission  ETV
-vector 659  FranciscoScenario.node[59].veinsmobility  posx  ETV
-vector 660  FranciscoScenario.node[59].veinsmobility  posy  ETV
-vector 661  FranciscoScenario.node[59].veinsmobility  speed  ETV
-vector 662  FranciscoScenario.node[59].veinsmobility  acceleration  ETV
-vector 663  FranciscoScenario.node[59].veinsmobility  co2emission  ETV
-vector 670  FranciscoScenario.node[60].veinsmobility  posx  ETV
-vector 671  FranciscoScenario.node[60].veinsmobility  posy  ETV
-vector 672  FranciscoScenario.node[60].veinsmobility  speed  ETV
-vector 673  FranciscoScenario.node[60].veinsmobility  acceleration  ETV
-vector 674  FranciscoScenario.node[60].veinsmobility  co2emission  ETV
-vector 681  FranciscoScenario.node[61].veinsmobility  posx  ETV
-vector 682  FranciscoScenario.node[61].veinsmobility  posy  ETV
-vector 683  FranciscoScenario.node[61].veinsmobility  speed  ETV
-vector 684  FranciscoScenario.node[61].veinsmobility  acceleration  ETV
-vector 685  FranciscoScenario.node[61].veinsmobility  co2emission  ETV
-vector 692  FranciscoScenario.node[62].veinsmobility  posx  ETV
-vector 693  FranciscoScenario.node[62].veinsmobility  posy  ETV
-vector 694  FranciscoScenario.node[62].veinsmobility  speed  ETV
-vector 695  FranciscoScenario.node[62].veinsmobility  acceleration  ETV
-vector 696  FranciscoScenario.node[62].veinsmobility  co2emission  ETV
-vector 703  FranciscoScenario.node[63].veinsmobility  posx  ETV
-vector 704  FranciscoScenario.node[63].veinsmobility  posy  ETV
-vector 705  FranciscoScenario.node[63].veinsmobility  speed  ETV
-vector 706  FranciscoScenario.node[63].veinsmobility  acceleration  ETV
-vector 707  FranciscoScenario.node[63].veinsmobility  co2emission  ETV
-vector 714  FranciscoScenario.node[64].veinsmobility  posx  ETV
-vector 715  FranciscoScenario.node[64].veinsmobility  posy  ETV
-vector 716  FranciscoScenario.node[64].veinsmobility  speed  ETV
-vector 717  FranciscoScenario.node[64].veinsmobility  acceleration  ETV
-vector 718  FranciscoScenario.node[64].veinsmobility  co2emission  ETV
-vector 725  FranciscoScenario.node[65].veinsmobility  posx  ETV
-vector 726  FranciscoScenario.node[65].veinsmobility  posy  ETV
-vector 727  FranciscoScenario.node[65].veinsmobility  speed  ETV
-vector 728  FranciscoScenario.node[65].veinsmobility  acceleration  ETV
-vector 729  FranciscoScenario.node[65].veinsmobility  co2emission  ETV
-vector 736  FranciscoScenario.node[66].veinsmobility  posx  ETV
-vector 737  FranciscoScenario.node[66].veinsmobility  posy  ETV
-vector 738  FranciscoScenario.node[66].veinsmobility  speed  ETV
-vector 739  FranciscoScenario.node[66].veinsmobility  acceleration  ETV
-vector 740  FranciscoScenario.node[66].veinsmobility  co2emission  ETV
-vector 747  FranciscoScenario.node[67].veinsmobility  posx  ETV
-vector 748  FranciscoScenario.node[67].veinsmobility  posy  ETV
-vector 749  FranciscoScenario.node[67].veinsmobility  speed  ETV
-vector 750  FranciscoScenario.node[67].veinsmobility  acceleration  ETV
-vector 751  FranciscoScenario.node[67].veinsmobility  co2emission  ETV
-vector 758  FranciscoScenario.node[68].veinsmobility  posx  ETV
-vector 759  FranciscoScenario.node[68].veinsmobility  posy  ETV
-vector 760  FranciscoScenario.node[68].veinsmobility  speed  ETV
-vector 761  FranciscoScenario.node[68].veinsmobility  acceleration  ETV
-vector 762  FranciscoScenario.node[68].veinsmobility  co2emission  ETV
-vector 769  FranciscoScenario.node[69].veinsmobility  posx  ETV
-vector 770  FranciscoScenario.node[69].veinsmobility  posy  ETV
-vector 1  FranciscoScenario.stats  allNewWarningsReceivedSignal:vector  ETV
+vector 0  FranciscoScenario.manager  actualNumVehiclesSignal:vector  ETV
+attr description  "Active vehicle count"
+vector 11  FranciscoScenario.node[0].veinsmobility  posx  ETV
+vector 12  FranciscoScenario.node[0].veinsmobility  posy  ETV
+vector 13  FranciscoScenario.node[0].veinsmobility  speed  ETV
+vector 14  FranciscoScenario.node[0].veinsmobility  acceleration  ETV
+vector 15  FranciscoScenario.node[0].veinsmobility  co2emission  ETV
+vector 22  FranciscoScenario.node[1].veinsmobility  posx  ETV
+vector 23  FranciscoScenario.node[1].veinsmobility  posy  ETV
+vector 33  FranciscoScenario.node[2].veinsmobility  posx  ETV
+vector 34  FranciscoScenario.node[2].veinsmobility  posy  ETV
+vector 44  FranciscoScenario.node[3].veinsmobility  posx  ETV
+vector 45  FranciscoScenario.node[3].veinsmobility  posy  ETV
+vector 55  FranciscoScenario.node[4].veinsmobility  posx  ETV
+vector 56  FranciscoScenario.node[4].veinsmobility  posy  ETV
+vector 66  FranciscoScenario.node[5].veinsmobility  posx  ETV
+vector 67  FranciscoScenario.node[5].veinsmobility  posy  ETV
+vector 77  FranciscoScenario.node[6].veinsmobility  posx  ETV
+vector 78  FranciscoScenario.node[6].veinsmobility  posy  ETV
+vector 88  FranciscoScenario.node[7].veinsmobility  posx  ETV
+vector 89  FranciscoScenario.node[7].veinsmobility  posy  ETV
+vector 99  FranciscoScenario.node[8].veinsmobility  posx  ETV
+vector 100  FranciscoScenario.node[8].veinsmobility  posy  ETV
+vector 110  FranciscoScenario.node[9].veinsmobility  posx  ETV
+vector 111  FranciscoScenario.node[9].veinsmobility  posy  ETV
+vector 121  FranciscoScenario.node[10].veinsmobility  posx  ETV
+vector 122  FranciscoScenario.node[10].veinsmobility  posy  ETV
+vector 132  FranciscoScenario.node[11].veinsmobility  posx  ETV
+vector 133  FranciscoScenario.node[11].veinsmobility  posy  ETV
+vector 143  FranciscoScenario.node[12].veinsmobility  posx  ETV
+vector 144  FranciscoScenario.node[12].veinsmobility  posy  ETV
+vector 154  FranciscoScenario.node[13].veinsmobility  posx  ETV
+vector 155  FranciscoScenario.node[13].veinsmobility  posy  ETV
+vector 165  FranciscoScenario.node[14].veinsmobility  posx  ETV
+vector 166  FranciscoScenario.node[14].veinsmobility  posy  ETV
+vector 176  FranciscoScenario.node[15].veinsmobility  posx  ETV
+vector 177  FranciscoScenario.node[15].veinsmobility  posy  ETV
+vector 187  FranciscoScenario.node[16].veinsmobility  posx  ETV
+vector 188  FranciscoScenario.node[16].veinsmobility  posy  ETV
+vector 198  FranciscoScenario.node[17].veinsmobility  posx  ETV
+vector 199  FranciscoScenario.node[17].veinsmobility  posy  ETV
+vector 209  FranciscoScenario.node[18].veinsmobility  posx  ETV
+vector 210  FranciscoScenario.node[18].veinsmobility  posy  ETV
+vector 220  FranciscoScenario.node[19].veinsmobility  posx  ETV
+vector 221  FranciscoScenario.node[19].veinsmobility  posy  ETV
+vector 231  FranciscoScenario.node[20].veinsmobility  posx  ETV
+vector 232  FranciscoScenario.node[20].veinsmobility  posy  ETV
+vector 242  FranciscoScenario.node[21].veinsmobility  posx  ETV
+vector 243  FranciscoScenario.node[21].veinsmobility  posy  ETV
+vector 253  FranciscoScenario.node[22].veinsmobility  posx  ETV
+vector 254  FranciscoScenario.node[22].veinsmobility  posy  ETV
+vector 264  FranciscoScenario.node[23].veinsmobility  posx  ETV
+vector 265  FranciscoScenario.node[23].veinsmobility  posy  ETV
+vector 275  FranciscoScenario.node[24].veinsmobility  posx  ETV
+vector 276  FranciscoScenario.node[24].veinsmobility  posy  ETV
+vector 286  FranciscoScenario.node[25].veinsmobility  posx  ETV
+vector 287  FranciscoScenario.node[25].veinsmobility  posy  ETV
+vector 297  FranciscoScenario.node[26].veinsmobility  posx  ETV
+vector 298  FranciscoScenario.node[26].veinsmobility  posy  ETV
+vector 308  FranciscoScenario.node[27].veinsmobility  posx  ETV
+vector 309  FranciscoScenario.node[27].veinsmobility  posy  ETV
+vector 319  FranciscoScenario.node[28].veinsmobility  posx  ETV
+vector 320  FranciscoScenario.node[28].veinsmobility  posy  ETV
+vector 330  FranciscoScenario.node[29].veinsmobility  posx  ETV
+vector 331  FranciscoScenario.node[29].veinsmobility  posy  ETV
+vector 341  FranciscoScenario.node[30].veinsmobility  posx  ETV
+vector 342  FranciscoScenario.node[30].veinsmobility  posy  ETV
+vector 352  FranciscoScenario.node[31].veinsmobility  posx  ETV
+vector 353  FranciscoScenario.node[31].veinsmobility  posy  ETV
+vector 363  FranciscoScenario.node[32].veinsmobility  posx  ETV
+vector 364  FranciscoScenario.node[32].veinsmobility  posy  ETV
+vector 374  FranciscoScenario.node[33].veinsmobility  posx  ETV
+vector 375  FranciscoScenario.node[33].veinsmobility  posy  ETV
+vector 385  FranciscoScenario.node[34].veinsmobility  posx  ETV
+vector 386  FranciscoScenario.node[34].veinsmobility  posy  ETV
+vector 396  FranciscoScenario.node[35].veinsmobility  posx  ETV
+vector 397  FranciscoScenario.node[35].veinsmobility  posy  ETV
+vector 407  FranciscoScenario.node[36].veinsmobility  posx  ETV
+vector 408  FranciscoScenario.node[36].veinsmobility  posy  ETV
+vector 418  FranciscoScenario.node[37].veinsmobility  posx  ETV
+vector 419  FranciscoScenario.node[37].veinsmobility  posy  ETV
+vector 429  FranciscoScenario.node[38].veinsmobility  posx  ETV
+vector 430  FranciscoScenario.node[38].veinsmobility  posy  ETV
+vector 440  FranciscoScenario.node[39].veinsmobility  posx  ETV
+vector 441  FranciscoScenario.node[39].veinsmobility  posy  ETV
+vector 451  FranciscoScenario.node[40].veinsmobility  posx  ETV
+vector 452  FranciscoScenario.node[40].veinsmobility  posy  ETV
+vector 462  FranciscoScenario.node[41].veinsmobility  posx  ETV
+vector 463  FranciscoScenario.node[41].veinsmobility  posy  ETV
+vector 473  FranciscoScenario.node[42].veinsmobility  posx  ETV
+vector 474  FranciscoScenario.node[42].veinsmobility  posy  ETV
+vector 484  FranciscoScenario.node[43].veinsmobility  posx  ETV
+vector 485  FranciscoScenario.node[43].veinsmobility  posy  ETV
+vector 495  FranciscoScenario.node[44].veinsmobility  posx  ETV
+vector 496  FranciscoScenario.node[44].veinsmobility  posy  ETV
+vector 506  FranciscoScenario.node[45].veinsmobility  posx  ETV
+vector 507  FranciscoScenario.node[45].veinsmobility  posy  ETV
+vector 517  FranciscoScenario.node[46].veinsmobility  posx  ETV
+vector 518  FranciscoScenario.node[46].veinsmobility  posy  ETV
+vector 528  FranciscoScenario.node[47].veinsmobility  posx  ETV
+vector 529  FranciscoScenario.node[47].veinsmobility  posy  ETV
+vector 539  FranciscoScenario.node[48].veinsmobility  posx  ETV
+vector 540  FranciscoScenario.node[48].veinsmobility  posy  ETV
+vector 550  FranciscoScenario.node[49].veinsmobility  posx  ETV
+vector 551  FranciscoScenario.node[49].veinsmobility  posy  ETV
+vector 561  FranciscoScenario.node[50].veinsmobility  posx  ETV
+vector 562  FranciscoScenario.node[50].veinsmobility  posy  ETV
+vector 572  FranciscoScenario.node[51].veinsmobility  posx  ETV
+vector 573  FranciscoScenario.node[51].veinsmobility  posy  ETV
+vector 583  FranciscoScenario.node[52].veinsmobility  posx  ETV
+vector 584  FranciscoScenario.node[52].veinsmobility  posy  ETV
+vector 594  FranciscoScenario.node[53].veinsmobility  posx  ETV
+vector 595  FranciscoScenario.node[53].veinsmobility  posy  ETV
+vector 24  FranciscoScenario.node[1].veinsmobility  speed  ETV
+vector 25  FranciscoScenario.node[1].veinsmobility  acceleration  ETV
+vector 26  FranciscoScenario.node[1].veinsmobility  co2emission  ETV
+vector 35  FranciscoScenario.node[2].veinsmobility  speed  ETV
+vector 46  FranciscoScenario.node[3].veinsmobility  speed  ETV
+vector 57  FranciscoScenario.node[4].veinsmobility  speed  ETV
+vector 68  FranciscoScenario.node[5].veinsmobility  speed  ETV
+vector 79  FranciscoScenario.node[6].veinsmobility  speed  ETV
+vector 90  FranciscoScenario.node[7].veinsmobility  speed  ETV
+vector 101  FranciscoScenario.node[8].veinsmobility  speed  ETV
+vector 112  FranciscoScenario.node[9].veinsmobility  speed  ETV
+vector 123  FranciscoScenario.node[10].veinsmobility  speed  ETV
+vector 134  FranciscoScenario.node[11].veinsmobility  speed  ETV
+vector 145  FranciscoScenario.node[12].veinsmobility  speed  ETV
+vector 156  FranciscoScenario.node[13].veinsmobility  speed  ETV
+vector 167  FranciscoScenario.node[14].veinsmobility  speed  ETV
+vector 178  FranciscoScenario.node[15].veinsmobility  speed  ETV
+vector 189  FranciscoScenario.node[16].veinsmobility  speed  ETV
+vector 200  FranciscoScenario.node[17].veinsmobility  speed  ETV
+vector 211  FranciscoScenario.node[18].veinsmobility  speed  ETV
+vector 222  FranciscoScenario.node[19].veinsmobility  speed  ETV
+vector 233  FranciscoScenario.node[20].veinsmobility  speed  ETV
+vector 244  FranciscoScenario.node[21].veinsmobility  speed  ETV
+vector 255  FranciscoScenario.node[22].veinsmobility  speed  ETV
+vector 266  FranciscoScenario.node[23].veinsmobility  speed  ETV
+vector 277  FranciscoScenario.node[24].veinsmobility  speed  ETV
+vector 288  FranciscoScenario.node[25].veinsmobility  speed  ETV
+vector 299  FranciscoScenario.node[26].veinsmobility  speed  ETV
+vector 310  FranciscoScenario.node[27].veinsmobility  speed  ETV
+vector 321  FranciscoScenario.node[28].veinsmobility  speed  ETV
+vector 332  FranciscoScenario.node[29].veinsmobility  speed  ETV
+vector 343  FranciscoScenario.node[30].veinsmobility  speed  ETV
+vector 354  FranciscoScenario.node[31].veinsmobility  speed  ETV
+vector 365  FranciscoScenario.node[32].veinsmobility  speed  ETV
+vector 376  FranciscoScenario.node[33].veinsmobility  speed  ETV
+vector 387  FranciscoScenario.node[34].veinsmobility  speed  ETV
+vector 398  FranciscoScenario.node[35].veinsmobility  speed  ETV
+vector 409  FranciscoScenario.node[36].veinsmobility  speed  ETV
+vector 420  FranciscoScenario.node[37].veinsmobility  speed  ETV
+vector 431  FranciscoScenario.node[38].veinsmobility  speed  ETV
+vector 442  FranciscoScenario.node[39].veinsmobility  speed  ETV
+vector 453  FranciscoScenario.node[40].veinsmobility  speed  ETV
+vector 464  FranciscoScenario.node[41].veinsmobility  speed  ETV
+vector 475  FranciscoScenario.node[42].veinsmobility  speed  ETV
+vector 486  FranciscoScenario.node[43].veinsmobility  speed  ETV
+vector 497  FranciscoScenario.node[44].veinsmobility  speed  ETV
+vector 508  FranciscoScenario.node[45].veinsmobility  speed  ETV
+vector 519  FranciscoScenario.node[46].veinsmobility  speed  ETV
+vector 530  FranciscoScenario.node[47].veinsmobility  speed  ETV
+vector 541  FranciscoScenario.node[48].veinsmobility  speed  ETV
+vector 552  FranciscoScenario.node[49].veinsmobility  speed  ETV
+vector 563  FranciscoScenario.node[50].veinsmobility  speed  ETV
+vector 574  FranciscoScenario.node[51].veinsmobility  speed  ETV
+vector 585  FranciscoScenario.node[52].veinsmobility  speed  ETV
+vector 596  FranciscoScenario.node[53].veinsmobility  speed  ETV
+vector 36  FranciscoScenario.node[2].veinsmobility  acceleration  ETV
+vector 37  FranciscoScenario.node[2].veinsmobility  co2emission  ETV
+vector 47  FranciscoScenario.node[3].veinsmobility  acceleration  ETV
+vector 48  FranciscoScenario.node[3].veinsmobility  co2emission  ETV
+vector 58  FranciscoScenario.node[4].veinsmobility  acceleration  ETV
+vector 59  FranciscoScenario.node[4].veinsmobility  co2emission  ETV
+vector 69  FranciscoScenario.node[5].veinsmobility  acceleration  ETV
+vector 70  FranciscoScenario.node[5].veinsmobility  co2emission  ETV
+vector 80  FranciscoScenario.node[6].veinsmobility  acceleration  ETV
+vector 81  FranciscoScenario.node[6].veinsmobility  co2emission  ETV
+vector 91  FranciscoScenario.node[7].veinsmobility  acceleration  ETV
+vector 92  FranciscoScenario.node[7].veinsmobility  co2emission  ETV
+vector 102  FranciscoScenario.node[8].veinsmobility  acceleration  ETV
+vector 103  FranciscoScenario.node[8].veinsmobility  co2emission  ETV
+vector 113  FranciscoScenario.node[9].veinsmobility  acceleration  ETV
+vector 114  FranciscoScenario.node[9].veinsmobility  co2emission  ETV
+vector 124  FranciscoScenario.node[10].veinsmobility  acceleration  ETV
+vector 125  FranciscoScenario.node[10].veinsmobility  co2emission  ETV
+vector 135  FranciscoScenario.node[11].veinsmobility  acceleration  ETV
+vector 136  FranciscoScenario.node[11].veinsmobility  co2emission  ETV
+vector 146  FranciscoScenario.node[12].veinsmobility  acceleration  ETV
+vector 147  FranciscoScenario.node[12].veinsmobility  co2emission  ETV
+vector 157  FranciscoScenario.node[13].veinsmobility  acceleration  ETV
+vector 158  FranciscoScenario.node[13].veinsmobility  co2emission  ETV
+vector 168  FranciscoScenario.node[14].veinsmobility  acceleration  ETV
+vector 169  FranciscoScenario.node[14].veinsmobility  co2emission  ETV
+vector 179  FranciscoScenario.node[15].veinsmobility  acceleration  ETV
+vector 180  FranciscoScenario.node[15].veinsmobility  co2emission  ETV
+vector 190  FranciscoScenario.node[16].veinsmobility  acceleration  ETV
+vector 191  FranciscoScenario.node[16].veinsmobility  co2emission  ETV
+vector 201  FranciscoScenario.node[17].veinsmobility  acceleration  ETV
+vector 202  FranciscoScenario.node[17].veinsmobility  co2emission  ETV
+vector 212  FranciscoScenario.node[18].veinsmobility  acceleration  ETV
+vector 213  FranciscoScenario.node[18].veinsmobility  co2emission  ETV
+vector 223  FranciscoScenario.node[19].veinsmobility  acceleration  ETV
+vector 224  FranciscoScenario.node[19].veinsmobility  co2emission  ETV
+vector 234  FranciscoScenario.node[20].veinsmobility  acceleration  ETV
+vector 235  FranciscoScenario.node[20].veinsmobility  co2emission  ETV
+vector 245  FranciscoScenario.node[21].veinsmobility  acceleration  ETV
+vector 246  FranciscoScenario.node[21].veinsmobility  co2emission  ETV
+vector 256  FranciscoScenario.node[22].veinsmobility  acceleration  ETV
+vector 257  FranciscoScenario.node[22].veinsmobility  co2emission  ETV
+vector 267  FranciscoScenario.node[23].veinsmobility  acceleration  ETV
+vector 268  FranciscoScenario.node[23].veinsmobility  co2emission  ETV
+vector 278  FranciscoScenario.node[24].veinsmobility  acceleration  ETV
+vector 279  FranciscoScenario.node[24].veinsmobility  co2emission  ETV
+vector 289  FranciscoScenario.node[25].veinsmobility  acceleration  ETV
+vector 290  FranciscoScenario.node[25].veinsmobility  co2emission  ETV
+vector 300  FranciscoScenario.node[26].veinsmobility  acceleration  ETV
+vector 301  FranciscoScenario.node[26].veinsmobility  co2emission  ETV
+vector 311  FranciscoScenario.node[27].veinsmobility  acceleration  ETV
+vector 312  FranciscoScenario.node[27].veinsmobility  co2emission  ETV
+vector 322  FranciscoScenario.node[28].veinsmobility  acceleration  ETV
+vector 323  FranciscoScenario.node[28].veinsmobility  co2emission  ETV
+vector 333  FranciscoScenario.node[29].veinsmobility  acceleration  ETV
+vector 334  FranciscoScenario.node[29].veinsmobility  co2emission  ETV
+vector 344  FranciscoScenario.node[30].veinsmobility  acceleration  ETV
+vector 345  FranciscoScenario.node[30].veinsmobility  co2emission  ETV
+vector 355  FranciscoScenario.node[31].veinsmobility  acceleration  ETV
+vector 356  FranciscoScenario.node[31].veinsmobility  co2emission  ETV
+vector 366  FranciscoScenario.node[32].veinsmobility  acceleration  ETV
+vector 367  FranciscoScenario.node[32].veinsmobility  co2emission  ETV
+vector 377  FranciscoScenario.node[33].veinsmobility  acceleration  ETV
+vector 378  FranciscoScenario.node[33].veinsmobility  co2emission  ETV
+vector 388  FranciscoScenario.node[34].veinsmobility  acceleration  ETV
+vector 389  FranciscoScenario.node[34].veinsmobility  co2emission  ETV
+vector 399  FranciscoScenario.node[35].veinsmobility  acceleration  ETV
+vector 400  FranciscoScenario.node[35].veinsmobility  co2emission  ETV
+vector 410  FranciscoScenario.node[36].veinsmobility  acceleration  ETV
+vector 411  FranciscoScenario.node[36].veinsmobility  co2emission  ETV
+vector 421  FranciscoScenario.node[37].veinsmobility  acceleration  ETV
+vector 422  FranciscoScenario.node[37].veinsmobility  co2emission  ETV
+vector 432  FranciscoScenario.node[38].veinsmobility  acceleration  ETV
+vector 433  FranciscoScenario.node[38].veinsmobility  co2emission  ETV
+vector 443  FranciscoScenario.node[39].veinsmobility  acceleration  ETV
+vector 444  FranciscoScenario.node[39].veinsmobility  co2emission  ETV
+vector 454  FranciscoScenario.node[40].veinsmobility  acceleration  ETV
+vector 455  FranciscoScenario.node[40].veinsmobility  co2emission  ETV
+vector 465  FranciscoScenario.node[41].veinsmobility  acceleration  ETV
+vector 466  FranciscoScenario.node[41].veinsmobility  co2emission  ETV
+vector 476  FranciscoScenario.node[42].veinsmobility  acceleration  ETV
+vector 477  FranciscoScenario.node[42].veinsmobility  co2emission  ETV
+vector 487  FranciscoScenario.node[43].veinsmobility  acceleration  ETV
+vector 488  FranciscoScenario.node[43].veinsmobility  co2emission  ETV
+vector 498  FranciscoScenario.node[44].veinsmobility  acceleration  ETV
+vector 499  FranciscoScenario.node[44].veinsmobility  co2emission  ETV
+vector 509  FranciscoScenario.node[45].veinsmobility  acceleration  ETV
+vector 510  FranciscoScenario.node[45].veinsmobility  co2emission  ETV
+vector 520  FranciscoScenario.node[46].veinsmobility  acceleration  ETV
+vector 521  FranciscoScenario.node[46].veinsmobility  co2emission  ETV
+vector 531  FranciscoScenario.node[47].veinsmobility  acceleration  ETV
+vector 532  FranciscoScenario.node[47].veinsmobility  co2emission  ETV
+vector 542  FranciscoScenario.node[48].veinsmobility  acceleration  ETV
+vector 543  FranciscoScenario.node[48].veinsmobility  co2emission  ETV
+vector 553  FranciscoScenario.node[49].veinsmobility  acceleration  ETV
+vector 554  FranciscoScenario.node[49].veinsmobility  co2emission  ETV
+vector 564  FranciscoScenario.node[50].veinsmobility  acceleration  ETV
+vector 565  FranciscoScenario.node[50].veinsmobility  co2emission  ETV
+vector 575  FranciscoScenario.node[51].veinsmobility  acceleration  ETV
+vector 576  FranciscoScenario.node[51].veinsmobility  co2emission  ETV
+vector 586  FranciscoScenario.node[52].veinsmobility  acceleration  ETV
+vector 587  FranciscoScenario.node[52].veinsmobility  co2emission  ETV
+vector 597  FranciscoScenario.node[53].veinsmobility  acceleration  ETV
+vector 598  FranciscoScenario.node[53].veinsmobility  co2emission  ETV
+vector 605  FranciscoScenario.node[54].veinsmobility  posx  ETV
+vector 606  FranciscoScenario.node[54].veinsmobility  posy  ETV
+vector 607  FranciscoScenario.node[54].veinsmobility  speed  ETV
+vector 608  FranciscoScenario.node[54].veinsmobility  acceleration  ETV
+vector 609  FranciscoScenario.node[54].veinsmobility  co2emission  ETV
+vector 616  FranciscoScenario.node[55].veinsmobility  posx  ETV
+vector 617  FranciscoScenario.node[55].veinsmobility  posy  ETV
+vector 627  FranciscoScenario.node[56].veinsmobility  posx  ETV
+vector 628  FranciscoScenario.node[56].veinsmobility  posy  ETV
+vector 638  FranciscoScenario.node[57].veinsmobility  posx  ETV
+vector 639  FranciscoScenario.node[57].veinsmobility  posy  ETV
+vector 649  FranciscoScenario.node[58].veinsmobility  posx  ETV
+vector 650  FranciscoScenario.node[58].veinsmobility  posy  ETV
+vector 660  FranciscoScenario.node[59].veinsmobility  posx  ETV
+vector 661  FranciscoScenario.node[59].veinsmobility  posy  ETV
+vector 671  FranciscoScenario.node[60].veinsmobility  posx  ETV
+vector 672  FranciscoScenario.node[60].veinsmobility  posy  ETV
+vector 682  FranciscoScenario.node[61].veinsmobility  posx  ETV
+vector 683  FranciscoScenario.node[61].veinsmobility  posy  ETV
+vector 693  FranciscoScenario.node[62].veinsmobility  posx  ETV
+vector 694  FranciscoScenario.node[62].veinsmobility  posy  ETV
+vector 704  FranciscoScenario.node[63].veinsmobility  posx  ETV
+vector 705  FranciscoScenario.node[63].veinsmobility  posy  ETV
+vector 715  FranciscoScenario.node[64].veinsmobility  posx  ETV
+vector 716  FranciscoScenario.node[64].veinsmobility  posy  ETV
+vector 618  FranciscoScenario.node[55].veinsmobility  speed  ETV
+vector 619  FranciscoScenario.node[55].veinsmobility  acceleration  ETV
+vector 620  FranciscoScenario.node[55].veinsmobility  co2emission  ETV
+vector 629  FranciscoScenario.node[56].veinsmobility  speed  ETV
+vector 640  FranciscoScenario.node[57].veinsmobility  speed  ETV
+vector 651  FranciscoScenario.node[58].veinsmobility  speed  ETV
+vector 662  FranciscoScenario.node[59].veinsmobility  speed  ETV
+vector 673  FranciscoScenario.node[60].veinsmobility  speed  ETV
+vector 684  FranciscoScenario.node[61].veinsmobility  speed  ETV
+vector 695  FranciscoScenario.node[62].veinsmobility  speed  ETV
+vector 706  FranciscoScenario.node[63].veinsmobility  speed  ETV
+vector 717  FranciscoScenario.node[64].veinsmobility  speed  ETV
+vector 726  FranciscoScenario.node[65].veinsmobility  posx  ETV
+vector 727  FranciscoScenario.node[65].veinsmobility  posy  ETV
+vector 737  FranciscoScenario.node[66].veinsmobility  posx  ETV
+vector 738  FranciscoScenario.node[66].veinsmobility  posy  ETV
+vector 630  FranciscoScenario.node[56].veinsmobility  acceleration  ETV
+vector 631  FranciscoScenario.node[56].veinsmobility  co2emission  ETV
+vector 641  FranciscoScenario.node[57].veinsmobility  acceleration  ETV
+vector 642  FranciscoScenario.node[57].veinsmobility  co2emission  ETV
+vector 652  FranciscoScenario.node[58].veinsmobility  acceleration  ETV
+vector 653  FranciscoScenario.node[58].veinsmobility  co2emission  ETV
+vector 663  FranciscoScenario.node[59].veinsmobility  acceleration  ETV
+vector 664  FranciscoScenario.node[59].veinsmobility  co2emission  ETV
+vector 674  FranciscoScenario.node[60].veinsmobility  acceleration  ETV
+vector 675  FranciscoScenario.node[60].veinsmobility  co2emission  ETV
+vector 685  FranciscoScenario.node[61].veinsmobility  acceleration  ETV
+vector 686  FranciscoScenario.node[61].veinsmobility  co2emission  ETV
+vector 696  FranciscoScenario.node[62].veinsmobility  acceleration  ETV
+vector 697  FranciscoScenario.node[62].veinsmobility  co2emission  ETV
+vector 707  FranciscoScenario.node[63].veinsmobility  acceleration  ETV
+vector 708  FranciscoScenario.node[63].veinsmobility  co2emission  ETV
+vector 718  FranciscoScenario.node[64].veinsmobility  acceleration  ETV
+vector 719  FranciscoScenario.node[64].veinsmobility  co2emission  ETV
+vector 728  FranciscoScenario.node[65].veinsmobility  speed  ETV
+vector 739  FranciscoScenario.node[66].veinsmobility  speed  ETV
+vector 729  FranciscoScenario.node[65].veinsmobility  acceleration  ETV
+vector 730  FranciscoScenario.node[65].veinsmobility  co2emission  ETV
+vector 740  FranciscoScenario.node[66].veinsmobility  acceleration  ETV
+vector 741  FranciscoScenario.node[66].veinsmobility  co2emission  ETV
+vector 748  FranciscoScenario.node[67].veinsmobility  posx  ETV
+vector 749  FranciscoScenario.node[67].veinsmobility  posy  ETV
+vector 750  FranciscoScenario.node[67].veinsmobility  speed  ETV
+vector 751  FranciscoScenario.node[67].veinsmobility  acceleration  ETV
+vector 752  FranciscoScenario.node[67].veinsmobility  co2emission  ETV
+vector 759  FranciscoScenario.node[68].veinsmobility  posx  ETV
+vector 760  FranciscoScenario.node[68].veinsmobility  posy  ETV
+vector 761  FranciscoScenario.node[68].veinsmobility  speed  ETV
+vector 762  FranciscoScenario.node[68].veinsmobility  acceleration  ETV
+vector 763  FranciscoScenario.node[68].veinsmobility  co2emission  ETV
+vector 770  FranciscoScenario.node[69].veinsmobility  posx  ETV
+vector 771  FranciscoScenario.node[69].veinsmobility  posy  ETV
+vector 772  FranciscoScenario.node[69].veinsmobility  speed  ETV
+vector 773  FranciscoScenario.node[69].veinsmobility  acceleration  ETV
+vector 774  FranciscoScenario.node[69].veinsmobility  co2emission  ETV
+vector 781  FranciscoScenario.node[70].veinsmobility  posx  ETV
+vector 782  FranciscoScenario.node[70].veinsmobility  posy  ETV
+vector 792  FranciscoScenario.node[71].veinsmobility  posx  ETV
+vector 793  FranciscoScenario.node[71].veinsmobility  posy  ETV
+vector 783  FranciscoScenario.node[70].veinsmobility  speed  ETV
+vector 784  FranciscoScenario.node[70].veinsmobility  acceleration  ETV
+vector 785  FranciscoScenario.node[70].veinsmobility  co2emission  ETV
+vector 794  FranciscoScenario.node[71].veinsmobility  speed  ETV
+vector 795  FranciscoScenario.node[71].veinsmobility  acceleration  ETV
+vector 796  FranciscoScenario.node[71].veinsmobility  co2emission  ETV
+vector 803  FranciscoScenario.node[72].veinsmobility  posx  ETV
+vector 804  FranciscoScenario.node[72].veinsmobility  posy  ETV
+vector 805  FranciscoScenario.node[72].veinsmobility  speed  ETV
+vector 806  FranciscoScenario.node[72].veinsmobility  acceleration  ETV
+vector 807  FranciscoScenario.node[72].veinsmobility  co2emission  ETV
+vector 814  FranciscoScenario.node[73].veinsmobility  posx  ETV
+vector 815  FranciscoScenario.node[73].veinsmobility  posy  ETV
+vector 816  FranciscoScenario.node[73].veinsmobility  speed  ETV
+vector 817  FranciscoScenario.node[73].veinsmobility  acceleration  ETV
+vector 818  FranciscoScenario.node[73].veinsmobility  co2emission  ETV
+vector 825  FranciscoScenario.node[74].veinsmobility  posx  ETV
+vector 826  FranciscoScenario.node[74].veinsmobility  posy  ETV
+vector 827  FranciscoScenario.node[74].veinsmobility  speed  ETV
+vector 828  FranciscoScenario.node[74].veinsmobility  acceleration  ETV
+vector 829  FranciscoScenario.node[74].veinsmobility  co2emission  ETV
+vector 836  FranciscoScenario.node[75].veinsmobility  posx  ETV
+vector 837  FranciscoScenario.node[75].veinsmobility  posy  ETV
+vector 838  FranciscoScenario.node[75].veinsmobility  speed  ETV
+vector 839  FranciscoScenario.node[75].veinsmobility  acceleration  ETV
+vector 840  FranciscoScenario.node[75].veinsmobility  co2emission  ETV
+vector 847  FranciscoScenario.node[76].veinsmobility  posx  ETV
+vector 848  FranciscoScenario.node[76].veinsmobility  posy  ETV
+vector 849  FranciscoScenario.node[76].veinsmobility  speed  ETV
+vector 850  FranciscoScenario.node[76].veinsmobility  acceleration  ETV
+vector 851  FranciscoScenario.node[76].veinsmobility  co2emission  ETV
+vector 858  FranciscoScenario.node[77].veinsmobility  posx  ETV
+vector 859  FranciscoScenario.node[77].veinsmobility  posy  ETV
+vector 860  FranciscoScenario.node[77].veinsmobility  speed  ETV
+vector 861  FranciscoScenario.node[77].veinsmobility  acceleration  ETV
+vector 862  FranciscoScenario.node[77].veinsmobility  co2emission  ETV
+vector 869  FranciscoScenario.node[78].veinsmobility  posx  ETV
+vector 870  FranciscoScenario.node[78].veinsmobility  posy  ETV
+vector 871  FranciscoScenario.node[78].veinsmobility  speed  ETV
+vector 872  FranciscoScenario.node[78].veinsmobility  acceleration  ETV
+vector 873  FranciscoScenario.node[78].veinsmobility  co2emission  ETV
+vector 880  FranciscoScenario.node[79].veinsmobility  posx  ETV
+vector 881  FranciscoScenario.node[79].veinsmobility  posy  ETV
+vector 882  FranciscoScenario.node[79].veinsmobility  speed  ETV
+vector 883  FranciscoScenario.node[79].veinsmobility  acceleration  ETV
+vector 884  FranciscoScenario.node[79].veinsmobility  co2emission  ETV
+vector 891  FranciscoScenario.node[80].veinsmobility  posx  ETV
+vector 892  FranciscoScenario.node[80].veinsmobility  posy  ETV
+vector 2  FranciscoScenario.stats  allNewWarningsReceivedSignal:vector  ETV
 attr description  "All New Warnings Received"
-vector 771  FranciscoScenario.node[69].veinsmobility  speed  ETV
-vector 466  FranciscoScenario.node[42].appl  warningReceivedSignal:vector  ETV
+vector 893  FranciscoScenario.node[80].veinsmobility  speed  ETV
+vector 544  FranciscoScenario.node[49].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 468  FranciscoScenario.node[42].appl  messageReceivedSignal:vector  ETV
+vector 546  FranciscoScenario.node[49].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 2  FranciscoScenario.stats  allWarningsReceivedSignal:vector  ETV
+vector 3  FranciscoScenario.stats  allWarningsReceivedSignal:vector  ETV
 attr description  "All Warnings Received"
-vector 3  FranciscoScenario.stats  allMessagesReceivedSignal:vector  ETV
+vector 4  FranciscoScenario.stats  allMessagesReceivedSignal:vector  ETV
 attr description  "All Messages Received"
-vector 469  FranciscoScenario.node[42].appl  newWarningReceivedSignal:vector  ETV
+vector 547  FranciscoScenario.node[49].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 235  FranciscoScenario.node[21].appl  warningReceivedSignal:vector  ETV
+vector 49  FranciscoScenario.node[4].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 237  FranciscoScenario.node[21].appl  messageReceivedSignal:vector  ETV
+vector 51  FranciscoScenario.node[4].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 238  FranciscoScenario.node[21].appl  newWarningReceivedSignal:vector  ETV
+vector 52  FranciscoScenario.node[4].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 664  FranciscoScenario.node[60].appl  warningReceivedSignal:vector  ETV
+vector 786  FranciscoScenario.node[71].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 666  FranciscoScenario.node[60].appl  messageReceivedSignal:vector  ETV
+vector 788  FranciscoScenario.node[71].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 667  FranciscoScenario.node[60].appl  newWarningReceivedSignal:vector  ETV
+vector 789  FranciscoScenario.node[71].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 741  FranciscoScenario.node[67].appl  warningReceivedSignal:vector  ETV
+vector 159  FranciscoScenario.node[14].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 743  FranciscoScenario.node[67].appl  messageReceivedSignal:vector  ETV
+vector 161  FranciscoScenario.node[14].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 744  FranciscoScenario.node[67].appl  newWarningReceivedSignal:vector  ETV
+vector 162  FranciscoScenario.node[14].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 158  FranciscoScenario.node[14].appl  warningReceivedSignal:vector  ETV
+vector 489  FranciscoScenario.node[44].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 160  FranciscoScenario.node[14].appl  messageReceivedSignal:vector  ETV
+vector 491  FranciscoScenario.node[44].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 161  FranciscoScenario.node[14].appl  newWarningReceivedSignal:vector  ETV
+vector 492  FranciscoScenario.node[44].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 510  FranciscoScenario.node[46].appl  warningReceivedSignal:vector  ETV
+vector 236  FranciscoScenario.node[21].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 512  FranciscoScenario.node[46].appl  messageReceivedSignal:vector  ETV
+vector 238  FranciscoScenario.node[21].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 513  FranciscoScenario.node[46].appl  newWarningReceivedSignal:vector  ETV
+vector 239  FranciscoScenario.node[21].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 81  FranciscoScenario.node[7].appl  warningReceivedSignal:vector  ETV
+vector 610  FranciscoScenario.node[55].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 83  FranciscoScenario.node[7].appl  messageReceivedSignal:vector  ETV
+vector 612  FranciscoScenario.node[55].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 84  FranciscoScenario.node[7].appl  newWarningReceivedSignal:vector  ETV
+vector 613  FranciscoScenario.node[55].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 169  FranciscoScenario.node[15].appl  warningReceivedSignal:vector  ETV
+vector 38  FranciscoScenario.node[3].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 171  FranciscoScenario.node[15].appl  messageReceivedSignal:vector  ETV
+vector 40  FranciscoScenario.node[3].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 172  FranciscoScenario.node[15].appl  newWarningReceivedSignal:vector  ETV
+vector 41  FranciscoScenario.node[3].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 312  FranciscoScenario.node[28].appl  warningReceivedSignal:vector  ETV
+vector 478  FranciscoScenario.node[43].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 314  FranciscoScenario.node[28].appl  messageReceivedSignal:vector  ETV
+vector 480  FranciscoScenario.node[43].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 315  FranciscoScenario.node[28].appl  newWarningReceivedSignal:vector  ETV
+vector 481  FranciscoScenario.node[43].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 675  FranciscoScenario.node[61].appl  warningReceivedSignal:vector  ETV
+vector 302  FranciscoScenario.node[27].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 677  FranciscoScenario.node[61].appl  messageReceivedSignal:vector  ETV
+vector 304  FranciscoScenario.node[27].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 678  FranciscoScenario.node[61].appl  newWarningReceivedSignal:vector  ETV
+vector 305  FranciscoScenario.node[27].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 136  FranciscoScenario.node[12].appl  warningReceivedSignal:vector  ETV
+vector 676  FranciscoScenario.node[61].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 138  FranciscoScenario.node[12].appl  messageReceivedSignal:vector  ETV
+vector 678  FranciscoScenario.node[61].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 139  FranciscoScenario.node[12].appl  newWarningReceivedSignal:vector  ETV
+vector 679  FranciscoScenario.node[61].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 147  FranciscoScenario.node[13].appl  warningReceivedSignal:vector  ETV
+vector 456  FranciscoScenario.node[41].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 149  FranciscoScenario.node[13].appl  messageReceivedSignal:vector  ETV
+vector 458  FranciscoScenario.node[41].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 150  FranciscoScenario.node[13].appl  newWarningReceivedSignal:vector  ETV
+vector 459  FranciscoScenario.node[41].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 499  FranciscoScenario.node[45].appl  warningReceivedSignal:vector  ETV
+vector 731  FranciscoScenario.node[66].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 501  FranciscoScenario.node[45].appl  messageReceivedSignal:vector  ETV
+vector 733  FranciscoScenario.node[66].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 502  FranciscoScenario.node[45].appl  newWarningReceivedSignal:vector  ETV
+vector 734  FranciscoScenario.node[66].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 642  FranciscoScenario.node[58].appl  warningReceivedSignal:vector  ETV
+vector 775  FranciscoScenario.node[70].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 644  FranciscoScenario.node[58].appl  messageReceivedSignal:vector  ETV
+vector 777  FranciscoScenario.node[70].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 645  FranciscoScenario.node[58].appl  newWarningReceivedSignal:vector  ETV
+vector 778  FranciscoScenario.node[70].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 378  FranciscoScenario.node[34].appl  warningReceivedSignal:vector  ETV
+vector 181  FranciscoScenario.node[16].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 380  FranciscoScenario.node[34].appl  messageReceivedSignal:vector  ETV
+vector 183  FranciscoScenario.node[16].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 381  FranciscoScenario.node[34].appl  newWarningReceivedSignal:vector  ETV
+vector 184  FranciscoScenario.node[16].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 477  FranciscoScenario.node[43].appl  warningReceivedSignal:vector  ETV
+vector 533  FranciscoScenario.node[48].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 479  FranciscoScenario.node[43].appl  messageReceivedSignal:vector  ETV
+vector 535  FranciscoScenario.node[48].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 480  FranciscoScenario.node[43].appl  newWarningReceivedSignal:vector  ETV
+vector 536  FranciscoScenario.node[48].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 576  FranciscoScenario.node[52].appl  warningReceivedSignal:vector  ETV
+vector 709  FranciscoScenario.node[64].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 578  FranciscoScenario.node[52].appl  messageReceivedSignal:vector  ETV
+vector 711  FranciscoScenario.node[64].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 579  FranciscoScenario.node[52].appl  newWarningReceivedSignal:vector  ETV
+vector 712  FranciscoScenario.node[64].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 422  FranciscoScenario.node[38].appl  warningReceivedSignal:vector  ETV
+vector 324  FranciscoScenario.node[29].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 424  FranciscoScenario.node[38].appl  messageReceivedSignal:vector  ETV
+vector 326  FranciscoScenario.node[29].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 425  FranciscoScenario.node[38].appl  newWarningReceivedSignal:vector  ETV
+vector 327  FranciscoScenario.node[29].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 609  FranciscoScenario.node[55].appl  warningReceivedSignal:vector  ETV
+vector 214  FranciscoScenario.node[19].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 611  FranciscoScenario.node[55].appl  messageReceivedSignal:vector  ETV
+vector 216  FranciscoScenario.node[19].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 612  FranciscoScenario.node[55].appl  newWarningReceivedSignal:vector  ETV
+vector 217  FranciscoScenario.node[19].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 70  FranciscoScenario.node[6].appl  warningReceivedSignal:vector  ETV
+vector 720  FranciscoScenario.node[65].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 72  FranciscoScenario.node[6].appl  messageReceivedSignal:vector  ETV
+vector 722  FranciscoScenario.node[65].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 73  FranciscoScenario.node[6].appl  newWarningReceivedSignal:vector  ETV
+vector 723  FranciscoScenario.node[65].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 301  FranciscoScenario.node[27].appl  warningReceivedSignal:vector  ETV
+vector 115  FranciscoScenario.node[10].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 303  FranciscoScenario.node[27].appl  messageReceivedSignal:vector  ETV
+vector 117  FranciscoScenario.node[10].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 304  FranciscoScenario.node[27].appl  newWarningReceivedSignal:vector  ETV
+vector 118  FranciscoScenario.node[10].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 400  FranciscoScenario.node[36].appl  warningReceivedSignal:vector  ETV
+vector 434  FranciscoScenario.node[39].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 402  FranciscoScenario.node[36].appl  messageReceivedSignal:vector  ETV
+vector 436  FranciscoScenario.node[39].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 403  FranciscoScenario.node[36].appl  newWarningReceivedSignal:vector  ETV
+vector 437  FranciscoScenario.node[39].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 521  FranciscoScenario.node[47].appl  warningReceivedSignal:vector  ETV
+vector 819  FranciscoScenario.node[74].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 523  FranciscoScenario.node[47].appl  messageReceivedSignal:vector  ETV
+vector 821  FranciscoScenario.node[74].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 524  FranciscoScenario.node[47].appl  newWarningReceivedSignal:vector  ETV
+vector 822  FranciscoScenario.node[74].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 620  FranciscoScenario.node[56].appl  warningReceivedSignal:vector  ETV
+vector 16  FranciscoScenario.node[1].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 622  FranciscoScenario.node[56].appl  messageReceivedSignal:vector  ETV
+vector 18  FranciscoScenario.node[1].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 623  FranciscoScenario.node[56].appl  newWarningReceivedSignal:vector  ETV
+vector 19  FranciscoScenario.node[1].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 323  FranciscoScenario.node[29].appl  warningReceivedSignal:vector  ETV
+vector 401  FranciscoScenario.node[36].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 325  FranciscoScenario.node[29].appl  messageReceivedSignal:vector  ETV
+vector 403  FranciscoScenario.node[36].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 326  FranciscoScenario.node[29].appl  newWarningReceivedSignal:vector  ETV
+vector 404  FranciscoScenario.node[36].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 345  FranciscoScenario.node[31].appl  warningReceivedSignal:vector  ETV
+vector 379  FranciscoScenario.node[34].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 347  FranciscoScenario.node[31].appl  messageReceivedSignal:vector  ETV
+vector 381  FranciscoScenario.node[34].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 348  FranciscoScenario.node[31].appl  newWarningReceivedSignal:vector  ETV
+vector 382  FranciscoScenario.node[34].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 125  FranciscoScenario.node[11].appl  warningReceivedSignal:vector  ETV
+vector 5  FranciscoScenario.node[0].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 127  FranciscoScenario.node[11].appl  messageReceivedSignal:vector  ETV
+vector 7  FranciscoScenario.node[0].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 128  FranciscoScenario.node[11].appl  newWarningReceivedSignal:vector  ETV
+vector 8  FranciscoScenario.node[0].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 565  FranciscoScenario.node[51].appl  warningReceivedSignal:vector  ETV
+vector 27  FranciscoScenario.node[2].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 567  FranciscoScenario.node[51].appl  messageReceivedSignal:vector  ETV
+vector 29  FranciscoScenario.node[2].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 568  FranciscoScenario.node[51].appl  newWarningReceivedSignal:vector  ETV
+vector 30  FranciscoScenario.node[2].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 180  FranciscoScenario.node[16].appl  warningReceivedSignal:vector  ETV
+vector 423  FranciscoScenario.node[38].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 182  FranciscoScenario.node[16].appl  messageReceivedSignal:vector  ETV
+vector 425  FranciscoScenario.node[38].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 183  FranciscoScenario.node[16].appl  newWarningReceivedSignal:vector  ETV
+vector 426  FranciscoScenario.node[38].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 202  FranciscoScenario.node[18].appl  warningReceivedSignal:vector  ETV
+vector 346  FranciscoScenario.node[31].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 204  FranciscoScenario.node[18].appl  messageReceivedSignal:vector  ETV
+vector 348  FranciscoScenario.node[31].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 205  FranciscoScenario.node[18].appl  newWarningReceivedSignal:vector  ETV
+vector 349  FranciscoScenario.node[31].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 444  FranciscoScenario.node[40].appl  warningReceivedSignal:vector  ETV
+vector 830  FranciscoScenario.node[75].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 446  FranciscoScenario.node[40].appl  messageReceivedSignal:vector  ETV
+vector 832  FranciscoScenario.node[75].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 447  FranciscoScenario.node[40].appl  newWarningReceivedSignal:vector  ETV
+vector 833  FranciscoScenario.node[75].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 708  FranciscoScenario.node[64].appl  warningReceivedSignal:vector  ETV
+vector 412  FranciscoScenario.node[37].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 710  FranciscoScenario.node[64].appl  messageReceivedSignal:vector  ETV
+vector 414  FranciscoScenario.node[37].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 711  FranciscoScenario.node[64].appl  newWarningReceivedSignal:vector  ETV
+vector 415  FranciscoScenario.node[37].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 543  FranciscoScenario.node[49].appl  warningReceivedSignal:vector  ETV
+vector 170  FranciscoScenario.node[15].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 545  FranciscoScenario.node[49].appl  messageReceivedSignal:vector  ETV
+vector 172  FranciscoScenario.node[15].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 546  FranciscoScenario.node[49].appl  newWarningReceivedSignal:vector  ETV
+vector 173  FranciscoScenario.node[15].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 730  FranciscoScenario.node[66].appl  warningReceivedSignal:vector  ETV
+vector 137  FranciscoScenario.node[12].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 732  FranciscoScenario.node[66].appl  messageReceivedSignal:vector  ETV
+vector 139  FranciscoScenario.node[12].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 733  FranciscoScenario.node[66].appl  newWarningReceivedSignal:vector  ETV
+vector 140  FranciscoScenario.node[12].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 92  FranciscoScenario.node[8].appl  warningReceivedSignal:vector  ETV
+vector 577  FranciscoScenario.node[52].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 94  FranciscoScenario.node[8].appl  messageReceivedSignal:vector  ETV
+vector 579  FranciscoScenario.node[52].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 95  FranciscoScenario.node[8].appl  newWarningReceivedSignal:vector  ETV
+vector 580  FranciscoScenario.node[52].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 246  FranciscoScenario.node[22].appl  warningReceivedSignal:vector  ETV
+vector 148  FranciscoScenario.node[13].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 248  FranciscoScenario.node[22].appl  messageReceivedSignal:vector  ETV
+vector 150  FranciscoScenario.node[13].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 249  FranciscoScenario.node[22].appl  newWarningReceivedSignal:vector  ETV
+vector 151  FranciscoScenario.node[13].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 114  FranciscoScenario.node[10].appl  warningReceivedSignal:vector  ETV
+vector 82  FranciscoScenario.node[7].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 116  FranciscoScenario.node[10].appl  messageReceivedSignal:vector  ETV
+vector 84  FranciscoScenario.node[7].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 117  FranciscoScenario.node[10].appl  newWarningReceivedSignal:vector  ETV
+vector 85  FranciscoScenario.node[7].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 191  FranciscoScenario.node[17].appl  warningReceivedSignal:vector  ETV
+vector 841  FranciscoScenario.node[76].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 193  FranciscoScenario.node[17].appl  messageReceivedSignal:vector  ETV
+vector 843  FranciscoScenario.node[76].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 194  FranciscoScenario.node[17].appl  newWarningReceivedSignal:vector  ETV
+vector 844  FranciscoScenario.node[76].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 356  FranciscoScenario.node[32].appl  warningReceivedSignal:vector  ETV
+vector 357  FranciscoScenario.node[32].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 358  FranciscoScenario.node[32].appl  messageReceivedSignal:vector  ETV
+vector 359  FranciscoScenario.node[32].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 359  FranciscoScenario.node[32].appl  newWarningReceivedSignal:vector  ETV
+vector 360  FranciscoScenario.node[32].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 290  FranciscoScenario.node[26].appl  warningReceivedSignal:vector  ETV
+vector 225  FranciscoScenario.node[20].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 292  FranciscoScenario.node[26].appl  messageReceivedSignal:vector  ETV
+vector 227  FranciscoScenario.node[20].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 293  FranciscoScenario.node[26].appl  newWarningReceivedSignal:vector  ETV
+vector 228  FranciscoScenario.node[20].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 389  FranciscoScenario.node[35].appl  warningReceivedSignal:vector  ETV
+vector 874  FranciscoScenario.node[79].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 391  FranciscoScenario.node[35].appl  messageReceivedSignal:vector  ETV
+vector 876  FranciscoScenario.node[79].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 392  FranciscoScenario.node[35].appl  newWarningReceivedSignal:vector  ETV
+vector 877  FranciscoScenario.node[79].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 103  FranciscoScenario.node[9].appl  warningReceivedSignal:vector  ETV
+vector 291  FranciscoScenario.node[26].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 105  FranciscoScenario.node[9].appl  messageReceivedSignal:vector  ETV
+vector 293  FranciscoScenario.node[26].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 106  FranciscoScenario.node[9].appl  newWarningReceivedSignal:vector  ETV
+vector 294  FranciscoScenario.node[26].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 367  FranciscoScenario.node[33].appl  warningReceivedSignal:vector  ETV
+vector 665  FranciscoScenario.node[60].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 369  FranciscoScenario.node[33].appl  messageReceivedSignal:vector  ETV
+vector 667  FranciscoScenario.node[60].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 370  FranciscoScenario.node[33].appl  newWarningReceivedSignal:vector  ETV
+vector 668  FranciscoScenario.node[60].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 268  FranciscoScenario.node[24].appl  warningReceivedSignal:vector  ETV
+vector 258  FranciscoScenario.node[23].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 270  FranciscoScenario.node[24].appl  messageReceivedSignal:vector  ETV
+vector 260  FranciscoScenario.node[23].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 271  FranciscoScenario.node[24].appl  newWarningReceivedSignal:vector  ETV
+vector 261  FranciscoScenario.node[23].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 554  FranciscoScenario.node[50].appl  warningReceivedSignal:vector  ETV
+vector 280  FranciscoScenario.node[25].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 556  FranciscoScenario.node[50].appl  messageReceivedSignal:vector  ETV
+vector 282  FranciscoScenario.node[25].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 557  FranciscoScenario.node[50].appl  newWarningReceivedSignal:vector  ETV
+vector 283  FranciscoScenario.node[25].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 4  FranciscoScenario.node[0].appl  warningReceivedSignal:vector  ETV
+vector 335  FranciscoScenario.node[30].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 6  FranciscoScenario.node[0].appl  messageReceivedSignal:vector  ETV
+vector 337  FranciscoScenario.node[30].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 7  FranciscoScenario.node[0].appl  newWarningReceivedSignal:vector  ETV
+vector 338  FranciscoScenario.node[30].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 598  FranciscoScenario.node[54].appl  warningReceivedSignal:vector  ETV
+vector 764  FranciscoScenario.node[69].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 600  FranciscoScenario.node[54].appl  messageReceivedSignal:vector  ETV
+vector 766  FranciscoScenario.node[69].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 601  FranciscoScenario.node[54].appl  newWarningReceivedSignal:vector  ETV
+vector 767  FranciscoScenario.node[69].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 213  FranciscoScenario.node[19].appl  warningReceivedSignal:vector  ETV
+vector 632  FranciscoScenario.node[57].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 215  FranciscoScenario.node[19].appl  messageReceivedSignal:vector  ETV
+vector 634  FranciscoScenario.node[57].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 216  FranciscoScenario.node[19].appl  newWarningReceivedSignal:vector  ETV
+vector 635  FranciscoScenario.node[57].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 763  FranciscoScenario.node[69].appl  warningReceivedSignal:vector  ETV
+vector 126  FranciscoScenario.node[11].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 765  FranciscoScenario.node[69].appl  messageReceivedSignal:vector  ETV
+vector 128  FranciscoScenario.node[11].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 766  FranciscoScenario.node[69].appl  newWarningReceivedSignal:vector  ETV
+vector 129  FranciscoScenario.node[11].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 532  FranciscoScenario.node[48].appl  warningReceivedSignal:vector  ETV
+vector 192  FranciscoScenario.node[17].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 534  FranciscoScenario.node[48].appl  messageReceivedSignal:vector  ETV
+vector 194  FranciscoScenario.node[17].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 535  FranciscoScenario.node[48].appl  newWarningReceivedSignal:vector  ETV
+vector 195  FranciscoScenario.node[17].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 257  FranciscoScenario.node[23].appl  warningReceivedSignal:vector  ETV
+vector 621  FranciscoScenario.node[56].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 259  FranciscoScenario.node[23].appl  messageReceivedSignal:vector  ETV
+vector 623  FranciscoScenario.node[56].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 260  FranciscoScenario.node[23].appl  newWarningReceivedSignal:vector  ETV
+vector 624  FranciscoScenario.node[56].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 433  FranciscoScenario.node[39].appl  warningReceivedSignal:vector  ETV
+vector 60  FranciscoScenario.node[5].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 435  FranciscoScenario.node[39].appl  messageReceivedSignal:vector  ETV
+vector 62  FranciscoScenario.node[5].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 436  FranciscoScenario.node[39].appl  newWarningReceivedSignal:vector  ETV
+vector 63  FranciscoScenario.node[5].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 59  FranciscoScenario.node[5].appl  warningReceivedSignal:vector  ETV
+vector 71  FranciscoScenario.node[6].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 61  FranciscoScenario.node[5].appl  messageReceivedSignal:vector  ETV
+vector 73  FranciscoScenario.node[6].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 62  FranciscoScenario.node[5].appl  newWarningReceivedSignal:vector  ETV
+vector 74  FranciscoScenario.node[6].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 26  FranciscoScenario.node[2].appl  warningReceivedSignal:vector  ETV
+vector 687  FranciscoScenario.node[62].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 28  FranciscoScenario.node[2].appl  messageReceivedSignal:vector  ETV
+vector 689  FranciscoScenario.node[62].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 29  FranciscoScenario.node[2].appl  newWarningReceivedSignal:vector  ETV
+vector 690  FranciscoScenario.node[62].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 488  FranciscoScenario.node[44].appl  warningReceivedSignal:vector  ETV
+vector 511  FranciscoScenario.node[46].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 490  FranciscoScenario.node[44].appl  messageReceivedSignal:vector  ETV
+vector 513  FranciscoScenario.node[46].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 491  FranciscoScenario.node[44].appl  newWarningReceivedSignal:vector  ETV
+vector 514  FranciscoScenario.node[46].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 587  FranciscoScenario.node[53].appl  warningReceivedSignal:vector  ETV
+vector 643  FranciscoScenario.node[58].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 589  FranciscoScenario.node[53].appl  messageReceivedSignal:vector  ETV
+vector 645  FranciscoScenario.node[58].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 590  FranciscoScenario.node[53].appl  newWarningReceivedSignal:vector  ETV
+vector 646  FranciscoScenario.node[58].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 631  FranciscoScenario.node[57].appl  warningReceivedSignal:vector  ETV
+vector 599  FranciscoScenario.node[54].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 633  FranciscoScenario.node[57].appl  messageReceivedSignal:vector  ETV
+vector 601  FranciscoScenario.node[54].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 634  FranciscoScenario.node[57].appl  newWarningReceivedSignal:vector  ETV
+vector 602  FranciscoScenario.node[54].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 15  FranciscoScenario.node[1].appl  warningReceivedSignal:vector  ETV
+vector 522  FranciscoScenario.node[47].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 17  FranciscoScenario.node[1].appl  messageReceivedSignal:vector  ETV
+vector 524  FranciscoScenario.node[47].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 18  FranciscoScenario.node[1].appl  newWarningReceivedSignal:vector  ETV
+vector 525  FranciscoScenario.node[47].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 48  FranciscoScenario.node[4].appl  warningReceivedSignal:vector  ETV
+vector 698  FranciscoScenario.node[63].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 50  FranciscoScenario.node[4].appl  messageReceivedSignal:vector  ETV
+vector 700  FranciscoScenario.node[63].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 51  FranciscoScenario.node[4].appl  newWarningReceivedSignal:vector  ETV
+vector 701  FranciscoScenario.node[63].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 719  FranciscoScenario.node[65].appl  warningReceivedSignal:vector  ETV
+vector 863  FranciscoScenario.node[78].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 721  FranciscoScenario.node[65].appl  messageReceivedSignal:vector  ETV
+vector 865  FranciscoScenario.node[78].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 722  FranciscoScenario.node[65].appl  newWarningReceivedSignal:vector  ETV
+vector 866  FranciscoScenario.node[78].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 455  FranciscoScenario.node[41].appl  warningReceivedSignal:vector  ETV
+vector 93  FranciscoScenario.node[8].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 457  FranciscoScenario.node[41].appl  messageReceivedSignal:vector  ETV
+vector 95  FranciscoScenario.node[8].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 458  FranciscoScenario.node[41].appl  newWarningReceivedSignal:vector  ETV
+vector 96  FranciscoScenario.node[8].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 224  FranciscoScenario.node[20].appl  warningReceivedSignal:vector  ETV
+vector 368  FranciscoScenario.node[33].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 226  FranciscoScenario.node[20].appl  messageReceivedSignal:vector  ETV
+vector 370  FranciscoScenario.node[33].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 227  FranciscoScenario.node[20].appl  newWarningReceivedSignal:vector  ETV
+vector 371  FranciscoScenario.node[33].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 653  FranciscoScenario.node[59].appl  warningReceivedSignal:vector  ETV
+vector 500  FranciscoScenario.node[45].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 655  FranciscoScenario.node[59].appl  messageReceivedSignal:vector  ETV
+vector 502  FranciscoScenario.node[45].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 656  FranciscoScenario.node[59].appl  newWarningReceivedSignal:vector  ETV
+vector 503  FranciscoScenario.node[45].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 279  FranciscoScenario.node[25].appl  warningReceivedSignal:vector  ETV
+vector 654  FranciscoScenario.node[59].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 281  FranciscoScenario.node[25].appl  messageReceivedSignal:vector  ETV
+vector 656  FranciscoScenario.node[59].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 282  FranciscoScenario.node[25].appl  newWarningReceivedSignal:vector  ETV
+vector 657  FranciscoScenario.node[59].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 334  FranciscoScenario.node[30].appl  warningReceivedSignal:vector  ETV
+vector 742  FranciscoScenario.node[67].appl  warningReceivedSignal:vector  ETV
 attr description  "Warning Received"
-vector 336  FranciscoScenario.node[30].appl  messageReceivedSignal:vector  ETV
+vector 744  FranciscoScenario.node[67].appl  messageReceivedSignal:vector  ETV
 attr description  "Message Received"
-vector 337  FranciscoScenario.node[30].appl  newWarningReceivedSignal:vector  ETV
+vector 745  FranciscoScenario.node[67].appl  newWarningReceivedSignal:vector  ETV
 attr description  "New Warning Received"
-vector 772  FranciscoScenario.node[69].veinsmobility  acceleration  ETV
-vector 773  FranciscoScenario.node[69].veinsmobility  co2emission  ETV
-14	47200 4878 4 371208 0.3 20.3 201 0.973 10.289778712266 717.18236130751 3662.3333571857
-13	52078 5279 4 371208 0.3 20.3 201 -4.5 2.6 136.19647441647 812.1644482928
-12	57357 5397 3 371208 0.2 20.3 202 0.25286542447004 13.882136146231 1718.6559831053 17599.225888365
-11	62754 5418 2 371208 0.1 20.3 203 536.13995142756 628.4415724151 112488.83454408 62467932.100266
-10	68172 5428 2 371208 0.1 20.3 203 423.90463588894 509.05966710105 91922.364335136 41822036.970791
-25	73600 4674 14 371208 1.3 20.3 191 0.973 9.8516598197759 754.290358004 4183.1041944344
-24	78274 5113 14 371208 1.3 20.3 191 -4.4923778666541 2.6 136.01020002316 831.59063157927
-23	83387 5152 13 371208 1.2 20.3 192 0.2550030377931 13.886874438564 1767.8135144384 19254.72143103
-22	88539 5178 12 371208 1.1 20.3 193 1069.0060670471 1077.2068158912 207189.73617695 222423858.93512
-21	93717 5174 12 371208 1.1 20.3 193 1877.3747992285 1969.2846040739 371762.5669462 716256965.9288
-663	98891 2565 104 371208 10.3 20.3 101 0.973 10.070387513893 360.05116195648 1992.3911769061
-662	101456 2940 104 371208 10.3 20.3 101 -4.2360883754063 2.5975111772073 34.485671879076 580.7581063222
-661	104396 2935 103 371208 10.2 20.3 102 0.24847311813943 13.599439581569 744.89284619238 6743.7559013537
-660	107331 2953 102 371208 10.1 20.3 103 961.76150568182 966.28869597345 99257.000033549 95650269.904944
-659	110284 2954 102 371208 10.1 20.3 103 269.90045649581 343.87965909091 32223.861389758 10148076.090759
-674	113238 2161 115 371208 11.3 20.3 91 0.973 7.3982546660104 214.82013888135 785.66059836878
-673	115399 2581 115 371208 11.3 20.3 91 -3.8720074026186 2.6 2.8036486188008 411.01248031868
-672	117980 2553 114 371208 11.2 20.3 92 0.26 9.3684898173739 406.28976418102 2459.1772156337
-671	120533 2657 112 371208 11.1 20.3 93 489.83819191697 496.91822580645 45750.15143095 22506583.84244
-670	123190 2656 112 371208 11.1 20.3 93 1239.4262244995 1275.1774193548 116971.36773944 147139539.53827
-685	125846 2159 125 371208 12.3 20.3 81 0.973 7.5974191162163 280.00335099535 1263.9487958263
-684	128005 2366 125 371208 12.3 20.3 81 -4.3053131505674 2.5988132108236 92.440612196309 290.62939743855
-683	130371 2361 124 371208 12.2 20.3 82 0.24923093582457 11.179072449959 616.77628402705 5661.9500294449
-682	132732 2386 123 371208 12.1 20.3 83 467.01131810193 470.71834140322 38874.834388173 18207978.493857
-681	135118 2384 123 371208 12.1 20.3 83 1581.1873920241 1641.8089630931 134423.95338343 217738924.98679
-696	137502 2033 135 371208 13.3 20.3 71 0.973 10.350427294602 343.67811503006 2028.7429529658
-695	139535 2044 135 371208 13.3 20.3 71 -1.078522513574 2.5980902890908 135.10971954656 281.04191745906
-694	141579 2075 134 371208 13.2 20.3 72 0.25672161749075 13.880945403904 530.26938222033 5080.2117317704
-693	143654 2101 133 371208 13.1 20.3 73 2911.0460923399 2962.5995494367 214993.9989599 633201551.06784
-692	145755 2100 133 371208 13.1 20.3 73 1517.5141238481 1520.6776314427 110931.18132254 168571669.32612
-707	147855 1753 145 371208 14.3 20.3 61 1.4272034747023 8.6795029757243 288.73405486903 1609.4159126192
-706	149608 1753 145 371208 14.3 20.3 61 1.3127815789776 2.5974121860694 124.63043313781 263.07203399922
-705	151361 1787 144 371208 14.2 20.3 62 0.25652519984264 12.719568513624 411.09268178582 3543.732424152
-704	153148 1812 143 371208 14.1 20.3 63 2681.6856065348 2721.4494104672 170601.94720277 461993719.33283
-703	154960 1811 143 371208 14.1 20.3 63 2072.1286418713 2074.5500142433 130644.92972552 270922219.26032
-718	156771 1468 155 371208 15.3 20.3 51 1.430723548266 7.9530076304422 205.79066260952 956.15120204011
-717	158239 1469 155 371208 15.3 20.3 51 1.3355510365451 2.5170652843795 101.93243528476 210.33795366982
-716	159708 1499 154 371208 15.2 20.3 52 0.25159090164513 10.444834430121 286.32516403652 2016.6436240147
-715	161207 1524 153 371208 15.1 20.3 53 1294.8323637334 1322.3694231164 69583.251093824 91359012.502989
-714	162731 1522 153 371208 15.1 20.3 53 1040.1619421547 1041.8398224184 55186.90286128 57464056.332281
-729	164253 1182 165 371208 16.3 20.3 41 1.4153615758457 5.8770179481494 141.54545690316 547.995113464
-728	165435 1178 165 371208 16.3 20.3 41 1.3602182873059 2.5947106096195 81.222349160399 165.88523476456
-727	166613 1213 164 371208 16.2 20.3 42 0.25179539743974 8.3740303134796 186.42540711802 1066.285821763
-726	167826 1233 163 371208 16.1 20.3 43 760.8909830025 761.97668793891 32734.218070442 24919284.56725
-725	169059 1240 163 371208 16.1 20.3 43 219.74842373674 237.51969927493 9952.9942154032 2305038.8953963
-740	170299 892 175 371208 17.3 20.3 31 1.4148169931797 5.5725447655577 96.382486004419 332.20804834776
-739	171191 895 175 371208 17.3 20.3 31 1.3157435514964 2.5963509678608 64.733274433864 139.64942667167
-738	172086 923 174 371208 17.2 20.3 32 0.25557297746348 6.7289004208499 115.46744387304 530.07881137645
-737	173009 951 173 371208 17.1 20.3 33 1161.4602986993 1172.3134686267 38451.354715081 44803605.436512
-736	173960 950 173 371208 17.1 20.3 33 649.48096601717 650.14398546365 21440.396011749 13930019.00133
-751	174910 604 185 371208 18.3 20.3 21 1.4424473172509 3.8320263826742 52.658870519652 141.62960344232
-750	175514 605 185 371208 18.3 20.3 21 1.447555508744 2.5761636662297 43.492291938301 92.923764713675
-749	176119 637 184 371208 18.2 20.3 22 0.25972339465399 4.6089525884841 55.312695024692 175.85474245968
-748	176756 664 183 371208 18.1 20.3 23 512.61175341081 517.67392896945 11830.061120361 6084855.9150126
-747	177420 662 183 371208 18.1 20.3 23 1083.8550227388 1084.1383897885 24930.904100573 27023912.324808
-762	178082 318 195 371208 19.3 20.3 11 1.4119740608339 2.603323218544 21.852300280827 44.715376149889
-761	178400 319 195 371208 19.3 20.3 11 1.6269898565136 2.4353255366563 23.654282642576 51.664115667084
-760	178719 353 194 371208 19.2 20.3 12 0.25043899509404 2.6158672593516 17.737838117064 32.748921148141
-759	179072 375 193 371208 19.1 20.3 13 3371.9459867522 3373.2138921954 43846.16021941 147883522.69933
-758	179447 376 193 371208 19.1 20.3 13 862.74917187857 863.57322199929 11219.392088919 9682674.7030151
-487	179823 4590 24 371208 2.3 20.3 181 0.973 8.7898858939974 732.77266621691 4047.2605460134
-486	184413 4888 24 371208 2.3 20.3 181 -4.5 2.6 136.31106951955 911.90206672843
-485	189301 5080 23 371208 2.2 20.3 182 0.2518232359637 13.888054884691 1452.6024836413 14111.020650664
-484	194381 5101 22 371208 2.1 20.3 183 909.65119455527 974.65429336359 168570.47749812 155329357.33962
-483	199482 5088 22 371208 2.1 20.3 183 1108.7133665364 1194.6595752171 208707.10235588 238215276.92983
-773	204570 32 371208 371208 20.3 20.3 1 1.4132844305157 1.4132844305157 1.4132844305157 1.997372881538
-772	204602 32 371208 371208 20.3 20.3 1 2.3797066033964 2.3797066033964 2.3797066033964 5.6630035182486
-771	204634 63 204 371208 20.2 20.3 2 0.24980425763037 0.48777491797001 0.73757917560039 0.30032653773092
-770	204697 89 203 371208 20.1 20.3 3 555.6424641208 555.64401186944 1666.9304878597 926219.08378696
-769	204786 90 203 371208 20.1 20.3 3 244.79031454006 244.81524752525 734.39587660537 179779.10160609
-575	204876 4496 34 371208 3.3 20.3 171 0.973 9.588637116393 574.48359590147 2685.1920440108
-574	209372 4927 34 371208 3.3 20.3 171 -1.2077368733706 2.5852383376565 135.97517558061 301.10777177879
-573	214299 4808 33 371208 3.2 20.3 172 0.25363637881423 13.888158064948 1909.3948189368 24141.03567108
-572	219107 4834 32 371208 3.1 20.3 173 1036.7556786064 1143.7866472762 193373.48810639 216332223.32736
-571	223941 4824 32 371208 3.1 20.3 173 740.23260260227 829.66896309315 134058.1705836 104084911.02336
-586	228765 4068 44 371208 4.3 20.3 161 0.973 9.6784539151723 626.1726555417 3343.2886826376
-585	232833 4328 44 371208 4.3 20.3 161 -4.5 2.6 116.84093635372 881.32345954733
-584	237161 4540 43 371208 4.2 20.3 162 0.25800620454736 13.473294986444 1164.2875558946 10087.690727976
-583	241701 4562 42 371208 4.1 20.3 163 668.56778443114 704.95172461741 110002.24500207 74247671.170576
-582	246263 4556 42 371208 4.1 20.3 163 1662.0474367067 1747.9395808383 276692.42869613 469855075.23138
-608	250819 3885 54 371208 5.3 20.3 151 0.973 8.4060060070986 424.9079780699 1643.4081666597
-607	254704 4391 54 371208 5.3 20.3 151 -1.1552955509862 2.5814730371116 109.07920046986 248.3421366132
-606	259095 4278 53 371208 5.2 20.3 152 0.25824735762156 11.178519032628 1388.0023818091 14231.686623222
-605	263373 4298 52 371208 5.1 20.3 153 547.17129636607 555.64401186944 84472.611637397 46639168.943931
-604	267671 4300 52 371208 5.1 20.3 153 244.79031454006 382.21384659241 46190.488241848 14237350.0004
-641	271971 3245 86 371208 8.5 20.3 119 0.973 10.003067446423 456.16005710493 2348.2784701894
-640	275216 3468 86 371208 8.5 20.3 119 -0.98694091478828 2.5722567704646 136.10906643693 290.89189021894
-639	278684 3416 85 371208 8.4 20.3 120 0.25209376937966 13.88972369859 1198.783377325 14316.360978837
-638	282100 3442 84 371208 8.3 20.3 121 874.28067404886 992.55603508252 111204.51455804 102371983.9932
-637	285542 3440 84 371208 8.3 20.3 121 1958.809828821 1966.008308888 237345.6517669 465562269.36372
-619	288982 3535 74 371208 7.3 20.3 131 0.973 10.063731937195 485.06953742625 2460.3021738588
-618	292517 3805 74 371208 7.3 20.3 131 -1.1074565884192 2.5859703897266 135.75878841915 297.28894410666
-617	296322 3735 73 371208 7.2 20.3 132 0.2488235808555 13.887267420811 1361.0640067012 16590.425519141
-616	300057 3763 72 371208 7.1 20.3 133 588.66408013237 723.12977553594 89277.526611752 60172188.798894
-615	303820 3769 72 371208 7.1 20.3 133 712.90028642666 721.34049432535 95505.262697316 68581826.699443
-630	307589 3082 84 371208 8.3 20.3 121 0.973 9.9543081084488 438.79456840922 2304.9430506191
-629	310671 3369 84 371208 8.3 20.3 121 -4.2734820784572 2.6 71.567244603583 683.86111719965
-628	314040 3473 83 371208 8.2 20.3 122 0.2494183260405 13.530464517906 855.3217205895 7413.1104981229
-627	317513 3485 82 371208 8.1 20.3 123 935.77992164937 940.63843023942 115416.77154665 108301428.95303
-626	320998 3491 82 371208 8.1 20.3 123 742.87037622361 825.69617173494 96138.830703751 75249115.9914
-652	324489 2643 94 371208 9.3 20.3 111 0.973 5.4177454001423 181.50487684148 433.03892535819
-651	327132 3333 94 371208 9.3 20.3 111 -3.3504356954889 2.5922796174418 -2.4554542222907 270.11902952795
-650	330465 3276 93 371208 9.2 20.3 112 0.0098437670205336 6.9078715597162 244.29698292561 1070.3753526499
-649	333741 3231 92 371208 9.1 20.3 113 903.89227897839 905.38807776761 102254.39281937 92530661.880017
-648	336972 3220 92 371208 9.1 20.3 113 1264.0896304095 1288.4783497053 143730.0878275 182826424.82189
-36	340192 4240 15 371208 1.4 20.3 190 0.973 9.94568420536 566.3879198641 2700.6043909875
-35	344432 4942 15 371208 1.4 20.3 190 -4.5 2.6 -61.587865006851 1053.8232598315
-34	349374 5111 14 371208 1.3 20.3 191 2.9557790053211 13.887401602597 1747.0560574501 18540.611643968
-33	354485 5147 13 371208 1.2 20.3 192 1080.6260151832 1088.7869426375 208230.9400743 225834757.79917
-32	359632 5137 13 371208 1.2 20.3 192 1688.916028771 1780.0601650412 333889.75873929 580801589.50697
-498	364769 3963 31 371208 3 20.3 174 0.973 9.4291204201586 474.71575123599 2235.1428933179
-497	368732 4797 31 371208 3 20.3 174 -4.5 2.6 -60.164918314386 765.56649162155
-496	373529 4880 30 371208 2.9 20.3 175 3.0542071185632 13.889029118798 1548.3843752816 15558.41094683
-495	378409 4908 29 371208 2.8 20.3 176 1080.6188367281 1088.7869426375 190852.83211869 206959866.78974
-494	383317 4909 29 371208 2.8 20.3 176 1699.320348906 1780.0752941982 307681.48213886 537982103.47298
-47	388226 4513 15 371208 1.4 20.3 190 0.973 6.0885722322035 440.29263626418 1374.8163229617
-46	392739 5399 15 371208 1.4 20.3 190 -1.2018363845069 1.2138419598807 -0.64209009991028 52.252109483851
-45	398138 5115 14 371208 1.3 20.3 191 13.760013352782 13.889820163865 2640.3494547477 36499.986958641
-44	403253 5139 13 371208 1.2 20.3 192 1013.8744339603 1030.025749272 196207.58301006 200511633.69254
-43	408392 5135 13 371208 1.2 20.3 192 2600.8356074293 2862.9996521729 524656.88712736 1434793862.763
-58	413527 4552 15 371208 1.4 20.3 190 0.973 5.6216455770949 443.20283640872 1343.3037026191
-57	418079 5398 15 371208 1.4 20.3 190 -1.2265688676154 1.0757279632613 -0.84278536143247 50.431525196172
-56	423477 5119 14 371208 1.3 20.3 191 13.760994894973 13.889325349405 2640.2629819887 36497.615670291
-55	428596 5140 13 371208 1.2 20.3 192 866.30047492577 1046.1633411433 178290.09174811 166236093.93334
-54	433736 5142 13 371208 1.2 20.3 192 1875.0298525281 1969.2709590355 374077.5927148 728959233.67242
-69	438878 4381 15 371208 1.4 20.3 190 0.973 10.127185930668 575.53037743783 2718.3468608223
-68	443259 5079 15 371208 1.4 20.3 190 -4.5 2.6 -0.28727198201237 675.27973459748
-67	448338 5123 14 371208 1.3 20.3 191 3.3150704857752 13.888221266132 2029.44061693 24261.103742141
-66	453461 5151 13 371208 1.2 20.3 192 880.68175642379 1003.2666619165 175131.42916994 160014081.61194
-65	458612 5148 13 371208 1.2 20.3 192 1580.9710611728 1666.9295740936 306981.65876895 490931485.58354
-80	463760 4324 15 371208 1.4 20.3 190 0.973 8.2950812009027 512.60420327791 2060.0120630036
-79	468084 5202 15 371208 1.4 20.3 190 -4.2221616254879 2.6 -24.704160507872 529.89718761261
-78	473286 5121 14 371208 1.3 20.3 191 3.3032529969387 13.888984672111 2189.1442491841 27257.79736661
-77	478407 5146 13 371208 1.2 20.3 192 528.83724621445 723.12977553594 115979.50998558 70807970.061045
-76	483553 5153 13 371208 1.2 20.3 192 705.96785567155 721.34049432535 136978.36618703 97728210.013838
-91	488706 4496 15 371208 1.4 20.3 190 0.973 6.9796505418378 455.75897398109 1504.9513698094
-90	493202 5391 15 371208 1.4 20.3 190 -4.5 1.2624090469442 -17.708425695379 110.96647646982
-89	498593 5117 14 371208 1.3 20.3 191 13.761942808677 15.649992804453 2852.4392792845 42733.520179418
-88	503710 5146 13 371208 1.2 20.3 192 510.16045886816 705.79792679369 122740.48557182 79277497.824479
-87	508856 5147 13 371208 1.2 20.3 192 1135.9310576821 1230.1833910135 232229.08439811 281017363.36686
-102	514003 5101 15 371208 1.4 20.3 190 -0.56257073936471 12.727752772488 905.44019766864 6361.8834708287
-101	519104 5561 15 371208 1.4 20.3 190 -1.243406775617 1.2395939452573 -0.22709174156191 61.912353619589
-100	524665 5304 14 371208 1.3 20.3 191 27.650005640106 27.778899022706 5293.4739015434 146706.39398127
-99	529969 5147 13 371208 1.2 20.3 192 1348.1894166996 1379.9714944904 261919.77396257 357318406.49102
-98	535116 5147 13 371208 1.2 20.3 192 389.14063360882 914.75382939095 124909.75900241 85775247.756686
-113	540263 4698 15 371208 1.4 20.3 190 0.973 6.035387189439 440.8551109171 1398.6233631909
-112	544961 5584 15 371208 1.4 20.3 190 -1.2385049343808 1.1973061442142 0.0183495561825 54.554642180814
-111	550545 5306 14 371208 1.3 20.3 191 13.760202274094 13.889512215643 2640.8299800905 36513.261949747
-110	555851 5333 13 371208 1.2 20.3 192 984.19042326431 1246.4053475143 214002.01457826 239648565.186
-109	561184 5334 13 371208 1.2 20.3 192 165.6018909866 181.66346387322 33329.475268628 5789912.4314978
-124	566518 4085 15 371208 1.4 20.3 190 0.973 6.0333198898131 318.39579731765 803.64901353428
-123	570603 4276 15 371208 1.4 20.3 190 -4.5 1.1977225865703 -138.74624324911 648.16187941775
-122	574879 4457 14 371208 1.3 20.3 191 0 13.886106458216 1575.955657442 20818.933816813
-121	579336 5346 13 371208 1.2 20.3 192 1161.4602986993 1318.7560836645 243949.58771919 310486818.6083
-120	584682 5346 13 371208 1.2 20.3 192 649.48096601717 659.09015531194 125980.1313771 82663408.421288
-135	590028 4580 15 371208 1.4 20.3 190 0.973 6.1503584445114 428.52667109077 1312.1243772569
-134	594608 5581 15 371208 1.4 20.3 190 -4.0964579226204 1.2322551157558 -42.486511223012 191.90510444097
-133	600189 5317 14 371208 1.3 20.3 191 9.5169187076373 13.889763465817 2610.4339908834 35763.49271495
-132	605506 5339 13 371208 1.2 20.3 192 1125.6935894844 1322.3694231164 230540.66590656 277633062.57203
-131	610845 5332 13 371208 1.2 20.3 192 1030.3206447766 1098.4308035976 200462.77990755 209354778.99914
-146	616177 4624 15 371208 1.4 20.3 190 0.973 9.9316148007503 577.7623347024 2684.5996326189
-145	620801 5276 15 371208 1.4 20.3 190 -4.5 2.6 0.50195048234886 647.57358096427
-144	626077 5303 14 371208 1.3 20.3 191 3.2248186964898 13.889894360469 2111.406587197 25789.887293561
-143	631380 5336 13 371208 1.2 20.3 192 673.99050722968 682.1574115983 130205.01275437 88299603.194671
-142	636716 5340 13 371208 1.2 20.3 192 1533.5624897739 1660.1586859712 310036.76597649 500885650.86599
-597	642056 3604 47 371208 4.6 20.3 158 0.973 9.0019354676776 423.45857923919 1928.0313514365
-596	645660 4352 47 371208 4.6 20.3 158 -4.5 2.6 -18.837183955282 580.17826730147
-595	650012 4457 46 371208 4.5 20.3 159 3.1823003330253 13.806838336866 1275.4892751734 11784.147907643
-594	654469 4479 45 371208 4.4 20.3 160 1080.6291565023 1088.7869426375 173535.9216639 188217759.81717
-593	658948 4478 45 371208 4.4 20.3 160 1699.320348906 1780.0415467026 280362.28628973 491342744.07452
-157	663426 4534 15 371208 1.4 20.3 190 0.973 7.7968075078007 491.66516975713 1896.4271301197
-156	667960 5408 15 371208 1.4 20.3 190 -4.423613210001 2.6 -27.85767758009 517.60623249453
-155	673368 5313 14 371208 1.3 20.3 191 3.5162832031272 13.889517729501 2211.7677792308 27622.454447167
-154	678681 5338 13 371208 1.2 20.3 192 520.00579612712 717.37926103405 114557.95452272 69144123.943549
-153	684019 5338 13 371208 1.2 20.3 192 803.78454306966 828.56428440186 155485.60922685 125920190.19012
-509	689357 4033 31 371208 3 20.3 174 0.973 5.9342326854911 359.35954929583 1057.9607151883
-508	693390 4966 31 371208 3 20.3 174 -4.3871937470775 2.6 -76.65381738747 393.05320908867
-507	698356 4883 30 371208 2.9 20.3 175 3.4105710381261 13.889990419396 1942.5592357968 23864.06096136
-506	703239 4914 29 371208 2.8 20.3 176 524.09132996378 717.37926103405 106600.68984198 65208068.14518
-505	708153 4906 29 371208 2.8 20.3 176 803.77648542574 815.51975535939 142333.52611256 115109385.78745
-168	713059 4601 15 371208 1.4 20.3 190 0.973 6.025947355947 417.98335588861 1246.2026844345
-167	717660 5590 15 371208 1.4 20.3 190 -3.9443630176327 1.1953520728508 -66.054002083963 259.25460151044
-166	723250 5305 14 371208 1.3 20.3 191 7.181675537258 13.889768337631 2566.1163824 34793.686017884
-165	728555 5340 13 371208 1.2 20.3 192 706.89509894172 722.54130946773 137187.70320465 98027512.296396
-164	733895 5337 13 371208 1.2 20.3 192 918.20039095619 1173.6144172429 201288.11574469 212136182.54502
-520	739232 4229 31 371208 3 20.3 174 0.973 5.8624115672464 374.35219956091 1092.9558499676
-519	743461 5132 31 371208 3 20.3 174 -3.5344198334704 1.1461229720153 -48.313919654915 164.37177235306
-518	748593 4887 30 371208 2.9 20.3 175 9.041856160708 13.889052663688 2370.0626701822 32245.045924497
-517	753480 4913 29 371208 2.8 20.3 176 708.05382359061 722.54130946773 125873.34574758 90026602.252352
-516	758393 4907 29 371208 2.8 20.3 176 918.20039095619 1153.8556025473 182579.46515687 190262443.02282
-179	763300 4572 15 371208 1.4 20.3 190 0.973 8.8911194280187 525.57636552993 2202.7157357422
-178	767872 5399 15 371208 1.4 20.3 190 -4.3622215554388 2.6 -16.835027537568 529.41703072959
-177	773271 5313 14 371208 1.3 20.3 191 3.5758314387567 13.888477169403 2211.3177207489 27611.954473072
-176	778584 5342 13 371208 1.2 20.3 192 511.54890210555 705.82849313686 112689.39625518 66885167.399109
-175	783926 5338 13 371208 1.2 20.3 192 989.24798841047 1003.5876301978 191290.07339902 190586119.39819
-190	789264 4542 15 371208 1.4 20.3 190 0.973 7.0941574828573 477.63612949309 1725.6120124964
-189	793806 5329 15 371208 1.4 20.3 190 -4.5 2.6 -37.408624481178 574.78277312684
-188	799135 5311 14 371208 1.3 20.3 191 3.0096798478881 13.889193555582 2136.8214171317 26467.167693162
-187	804446 5335 13 371208 1.2 20.3 192 920.62093632578 1113.5762071481 199620.18317139 208290421.65203
-186	809781 5340 13 371208 1.2 20.3 192 1203.5576469991 1218.4053612783 232543.43242797 281651740.159
-201	815121 4631 15 371208 1.4 20.3 190 0.973 7.4775163911572 347.97101909721 1099.4129798118
-200	819752 5544 15 371208 1.4 20.3 190 -4.1592359499082 2.6 -2.5996071964514 469.50636637418
-199	825296 5436 14 371208 1.3 20.3 191 3.9280354854861e-05 10.347364019642 482.88962855331 3229.1307709525
-198	830732 5320 13 371208 1.2 20.3 192 495.79 499.07901255503 95406.905087736 47408863.806904
-197	836052 5326 13 371208 1.2 20.3 192 1168.9372457242 1213.8607182262 230847.12004223 277606115.3869
-212	841378 4748 15 371208 1.4 20.3 190 0.973 6.3017665037423 490.4727743556 1719.2900980932
-211	846126 5574 15 371208 1.4 20.3 190 -1.2568908978021 1.0830334525788 -0.65728433260228 56.764034614229
-210	851700 5305 14 371208 1.3 20.3 191 15.521915555415 15.649813819695 2976.9900850281 46400.659107463
-209	857005 5342 13 371208 1.2 20.3 192 1012.0823230062 1307.6794139363 222849.90807479 260084193.34918
-208	862347 5331 13 371208 1.2 20.3 192 1266.4774106106 1284.489863098 244902.35724822 312386366.08683
-223	867678 4675 15 371208 1.4 20.3 190 0.973 10.505412158479 573.622934066 2664.0894650141
-222	872353 5378 15 371208 1.4 20.3 190 -4.1342076194147 2.6 0.72939813816919 553.22790095081
-221	877731 5311 14 371208 1.3 20.3 191 3.4876979981829 13.889345170818 2183.8888251807 27030.250600858
-220	883042 5340 13 371208 1.2 20.3 192 755.17048205614 763.27087931972 145722.39485521 110600010.12759
-219	888382 5341 13 371208 1.2 20.3 192 250.56710607705 384.90397797072 57514.903097396 17504404.39799
-234	893723 4838 15 371208 1.4 20.3 190 0.973 10.161520428608 628.12872321847 2919.2999951925
-233	898561 5141 15 371208 1.4 20.3 190 -4.5 2.6 136.01884514177 450.14900875515
-232	903702 5167 14 371208 1.3 20.3 191 0.26 13.889285674586 2076.2557860711 25964.146336909
-231	908869 5318 13 371208 1.2 20.3 192 558.33790488975 753.32749018443 121296.7874035 77407748.57022
-230	914187 5320 13 371208 1.2 20.3 192 139.95896515899 151.46722405896 27948.475496093 4070679.6795098
-245	919507 4436 15 371208 1.4 20.3 190 0.973 4.4173525752099 253.36265082859 441.68165344982
-244	923943 5624 15 371208 1.4 20.3 190 -2.4885476357866 2.6 -9.4050426526588 214.71834320785
-243	929567 5524 14 371208 1.3 20.3 191 0.0021534267515741 6.2436577151772 261.10184276572 994.75902526115
-242	935091 5324 13 371208 1.2 20.3 192 491.09184 498.23049906742 95100.099754993 47105662.190639
-241	940415 5330 13 371208 1.2 20.3 192 1177.62008 1198.9772707911 227993.5485583 270752026.84678
-465	945745 4635 16 371208 1.5 20.3 189 0.973 9.7095958931481 586.95251530244 2738.7484092154
-464	950380 4614 16 371208 1.5 20.3 189 -4.5 2.6 138.44731195595 450.14885385577
-463	954994 4705 15 371208 1.4 20.3 190 0 13.889606555924 1629.9194972203 19781.560807688
-462	959699 5010 14 371208 1.3 20.3 191 558.33706378003 708.77885375818 115247.72961576 69989828.587954
-461	964709 5008 14 371208 1.3 20.3 191 139.96521364725 150.25275427575 27752.518871229 4034439.2522222
-256	969717 4659 15 371208 1.4 20.3 190 0.973 20.677731513121 1279.9627834779 14258.940019075
-255	974376 5148 15 371208 1.4 20.3 190 -4.5 2.6 47.444418336778 1232.3872101605
-254	979524 5312 14 371208 1.3 20.3 191 3.2238072159795 27.519178010116 2704.5748624199 47320.061711308
-253	984836 5328 13 371208 1.2 20.3 192 1349.424026715 1359.7946657166 260228.4119032 352703498.72492
-252	990164 5336 13 371208 1.2 20.3 192 666.36107887531 850.68941582596 138291.66329843 100078576.92944
-267	995500 4643 15 371208 1.4 20.3 190 0.973 7.7229346165597 507.10911956512 2002.7366484306
-266	1000143 5403 15 371208 1.4 20.3 190 -4.151567661713 2.6 -21.865865590299 521.42719919158
-265	1005546 5306 14 371208 1.3 20.3 191 3.3703236295244 13.888279208618 2191.86159874 27301.565161583
-264	1010852 5341 13 371208 1.2 20.3 192 691.04991941615 884.3919681307 155486.93998239 126658449.60148
-263	1016193 5333 13 371208 1.2 20.3 192 1568.1830956363 1583.6327980882 302626.11450696 476996462.35457
-278	1021526 4689 15 371208 1.4 20.3 190 0.973 4.8193036424841 395.7931919544 1053.6355567824
-277	1026215 5598 15 371208 1.4 20.3 190 -1.2429766118759 1.1289753856137 0.30199185577221 59.280609457853
-276	1031813 5302 14 371208 1.3 20.3 191 11.051158400744 11.179906795102 2122.9059205941 23595.735618907
-275	1037115 5343 13 371208 1.2 20.3 192 542.70565012583 555.64401186944 105442.38096673 57909480.602743
-274	1042458 5330 13 371208 1.2 20.3 192 244.79031454006 455.5774274122 67128.479081179 24195974.805591
-564	1047788 4260 33 371208 3.2 20.3 172 0.973 5.0670473383943 361.92385709085 982.57880730674
-563	1052048 5075 33 371208 3.2 20.3 172 -1.2697500024689 1.2206528437091 -0.16807442700957 59.216778048609
-562	1057123 4836 32 371208 3.1 20.3 173 11.0505034494 11.179854896194 1922.729644749 21369.563734044
-561	1061959 4859 31 371208 3 20.3 174 543.92426891096 555.64401186944 95663.352158654 52596733.043922
-560	1066818 4855 31 371208 3 20.3 174 244.79031454006 435.6029852629 59097.340225426 20611919.503785
-289	1071673 5183 15 371208 1.4 20.3 190 -0.79986748915071 11.923947486222 890.97675197001 6091.6238230559
-288	1076856 5581 15 371208 1.4 20.3 190 -1.2148227460682 1.1202019372257 1.1733237643959 53.182252016178
-287	1082437 5305 14 371208 1.3 20.3 191 27.650311985577 27.779473746277 5292.886463709 146673.80090843
-286	1087742 5335 13 371208 1.2 20.3 192 1274.0788573753 1309.1978578772 247954.8492155 320238839.08997
-285	1093077 5333 13 371208 1.2 20.3 192 1449.7703449865 1974.9294850634 329041.99964998 568400931.98795
-300	1098410 4666 15 371208 1.4 20.3 190 0.973 20.804217800761 1290.5457739914 14427.869861548
-299	1103076 5153 15 371208 1.4 20.3 190 -4.5 2.6 49.632110585822 1251.078114853
-298	1108229 5319 14 371208 1.3 20.3 191 3.0397177125838 27.624838371738 2704.9454442965 47556.228637304
-297	1113548 5339 13 371208 1.2 20.3 192 1377.17869662 1388.2676407229 265682.19550653 367642181.51837
-296	1118887 5333 13 371208 1.2 20.3 192 195.09990034616 380.59891220007 47817.304916579 12388624.644148
-311	1124220 4632 15 371208 1.4 20.3 190 0.973 8.0990616155589 507.97831879815 2014.966394269
-310	1128852 5391 15 371208 1.4 20.3 190 -4.3899795390323 2.6 -21.085975747154 520.88969390639
-309	1134243 5314 14 371208 1.3 20.3 191 3.3807721638243 13.885184203559 2191.1293947387 27271.730260011
-308	1139557 5332 13 371208 1.2 20.3 192 931.12558105646 1124.1608725445 193072.6090828 194889171.99103
-307	1144889 5340 13 371208 1.2 20.3 192 919.43358143042 935.32450433988 177993.82872401 165013576.74623
-322	1150229 4589 15 371208 1.4 20.3 190 0.973 9.05409506461 530.94940863336 2214.5551823191
-321	1154818 5396 15 371208 1.4 20.3 190 -3.9399789722115 2.6 -19.018958715025 535.90926720327
-320	1160214 5305 14 371208 1.3 20.3 191 3.4770539044425 13.889343256671 2207.687658501 27562.008597107
-319	1165519 5339 13 371208 1.2 20.3 192 477.00430387618 671.16901014588 106032.33486141 59301761.773452
-318	1170858 5346 13 371208 1.2 20.3 192 1555.7062091759 1570.2718928878 300068.13345596 468966393.91207
-476	1176204 4329 16 371208 1.5 20.3 189 0.973 6.580980677668 298.87285001917 745.61903764568
-475	1180533 5106 16 371208 1.5 20.3 189 -3.0854377520729 2.6 0.0070045784840484 335.85751646103
-474	1185639 4982 15 371208 1.4 20.3 190 0 8.6171017449355 407.87318271634 2263.0018617565
-473	1190621 5085 14 371208 1.3 20.3 191 495.79 499.07911909811 94944.96304534 47196709.334805
-472	1195706 5102 14 371208 1.3 20.3 191 1168.9372457242 1206.4719599093 227815.89654706 271773462.08564
-333	1200808 4627 15 371208 1.4 20.3 190 0.973 9.8834916309912 569.92680409233 2641.1713706709
-332	1205435 5380 15 371208 1.4 20.3 190 -4.2114322850606 2.6 -0.10934388102038 553.69815002253
-331	1210815 5302 14 371208 1.3 20.3 191 3.5611031452455 13.883451892363 2197.0617566374 27282.307331644
-330	1216117 5340 13 371208 1.2 20.3 192 729.2630260486 865.49842015227 147070.5256881 113018256.39713
-329	1221457 5332 13 371208 1.2 20.3 192 730.24978076379 821.23454500876 153647.3057438 123077929.65717
-344	1226789 4562 15 371208 1.4 20.3 190 0.973 8.1370161740716 503.09677936676 1955.1368007243
-343	1231351 5402 15 371208 1.4 20.3 190 -4.0664869018718 2.6 -24.327402963664 517.35048654546
-342	1236753 5316 14 371208 1.3 20.3 191 3.2901275248837 13.889388576287 2178.4027937809 27034.188778266
-341	1242069 5329 13 371208 1.2 20.3 192 1086.1017188587 1284.1010607796 231638.77020979 280244361.93612
-340	1247398 5335 13 371208 1.2 20.3 192 1863.8681512045 1887.5705841412 361330.1915714 680001672.20734
-355	1252733 4437 15 371208 1.4 20.3 190 0.973 9.3308669026108 569.1724194775 2741.7590410637
-354	1257170 5141 15 371208 1.4 20.3 190 -4.5 2.6 -61.177618772165 1049.7963713325
-353	1262311 5318 14 371208 1.3 20.3 191 2.9677980267901 13.888870310558 1758.669760396 18764.780706343
-352	1267629 5342 13 371208 1.2 20.3 192 1127.2924660607 1135.4539997775 217252.73079615 245827592.40929
-351	1272971 5341 13 371208 1.2 20.3 192 937.5119883253 1029.6738674557 187959.95651529 184171643.39861
-366	1278312 4633 15 371208 1.4 20.3 190 0.973 5.8299587457805 425.02043049648 1320.5497884
-365	1282945 5583 15 371208 1.4 20.3 190 -4.1709793464181 1.1376339013223 -44.681314945118 198.42104790659
-364	1288528 5315 14 371208 1.3 20.3 191 9.4126338178558 13.889729095947 2607.3046262862 35689.254574187
-363	1293843 5336 13 371208 1.2 20.3 192 1159.2497422526 1337.3042341623 234656.55582563 287472222.68795
-362	1299179 5330 13 371208 1.2 20.3 192 472.83033060789 565.87552609373 104724.25726811 57252703.813494
-377	1304509 4738 15 371208 1.4 20.3 190 0.973 6.2999086320214 454.23326428258 1437.3440843023
-376	1309247 5569 15 371208 1.4 20.3 190 -1.2358778571244 1.2763100987999 0.14385250001215 58.235601850997
-375	1314816 5302 14 371208 1.3 20.3 191 13.761255149206 13.889658768498 2640.6704122305 36508.86381463
-374	1320118 5340 13 371208 1.2 20.3 192 117.34764483568 379.53758454066 47571.626930757 12909687.025851
-373	1325458 5340 13 371208 1.2 20.3 192 586.44365336053 602.51422356412 114156.13557532 67877317.523419
-388	1330798 4678 15 371208 1.4 20.3 190 0.973 11.765327044088 667.45421077168 3675.5677771393
-387	1335476 5367 15 371208 1.4 20.3 190 -4.3301330407242 2.6 41.698050262896 527.43649982927
-386	1340843 5313 14 371208 1.3 20.3 191 3.3915317395455 15.648526219064 2382.3278369825 32844.699914172
-385	1346156 5344 13 371208 1.2 20.3 192 917.48290195264 1117.8071470302 201457.76384081 212223382.49026
-384	1351500 5341 13 371208 1.2 20.3 192 1227.0000681597 1269.0609708178 241884.8782792 304751652.8999
-399	1356841 4654 15 371208 1.4 20.3 190 0.973 10.274898376399 574.21510300111 2673.4625302708
-398	1361495 5382 15 371208 1.4 20.3 190 -4.2190704781625 2.6 0.30470282800958 558.64308455037
-397	1366877 5310 14 371208 1.3 20.3 191 3.5216119171186 13.889648582141 2185.7467687333 27058.925422517
-396	1372187 5338 13 371208 1.2 20.3 192 958.83910521967 1091.543630512 190822.69403145 189992858.00745
-395	1377525 5332 13 371208 1.2 20.3 192 363.75006303725 456.90149470311 83570.336182074 36505344.129802
-410	1382857 4710 15 371208 1.4 20.3 190 0.973 5.6138429602979 435.4816876457 1316.7312545756
-409	1387567 5590 15 371208 1.4 20.3 190 -1.1467108646408 1.0728920493275 -1.1176572793862 47.567489843745
-408	1393157 5305 14 371208 1.3 20.3 191 13.762074509396 13.889882573057 2640.7227568392 36510.288836856
-407	1398462 5338 13 371208 1.2 20.3 192 931.1006505188 1129.9893212164 193498.97744532 195840201.26683
-406	1403800 5341 13 371208 1.2 20.3 192 829.00470741996 897.58078648308 161731.89296985 136287990.60549
-531	1409141 4330 31 371208 3 20.3 174 0.973 6.094362743191 405.55651172595 1284.3573633574
-530	1413471 5139 31 371208 3 20.3 174 -1.117239976814 1.2150778258685 -0.0081331673310986 49.499162604393
-529	1418610 4889 30 371208 2.9 20.3 175 13.760264907209 13.889828387918 2419.066447166 33439.577008525
-528	1423499 4916 29 371208 2.8 20.3 176 932.47489958948 1129.9893212164 178594.55243799 181956858.65971
-527	1428415 4900 29 371208 2.8 20.3 176 829.00284953719 875.45090947885 147534.80950509 123690086.35196
-542	1433315 4004 31 371208 3 20.3 174 0.973 5.8164570642372 367.857789327 1129.4359704645
-541	1437319 4976 31 371208 3 20.3 174 -3.6867229254771 2.6 -78.203279520996 394.03052261223
-540	1442295 4880 30 371208 2.9 20.3 175 3.3398299810029 13.887877294379 1932.6671513013 23705.764197562
-539	1447175 4906 29 371208 2.8 20.3 176 685.27914398662 877.53705348728 140215.87152242 112343098.46805
-538	1452081 4906 29 371208 2.8 20.3 176 1662.3631762202 1674.948415338 293859.5322505 490647183.4056
-421	1456987 4714 15 371208 1.4 20.3 190 0.973 6.2219931848568 441.82480776495 1389.8094965317
-420	1461701 5589 15 371208 1.4 20.3 190 -1.2148963826243 1.2532383790938 -0.048914512968636 53.083978425824
-419	1467290 5308 14 371208 1.3 20.3 191 13.760405280946 13.889597059374 2641.1460856659 36522.025151921
-418	1472598 5337 13 371208 1.2 20.3 192 2459.1995426256 2721.4494104672 497477.10970083 1290099852.5159
-417	1477935 5333 13 371208 1.2 20.3 192 2058.5828923658 2074.5500142433 396788.79912736 820011202.07211
-432	1483268 4604 15 371208 1.4 20.3 190 0.973 10.386885455089 577.21687095727 2698.718151731
-431	1487872 5376 15 371208 1.4 20.3 190 -4.3007984988818 2.6 -0.53768996554428 565.05647339933
-430	1493248 5313 14 371208 1.3 20.3 191 3.4537000719337 13.88847425048 2196.9187690525 27301.828874817
-429	1498561 5337 13 371208 1.2 20.3 192 927.24122850499 940.63843023942 179385.1868388 167601775.83486
-428	1503898 5331 13 371208 1.2 20.3 192 742.87037622361 960.75760644753 162430.92747111 138093761.38534
-443	1509229 4537 15 371208 1.4 20.3 190 0.973 8.1104094837665 514.54871562351 2086.8213735947
-442	1513766 5393 15 371208 1.4 20.3 190 -4.5 2.6 -20.81492246729 533.4669873352
-441	1519159 5304 14 371208 1.3 20.3 191 3.3541134953758 13.887592166765 2194.4950095684 27341.873899262
-440	1524463 5330 13 371208 1.2 20.3 192 685.27914398662 881.65786079896 154699.63431067 125430622.28655
-439	1529793 5338 13 371208 1.2 20.3 192 1650.9915320216 1674.9092561917 320382.36367128 534613316.7851
-454	1535131 4585 15 371208 1.4 20.3 190 0.973 8.4893518813189 521.55335168617 2112.9012113471
-453	1539716 5389 15 371208 1.4 20.3 190 -4.1100790777878 2.6 -20.272725964903 523.62103647692
-452	1545105 5305 14 371208 1.3 20.3 191 3.5497557801444 13.887178765009 2207.578644888 27546.600308338
-451	1550410 5328 13 371208 1.2 20.3 192 541.39048363508 740.19984306057 127168.49813262 85026734.008195
-450	1555738 5334 13 371208 1.2 20.3 192 611.77069645469 646.36034740401 119138.33360835 73935688.086355
-553	1561072 4066 31 371208 3 20.3 174 0.973 5.5100624225535 365.52295285485 1084.7980780171
-552	1565138 4985 31 371208 3 20.3 174 -3.6865285680796 2.6 -76.650724320882 391.45292975574
-551	1570123 4882 30 371208 2.9 20.3 175 3.3923245960451 13.889498196724 1942.4753888948 23873.270073664
-550	1575005 4897 29 371208 2.8 20.3 176 541.39048363508 734.65548351653 114944.56287188 75711492.024619
-549	1579902 4914 29 371208 2.8 20.3 176 611.77069645469 623.62961213156 108871.63911724 67349174.750316
-1	1584816 1636 204 3345 20.2 20.205162778271 66 1 66 2211 98021
-2	1586452 241791 256 578581 20.20346202469 20.353646374731 8196 1 8196 33591306 183554093086
-3	1828243 241791 256 578581 20.20346202469 20.353646374731 8196 1 8196 33591306 183554093086
-4	2070034 1941 903 567124 20.204097146432 20.350418562941 73 1 1 73 73
-6	2071975 1941 903 567124 20.204097146432 20.350418562941 73 1 1 73 73
-7	2073916 24 903 903 20.204097146432 20.204097146432 1 1 1 1 1
-15	2073940 6746 1216 578403 20.204281077772 20.353638851092 244 1 1 244 244
-17	2080686 6746 1216 578403 20.204281077772 20.353638851092 244 1 1 244 244
-18	2087432 26 1216 1216 20.204281077772 20.204281077772 1 1 1 1 1
-26	2087458 4397 1200 575388 20.20428092792 20.352829411757 159 1 1 159 159
-28	2091855 4397 1200 575388 20.20428092792 20.352829411757 159 1 1 159 159
-29	2096252 25 1200 1200 20.20428092792 20.20428092792 1 1 1 1 1
-48	2096277 8777 1224 577684 20.204281181656 20.353446526836 317 1 1 317 317
-50	2105054 8777 1224 577684 20.204281181656 20.353446526836 317 1 1 317 317
-51	2113831 26 1224 1224 20.204281181656 20.204281181656 1 1 1 1 1
-59	2113857 687 1196 573669 20.2042806805 20.352240811813 25 1 1 25 25
-61	2114544 687 1196 573669 20.2042806805 20.352240811813 25 1 1 25 25
-62	2115231 24 1196 1196 20.2042806805 20.2042806805 1 1 1 1 1
-70	2115255 3427 332 575461 20.203463699595 20.35283298092 124 1 1 124 124
-72	2118682 3427 332 575461 20.203463699595 20.35283298092 124 1 1 124 124
-73	2122109 25 332 332 20.203463699595 20.203463699595 1 1 1 1 1
-81	2122134 1296 280 490414 20.203462745122 20.330416433878 47 1 1 47 47
-83	2123430 1296 280 490414 20.203462745122 20.330416433878 47 1 1 47 47
-84	2124726 25 280 280 20.203462745122 20.203462745122 1 1 1 1 1
-92	2124751 5554 496 577850 20.203670079117 20.353453201505 201 1 1 201 201
-94	2130305 5554 496 577850 20.203670079117 20.353453201505 201 1 1 201 201
-95	2135859 25 496 496 20.203670079117 20.203670079117 1 1 1 1 1
-103	2135884 5990 639 578065 20.203863925984 20.353539264036 209 1 1 209 209
-105	2141874 5990 639 578065 20.203863925984 20.353539264036 209 1 1 209 209
-106	2147864 26 639 639 20.203863925984 20.203863925984 1 1 1 1 1
-114	2147890 2688 524 575058 20.203670315279 20.352692160138 94 1 1 94 94
-116	2150578 2688 524 575058 20.203670315279 20.352692160138 94 1 1 94 94
-117	2153266 26 524 524 20.203670315279 20.203670315279 1 1 1 1 1
-125	2153292 3916 436 576470 20.203669472285 20.353066141865 137 1 1 137 137
-127	2157208 3916 436 576470 20.203669472285 20.353066141865 137 1 1 137 137
-128	2161124 26 436 436 20.203669472285 20.203669472285 1 1 1 1 1
-136	2161150 3926 296 578214 20.203463232237 20.353569063966 137 1 1 137 137
-138	2165076 3926 296 578214 20.203463232237 20.353569063966 137 1 1 137 137
-139	2169002 26 296 296 20.203463232237 20.203463232237 1 1 1 1 1
-147	2169028 5011 300 574833 20.203463287609 20.352640576056 175 1 1 175 175
-149	2174039 5011 300 574833 20.203463287609 20.352640576056 175 1 1 175 175
-150	2179050 26 300 300 20.203463287609 20.203463287609 1 1 1 1 1
-158	2179076 1224 272 559196 20.20346271469 20.348506640784 43 1 1 43 43
-160	2180300 1224 272 559196 20.20346271469 20.348506640784 43 1 1 43 43
-161	2181524 25 272 272 20.20346271469 20.20346271469 1 1 1 1 1
-169	2181549 4722 284 574345 20.203462756278 20.352449099978 165 1 1 165 165
-171	2186271 4722 284 574345 20.203462756278 20.352449099978 165 1 1 165 165
-172	2190993 26 284 284 20.203462756278 20.203462756278 1 1 1 1 1
-180	2191019 3112 464 574950 20.203669691219 20.352666637029 109 1 1 109 109
-182	2194131 3112 464 574950 20.203669691219 20.352666637029 109 1 1 109 109
-183	2197243 26 464 464 20.203669691219 20.203669691219 1 1 1 1 1
-191	2197269 3097 532 576774 20.203670333252 20.353171355294 108 1 1 108 108
-193	2200366 3097 532 576774 20.203670333252 20.353171355294 108 1 1 108 108
-194	2203463 26 532 532 20.203670333252 20.203670333252 1 1 1 1 1
-202	2203489 2404 468 571573 20.203669724936 20.351662652012 84 1 1 84 84
-204	2205893 2404 468 571573 20.203669724936 20.351662652012 84 1 1 84 84
-205	2208297 26 468 468 20.203669724936 20.203669724936 1 1 1 1 1
-213	2208323 1624 917 567139 20.204097455777 20.350418941888 57 1 1 57 57
-215	2209947 1624 917 567139 20.204097455777 20.350418941888 57 1 1 57 57
-216	2211571 26 917 917 20.204097455777 20.204097455777 1 1 1 1 1
-224	2211597 7494 1358 577508 20.2042902981 20.353371863117 261 1 1 261 261
-226	2219091 7494 1358 577508 20.2042902981 20.353371863117 261 1 1 261 261
-227	2226585 25 1358 1358 20.2042902981 20.2042902981 1 1 1 1 1
-235	2226610 3068 260 576782 20.203462049736 20.353171405028 107 1 1 107 107
-237	2229678 3068 260 576782 20.203462049736 20.353171405028 107 1 1 107 107
-238	2232746 26 260 260 20.203462049736 20.203462049736 1 1 1 1 1
-246	2232772 3825 512 572432 20.203670130473 20.351881820658 134 1 1 134 134
-248	2236597 3825 512 572432 20.203670130473 20.351881820658 134 1 1 134 134
-249	2240422 26 512 512 20.203670130473 20.203670130473 1 1 1 1 1
-257	2240448 307 1180 511767 20.204280242798 20.336085095044 11 1 1 11 11
-259	2240755 307 1180 511767 20.204280242798 20.336085095044 11 1 1 11 11
-260	2241062 27 1180 1180 20.204280242798 20.204280242798 1 1 1 1 1
-268	2241089 3732 892 577535 20.204097021587 20.353372716276 130 1 1 130 130
-270	2244821 3732 892 577535 20.204097021587 20.353372716276 130 1 1 130 130
-271	2248553 26 892 892 20.204097021587 20.204097021587 1 1 1 1 1
-279	2248579 3614 2466 571566 20.204882359443 20.351662318768 126 1 1 126 126
-281	2252193 3614 2466 571566 20.204882359443 20.351662318768 126 1 1 126 126
-282	2255807 27 2466 2466 20.204882359443 20.204882359443 1 1 1 1 1
-290	2255834 7935 595 576519 20.203863264445 20.353089465257 277 1 1 277 277
-292	2263769 7935 595 576519 20.203863264445 20.353089465257 277 1 1 277 277
-293	2271704 26 595 595 20.203863264445 20.203863264445 1 1 1 1 1
-301	2271730 1972 408 578495 20.203668827112 20.353644428118 69 1 1 69 69
-303	2273702 1972 408 578495 20.203668827112 20.353644428118 69 1 1 69 69
-304	2275674 26 408 408 20.203668827112 20.203668827112 1 1 1 1 1
-312	2275700 9061 288 576759 20.203463144537 20.353170258862 316 1 1 316 316
-314	2284761 9061 288 576759 20.203463144537 20.353170258862 316 1 1 316 316
-315	2293822 26 288 288 20.203463144537 20.203463144537 1 1 1 1 1
-323	2293848 684 424 535779 20.203669175557 20.342631765482 24 1 1 24 24
-325	2294532 684 424 535779 20.203669175557 20.342631765482 24 1 1 24 24
-326	2295216 26 424 424 20.203669175557 20.203669175557 1 1 1 1 1
-334	2295242 7105 3345 572959 20.205162778271 20.352047504009 248 1 1 248 248
-336	2302347 7105 3345 572959 20.205162778271 20.352047504009 248 1 1 248 248
-337	2309452 27 3345 3345 20.205162778271 20.205162778271 1 1 1 1 1
-345	2309479 3286 432 575663 20.20366938067 20.352871838257 115 1 1 115 115
-347	2312765 3286 432 575663 20.20366938067 20.352871838257 115 1 1 115 115
-348	2316051 25 432 432 20.20366938067 20.20366938067 1 1 1 1 1
-356	2316076 4270 579 578581 20.203862632304 20.353646374731 149 1 1 149 149
-358	2320346 4270 579 578581 20.203862632304 20.353646374731 149 1 1 149 149
-359	2324616 26 579 579 20.203862632304 20.203862632304 1 1 1 1 1
-367	2324642 5172 885 574847 20.204096850082 20.35264131187 180 1 1 180 180
-369	2329814 5172 885 574847 20.204096850082 20.35264131187 180 1 1 180 180
-370	2334986 26 885 885 20.204096850082 20.204096850082 1 1 1 1 1
-378	2335012 2993 312 540226 20.203463413082 20.343803271219 105 1 1 105 105
-380	2338005 2993 312 540226 20.203463413082 20.343803271219 105 1 1 105 105
-381	2340998 26 312 312 20.203463413082 20.203463413082 1 1 1 1 1
-389	2341024 1451 603 570035 20.203863329805 20.351147012197 51 1 1 51 51
-391	2342475 1451 603 570035 20.203863329805 20.351147012197 51 1 1 51 51
-392	2343926 26 603 603 20.203863329805 20.203863329805 1 1 1 1 1
-400	2343952 2483 412 578498 20.203668877753 20.353644472841 87 1 1 87 87
-402	2346435 2483 412 578498 20.203668877753 20.353644472841 87 1 1 87 87
-403	2348918 26 412 412 20.203668877753 20.203668877753 1 1 1 1 1
-422	2348944 1489 324 576433 20.203463666626 20.353065385807 52 1 1 52 52
-424	2350433 1489 324 576433 20.203463666626 20.353065385807 52 1 1 52 52
-425	2351922 26 324 324 20.203463666626 20.203463666626 1 1 1 1 1
-433	2351948 798 1184 532824 20.204280244635 20.341771264399 28 1 1 28 28
-435	2352746 798 1184 532824 20.204280244635 20.341771264399 28 1 1 28 28
-436	2353544 27 1184 1184 20.204280244635 20.204280244635 1 1 1 1 1
-444	2353571 589 472 561753 20.203669888537 20.34901623481 21 1 1 21 21
-446	2354160 589 472 561753 20.203669888537 20.34901623481 21 1 1 21 21
-447	2354749 26 472 472 20.203669888537 20.203669888537 1 1 1 1 1
-455	2354775 8152 1349 577512 20.204290213119 20.353371927947 284 1 1 284 284
-457	2362927 8152 1349 577512 20.204290213119 20.353371927947 284 1 1 284 284
-458	2371079 27 1349 1349 20.204290213119 20.204290213119 1 1 1 1 1
-466	2371106 3088 256 576778 20.20346202469 20.353171379984 108 1 1 108 108
-468	2374194 3088 256 576778 20.20346202469 20.353171379984 108 1 1 108 108
-469	2377282 25 256 256 20.20346202469 20.20346202469 1 1 1 1 1
-477	2377307 3606 316 576446 20.203463630953 20.353065910629 126 1 1 126 126
-479	2380913 3606 316 576446 20.203463630953 20.353065910629 126 1 1 126 126
-480	2384519 26 316 316 20.203463630953 20.203463630953 1 1 1 1 1
-488	2384545 4929 1204 573653 20.20428092995 20.352240345474 172 1 1 172 172
-490	2389474 4929 1204 573653 20.20428092995 20.352240345474 172 1 1 172 172
-491	2394403 26 1204 1204 20.20428092995 20.20428092995 1 1 1 1 1
-499	2394429 4736 304 574325 20.203463370886 20.352448489162 165 1 1 165 165
-501	2399165 4736 304 574325 20.203463370886 20.352448489162 165 1 1 165 165
-502	2403901 26 304 304 20.203463370886 20.203463370886 1 1 1 1 1
-510	2403927 1480 276 559937 20.203462733664 20.348698575825 52 1 1 52 52
-512	2405407 1480 276 559937 20.203462733664 20.348698575825 52 1 1 52 52
-513	2406887 26 276 276 20.203462733664 20.203462733664 1 1 1 1 1
-521	2406913 1946 416 577778 20.203668951712 20.353451976956 68 1 1 68 68
-523	2408859 1946 416 577778 20.203668951712 20.353451976956 68 1 1 68 68
-524	2410805 26 416 416 20.203668951712 20.203668951712 1 1 1 1 1
-532	2410831 883 1176 532036 20.204280230611 20.341578268366 31 1 1 31 31
-534	2411714 883 1176 532036 20.204280230611 20.341578268366 31 1 1 31 31
-535	2412597 27 1176 1176 20.204280230611 20.204280230611 1 1 1 1 1
-543	2412624 760 480 548704 20.203669961715 20.345930193142 27 1 1 27 27
-545	2413384 760 480 548704 20.203669961715 20.345930193142 27 1 1 27 27
-546	2414144 26 480 480 20.203669961715 20.203669961715 1 1 1 1 1
-554	2414170 3842 896 577531 20.204097088082 20.353372665405 134 1 1 134 134
-556	2418012 3842 896 577531 20.204097088082 20.353372665405 134 1 1 134 134
-557	2421854 26 896 896 20.204097088082 20.204097088082 1 1 1 1 1
-565	2421880 1577 440 571771 20.203669487929 20.351689021885 55 1 1 55 55
-567	2423457 1577 440 571771 20.203669487929 20.351689021885 55 1 1 55 55
-568	2425034 26 440 440 20.203669487929 20.203669487929 1 1 1 1 1
-576	2425060 1080 320 574198 20.203463653698 20.352401039817 38 1 1 38 38
-578	2426140 1080 320 574198 20.203463653698 20.352401039817 38 1 1 38 38
-579	2427220 26 320 320 20.203463653698 20.203463653698 1 1 1 1 1
-587	2427246 4270 1208 575391 20.204280938506 20.352829436498 149 1 1 149 149
-589	2431516 4270 1208 575391 20.204280938506 20.352829436498 149 1 1 149 149
-590	2435786 27 1208 1208 20.204280938506 20.204280938506 1 1 1 1 1
-598	2435813 2602 907 577527 20.204097265968 20.353372539733 91 1 1 91 91
-600	2438415 2602 907 577527 20.204097265968 20.353372539733 91 1 1 91 91
-601	2441017 26 907 907 20.204097265968 20.204097265968 1 1 1 1 1
-609	2441043 3803 328 574841 20.203463699097 20.352640860009 133 1 1 133 133
-611	2444846 3803 328 574841 20.203463699097 20.352640860009 133 1 1 133 133
-612	2448649 26 328 328 20.203463699097 20.203463699097 1 1 1 1 1
-620	2448675 1054 420 576417 20.20366911878 20.353065117605 37 1 1 37 37
-622	2449729 1054 420 576417 20.20366911878 20.353065117605 37 1 1 37 37
-623	2450783 25 420 420 20.20366911878 20.20366911878 1 1 1 1 1
-631	2450808 9015 1212 578390 20.204281045647 20.353638705955 314 1 1 314 314
-633	2459823 9015 1212 578390 20.204281045647 20.353638705955 314 1 1 314 314
-634	2468838 27 1212 1212 20.204281045647 20.204281045647 1 1 1 1 1
-642	2468865 2428 308 537920 20.203463374321 20.343222647349 85 1 1 85 85
-644	2471293 2428 308 537920 20.203463374321 20.343222647349 85 1 1 85 85
-645	2473721 26 308 308 20.203463374321 20.203463374321 1 1 1 1 1
-653	2473747 1312 1386 524661 20.204290713318 20.33954299258 46 1 1 46 46
-655	2475059 1312 1386 524661 20.204290713318 20.33954299258 46 1 1 46 46
-656	2476371 27 1386 1386 20.204290713318 20.204290713318 1 1 1 1 1
-664	2476398 4962 264 578220 20.203462086802 20.35356951787 173 1 1 173 173
-666	2481360 4962 264 578220 20.203462086802 20.35356951787 173 1 1 173 173
-667	2486322 26 264 264 20.203462086802 20.203462086802 1 1 1 1 1
-675	2486348 9477 292 578209 20.203463228271 20.353568586421 330 1 1 330 330
-677	2495825 9477 292 578209 20.203463228271 20.353568586421 330 1 1 330 330
-678	2505302 26 292 292 20.203463228271 20.203463228271 1 1 1 1 1
-708	2505328 3634 476 575000 20.203669921057 20.352667193797 127 1 1 127 127
-710	2508962 3634 476 575000 20.203669921057 20.352667193797 127 1 1 127 127
-711	2512596 26 476 476 20.203669921057 20.203669921057 1 1 1 1 1
-719	2512622 6190 1342 574147 20.204290164341 20.352372055426 216 1 1 216 216
-721	2518812 6190 1342 574147 20.204290164341 20.352372055426 216 1 1 216 216
-722	2525002 27 1342 1342 20.204290164341 20.204290164341 1 1 1 1 1
-730	2525029 1567 488 571755 20.203669986381 20.351688803704 55 1 1 55 55
-732	2526596 1567 488 571755 20.203669986381 20.351688803704 55 1 1 55 55
-733	2528163 26 488 488 20.203669986381 20.203669986381 1 1 1 1 1
-741	2528189 855 268 571335 20.203462438459 20.351578588921 30 1 1 30 30
-743	2529044 855 268 571335 20.203462438459 20.351578588921 30 1 1 30 30
-744	2529899 26 268 268 20.203462438459 20.203462438459 1 1 1 1 1
-763	2529925 4324 940 577518 20.204097724332 20.353372330963 151 1 1 151 151
-765	2534249 4324 940 577518 20.204097724332 20.353372330963 151 1 1 151 151
-766	2538573 26 940 940 20.204097724332 20.204097724332 1 1 1 1 1
+vector 269  FranciscoScenario.node[24].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 271  FranciscoScenario.node[24].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 272  FranciscoScenario.node[24].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 808  FranciscoScenario.node[73].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 810  FranciscoScenario.node[73].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 811  FranciscoScenario.node[73].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 797  FranciscoScenario.node[72].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 799  FranciscoScenario.node[72].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 800  FranciscoScenario.node[72].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 313  FranciscoScenario.node[28].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 315  FranciscoScenario.node[28].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 316  FranciscoScenario.node[28].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 467  FranciscoScenario.node[42].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 469  FranciscoScenario.node[42].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 470  FranciscoScenario.node[42].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 203  FranciscoScenario.node[18].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 205  FranciscoScenario.node[18].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 206  FranciscoScenario.node[18].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 588  FranciscoScenario.node[53].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 590  FranciscoScenario.node[53].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 591  FranciscoScenario.node[53].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 104  FranciscoScenario.node[9].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 106  FranciscoScenario.node[9].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 107  FranciscoScenario.node[9].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+vector 247  FranciscoScenario.node[22].appl  warningReceivedSignal:vector  ETV
+attr description  "Warning Received"
+vector 249  FranciscoScenario.node[22].appl  messageReceivedSignal:vector  ETV
+attr description  "Message Received"
+vector 250  FranciscoScenario.node[22].appl  newWarningReceivedSignal:vector  ETV
+attr description  "New Warning Received"
+8	54057 24 288 288 11.203745567598 11.203745567598 1 1 1 1 1
+7	54081 96 288 2186 11.203745567598 11.205139329589 4 1 1 4 4
+5	54177 96 288 2186 11.203745567598 11.205139329589 4 1 1 4 4
+15	54273 2734 4 114 0.3 11.2 110 0.973 10.408755057689 433.07506077168 2267.9220861017
+14	57007 2905 4 114 0.3 11.2 110 -1.0362348317867 2.5878362877294 135.89781593439 285.50954127134
+13	59912 2877 3 114 0.2 11.2 111 0.25286542447004 13.887498742575 1068.7375498229 12499.651955497
+12	62789 2895 2 114 0.1 11.2 112 691.04991941615 796.33090074521 81761.249560169 59810148.769224
+11	65684 2898 2 114 0.1 11.2 112 1568.1830956363 1574.8660748493 175913.50108624 276300139.37579
+19	68582 24 276 276 11.20374542308 11.20374542308 1 1 1 1 1
+18	68606 74 276 2004 11.20374542308 11.205091608852 3 1 1 3 3
+16	68680 74 276 2004 11.20374542308 11.205091608852 3 1 1 3 3
+26	68754 2518 14 114 1.3 11.2 100 0.973 9.1503434227287 410.62578781125 2177.3647521265
+25	71272 2643 14 114 1.3 11.2 100 -0.88781702904962 2.5951772950124 136.21963395364 277.60388264301
+24	73915 2621 13 114 1.2 11.2 101 0.2550030377931 13.887622917856 916.88274337286 10381.825816036
+23	76536 2648 12 114 1.1 11.2 102 529.87073896595 620.00734083158 57334.237601084 32308505.241912
+22	79184 2655 12 114 1.1 11.2 102 800.79024464061 806.28343489024 81880.950155486 65730594.601678
+877	81839 26 626 626 11.204289917066 11.204289917066 1 1 1 1 1
+876	81865 106 626 2024 11.204289917066 11.205091777428 4 1 1 4 4
+874	81971 106 626 2024 11.204289917066 11.205091777428 4 1 1 4 4
+884	82077 287 104 114 10.3 11.2 10 1.4196288437261 2.7082285074043 20.133962163638 42.070758213852
+883	82364 287 104 114 10.3 11.2 10 1.7940568343646 2.5787509843499 22.833407196893 52.743020493286
+882	82651 321 103 114 10.2 11.2 11 0.25015888548736 2.5334996051767 15.473833606142 27.361203179321
+881	82972 345 102 114 10.1 11.2 12 1150.4823433436 1150.5615948571 13806.110107411 15884056.366327
+880	83317 345 102 114 10.1 11.2 12 639.29806219394 640.58964767084 7681.8282494886 4917542.606167
+893	83662 30 114 114 11.2 11.2 1 0.25609581947629 0.25609581947629 0.25609581947629 0.065585068753234
+892	83692 58 112 114 11.1 11.2 2 1373.6894595291 1373.6894595291 2747.3789190582 3774045.4624426
+891	83750 58 112 114 11.1 11.2 2 192.75836106961 192.75836106961 385.51672213921 74311.571524482
+602	83808 27 1048 1048 11.204483377559 11.204483377559 1 1 1 1 1
+601	83835 81 1048 2016 11.204483377559 11.205091655417 3 1 1 3 3
+599	83916 81 1048 2016 11.204483377559 11.205091655417 3 1 1 3 3
+609	83997 2208 24 114 2.3 11.2 90 0.973 9.1855673300623 351.1383740343 1919.2528461353
+608	86205 2436 24 114 2.3 11.2 90 -4.5 2.587411686941 65.170139001687 497.76246655804
+607	88641 2459 23 114 2.2 11.2 91 0.24776208983548 13.6107904741 708.56763687641 6793.1714519683
+606	91100 2486 22 114 2.1 11.2 92 1165.698051097 1169.9882325955 107488.58356409 125584916.26558
+605	93586 2483 22 114 2.1 11.2 92 376.32064112857 446.37214128105 37076.199477891 14990184.558068
+745	96069 27 1652 1652 11.204905465399 11.204905465399 1 1 1 1 1
+744	96096 54 1652 2064 11.204905465399 11.205098877232 2 1 1 2 2
+742	96150 54 1652 2064 11.204905465399 11.205098877232 2 1 1 2 2
+752	96204 1875 37 114 3.6 11.2 77 0.973 8.4588769101325 273.38429581064 1398.1122514419
+751	98079 2103 37 114 3.6 11.2 77 -3.1815209314017 2.5796210545115 75.968947832062 335.67631413607
+750	100182 2112 36 114 3.5 11.2 78 0.25948454403202 11.851036584069 558.24436400307 4927.2054262717
+749	102294 2122 35 114 3.4 11.2 79 1063.5026 1066.8761545884 84115.571227697 89562490.334266
+748	104416 2124 35 114 3.4 11.2 79 2001.8544039766 2056.7896 160876.44043037 327635378.678
+763	106540 1897 44 114 4.3 11.2 70 1.4407627239117 9.7180391084987 339.92312316673 1974.8438085728
+762	108437 1898 44 114 4.3 11.2 70 1.3085732168984 2.599936388533 135.58358203586 273.71136784527
+761	110335 1928 43 114 4.2 11.2 71 0.25874613880296 13.817104342389 507.39197273017 4689.7464651877
+760	112263 1946 42 114 4.1 11.2 72 3326.11360858 3375.3794676906 241816.81190347 812173917.42971
+759	114209 1952 42 114 4.1 11.2 72 1447.7245935015 1450.7295087503 104378.69095833 151318269.58579
+800	116161 27 1741 1741 11.204933047345 11.204933047345 1 1 1 1 1
+799	116188 27 1741 1741 11.204933047345 11.204933047345 1 1 1 1 1
+797	116215 27 1741 1741 11.204933047345 11.204933047345 1 1 1 1 1
+807	116242 1625 54 114 5.3 11.2 60 1.4195031902106 9.1132550452448 270.24440924926 1441.6622645322
+806	117867 1621 54 114 5.3 11.2 60 1.3261766451877 2.5949819672387 119.50889539355 246.93940735396
+805	119488 1662 53 114 5.2 11.2 61 0.25533173784404 12.206221277199 384.69248868249 3146.4428721899
+804	121150 1685 52 114 5.1 11.2 62 1256.6541109364 1293.8299640103 79433.951532015 101778101.10497
+803	122835 1683 52 114 5.1 11.2 62 1510.8689262603 1513.1919383033 93768.941125507 141816390.83161
+811	124518 27 1678 1678 11.204906170223 11.204906170223 1 1 1 1 1
+810	124545 27 1678 1678 11.204906170223 11.204906170223 1 1 1 1 1
+808	124572 27 1678 1678 11.204906170223 11.204906170223 1 1 1 1 1
+818	124599 1360 64 114 6.3 11.2 50 1.4569401869215 7.2240710524947 196.94502576945 892.22691432398
+817	125959 1357 64 114 6.3 11.2 50 1.3476132542128 2.5999055697891 99.175360750715 202.46907138346
+816	127316 1394 63 114 6.2 11.2 51 0.2541155041093 10.171651579181 271.55078162022 1864.3419141125
+815	128710 1416 62 114 6.1 11.2 52 1277.8966817468 1282.7714911145 66557.540011694 85190686.422187
+814	130126 1412 62 114 6.1 11.2 52 1995.1909968224 2021.0827678123 104205.82333958 208827350.98013
+833	131538 26 442 442 11.204002808537 11.204002808537 1 1 1 1 1
+832	131564 104 442 2174 11.204002808537 11.205139147444 4 1 1 4 4
+830	131668 104 442 2174 11.204002808537 11.205139147444 4 1 1 4 4
+840	131772 1096 74 114 7.3 11.2 40 1.4176518353522 6.6855187085781 142.05639712016 573.88629867208
+839	132868 1095 74 114 7.3 11.2 40 1.3927647721488 2.5841263209935 82.104233308998 173.07963826122
+838	133963 1126 73 114 7.2 11.2 41 0.25062442447129 8.4610477553711 181.95654708695 1042.0545529071
+837	135089 1152 72 114 7.1 11.2 42 472.28047739201 489.59763262656 20083.275172398 9604475.5577674
+836	136241 1152 72 114 7.1 11.2 42 1744.1611576504 1745.2196763156 73269.896868569 127820904.14442
+844	137393 26 598 598 11.204289751644 11.204289751644 1 1 1 1 1
+843	137419 79 598 2040 11.204289751644 11.205091914948 3 1 1 3 3
+841	137498 79 598 2040 11.204289751644 11.205091914948 3 1 1 3 3
+851	137577 827 84 114 8.3 11.2 30 1.4199752378404 4.8882953420844 91.427045940447 303.78283677089
+850	138404 825 84 114 8.3 11.2 30 1.3422577313147 2.5970170868977 62.567194155548 135.27505173747
+849	139229 859 83 114 8.2 11.2 31 0.25351293192338 6.5102323474781 109.59380028711 493.38416878068
+848	140088 883 82 114 8.1 11.2 32 1144.6829790736 1145.3155869088 36636.802082673 41945478.325753
+847	140971 883 82 114 8.1 11.2 32 724.69062671282 734.97959322831 23406.362448487 17120883.52932
+866	141854 27 1581 1581 11.204897329122 11.204897329122 1 1 1 1 1
+865	141881 27 1581 1581 11.204897329122 11.204897329122 1 1 1 1 1
+863	141908 27 1581 1581 11.204897329122 11.204897329122 1 1 1 1 1
+873	141935 558 94 114 9.3 11.2 20 1.423582978317 3.5245949291377 49.472035779722 130.29399720734
+872	142493 561 94 114 9.3 11.2 20 1.3959031694801 2.5918909023749 41.85361117352 90.141839410961
+871	143054 590 93 114 9.2 11.2 21 0.25563039991469 4.4409915172667 51.018868652873 157.55912608657
+870	143644 613 92 114 9.1 11.2 22 1348.3877844311 1351.9600270838 29692.967734725 40076075.862978
+869	144257 615 92 114 9.1 11.2 22 743.08054322496 747.52958083832 16412.376958709 12243956.081686
+822	144872 26 272 272 11.203745404083 11.203745404083 1 1 1 1 1
+821	144898 79 272 2012 11.203745404083 11.205091637171 3 1 1 3 3
+819	144977 79 272 2012 11.203745404083 11.205091637171 3 1 1 3 3
+829	145056 1108 69 114 6.8 11.2 45 0.973 5.2855816087685 103.98677170953 312.52053559299
+828	146164 1298 69 114 6.8 11.2 45 -1.0961308470927 0.9737157454947 0.1989714641357 10.888079247142
+827	147462 1243 68 114 6.7 11.2 46 13.76327932473 13.889377640586 635.83847607082 8788.9865513219
+826	148705 1281 67 114 6.6 11.2 47 529.87073896595 591.95816293127 26331.333085633 14768264.638996
+825	149986 1281 67 114 6.6 11.2 47 800.79024464061 804.57403529714 37724.131971362 30278999.794458
+30	151267 25 292 292 11.203745572227 11.203745572227 1 1 1 1 1
+29	151292 76 292 2170 11.203745572227 11.205139107722 3 1 1 3 3
+27	151368 76 292 2170 11.203745572227 11.205139107722 3 1 1 3 3
+37	151444 2088 15 114 1.4 11.2 99 0.973 5.8915060300039 238.59574901736 836.58896133037
+36	153532 2466 15 114 1.4 11.2 99 -4.5 2.6 -54.039276385056 533.28682430012
+35	155998 2602 14 114 1.3 11.2 100 3.2194925824432 13.887401602597 924.01329377114 10104.101660815
+34	158600 2620 13 114 1.2 11.2 101 673.98875805021 682.1574115983 68519.964559684 46485503.820062
+33	161220 2622 13 114 1.2 11.2 101 1579.1503818953 1660.1758641691 164896.80500661 269282751.76288
+41	163842 25 212 212 11.203744486551 11.203744486551 1 1 1 1 1
+40	163867 152 212 2150 11.203744486551 11.205138985839 6 1 1 6 6
+38	164019 152 212 2150 11.203744486551 11.205138985839 6 1 1 6 6
+48	164171 2334 15 114 1.4 11.2 99 0.973 10.537775799429 303.75682757403 1465.5490620871
+47	166505 2720 15 114 1.4 11.2 99 -1.1629426968284 2.5577951150713 27.802136301924 75.419885428127
+46	169225 2599 14 114 1.3 11.2 100 11.07441806556 13.889648582141 1360.7020926326 18552.375837085
+45	171824 2607 13 114 1.2 11.2 101 493.12 625.36982598362 56217.011626262 31451192.215053
+44	174431 2607 13 114 1.2 11.2 101 1268.53 1279.7059053874 128817.33866973 164296801.1996
+52	177038 25 188 188 11.203744085353 11.203744085353 1 1 1 1 1
+51	177063 152 188 2146 11.203744085353 11.205138947836 6 1 1 6 6
+49	177215 152 188 2146 11.203744085353 11.205138947836 6 1 1 6 6
+59	177367 1878 15 114 1.4 11.2 99 0.973 7.1488868008734 201.61473048296 707.64021804467
+58	179245 2467 15 114 1.4 11.2 99 -4.5 2.6 -91.78887158424 569.63267092513
+57	181712 2607 14 114 1.3 11.2 100 0.56009843726074 9.7389855956847 504.49188199158 3163.6709263126
+56	184319 2617 13 114 1.2 11.2 101 490.06305996004 494.55612403116 49708.741284835 24465141.017276
+55	186936 2615 13 114 1.2 11.2 101 1239.4677487943 1266.4584305488 126489.57031252 158419887.89222
+789	189551 26 192 192 11.203744129281 11.203744129281 1 1 1 1 1
+788	189577 158 192 2142 11.203744129281 11.205138903669 6 1 1 6 6
+786	189735 158 192 2142 11.203744129281 11.205138903669 6 1 1 6 6
+796	189893 1314 51 114 5 11.2 63 0.973 6.2617840100428 136.41263349498 479.08423615267
+795	191207 1548 51 114 5 11.2 63 -4.5 2.6 -51.70428947177 423.66155400885
+794	192755 1693 50 114 4.9 11.2 64 3.2914215603992 9.39 371.1067678842 2299.6532107371
+793	194448 1755 49 114 4.8 11.2 65 490.07427132509 494.55612403116 32017.779851202 15771529.002351
+792	196203 1761 49 114 4.8 11.2 65 1244.9196195562 1266.4446908159 81771.113029253 102871638.68204
+63	197964 24 914 914 11.20442998189 11.20442998189 1 1 1 1 1
+62	197988 76 914 2088 11.20442998189 11.205099671082 3 1 1 3 3
+60	198064 76 914 2088 11.20442998189 11.205099671082 3 1 1 3 3
+70	198140 2109 15 114 1.4 11.2 99 0.973 6.7642531127064 261.86143469951 1043.5786132245
+69	200249 2547 15 114 1.4 11.2 99 -4.4083439845952 2.6 -40.537094636313 469.71410638951
+68	202796 2599 14 114 1.3 11.2 100 3.3746103789746 13.884283193788 965.38028676439 10661.625388807
+67	205395 2627 13 114 1.2 11.2 101 1086.7025381545 1094.8770729711 110142.24309293 120112549.0036
+66	208022 2623 13 114 1.2 11.2 101 1597.9821415312 1679.4495797135 164237.01934901 267131890.70869
+624	210645 26 910 910 11.204429975329 11.204429975329 1 1 1 1 1
+623	210671 80 910 2092 11.204429975329 11.205099699338 3 1 1 3 3
+621	210751 80 910 2092 11.204429975329 11.205099699338 3 1 1 3 3
+631	210831 1687 31 114 3 11.2 83 0.973 6.2811870752165 131.7187876636 311.17240018252
+630	212518 2298 31 114 3 11.2 83 -3.9958823940068 2.6 -98.30128548332 310.66671169503
+629	214816 2271 30 114 2.9 11.2 84 3.4514564316436 13.889597059374 762.78881771182 7967.0512895448
+628	217087 2291 29 114 2.8 11.2 85 1086.7025381545 1091.3527220309 92606.354697203 100893540.37419
+627	219378 2291 29 114 2.8 11.2 85 1603.7103779572 1679.4495797135 138898.99131108 227019342.08522
+74	221669 25 918 918 11.204430000023 11.204430000023 1 1 1 1 1
+73	221694 77 918 2072 11.204430000023 11.205099431641 3 1 1 3 3
+71	221771 77 918 2072 11.204430000023 11.205099431641 3 1 1 3 3
+81	221848 2126 15 114 1.4 11.2 99 0.973 6.7045863496777 265.98495674237 1085.4573213997
+80	223974 2551 15 114 1.4 11.2 99 -3.9124649133552 2.6 -36.26199714269 465.50020653344
+79	226525 2595 14 114 1.3 11.2 100 3.5019196210988 13.885681089771 970.06305603357 10703.054513822
+78	229120 2623 13 114 1.2 11.2 101 1080.9230573625 1098.7781722966 109610.52379551 118956464.10178
+77	231743 2619 13 114 1.2 11.2 101 1688.0568514738 1773.329651094 173584.63213992 298404617.1038
+85	234362 25 586 586 11.204289683763 11.204289683763 1 1 1 1 1
+84	234387 77 586 1984 11.204289683763 11.205090869939 3 1 1 3 3
+82	234464 77 586 1984 11.204289683763 11.205090869939 3 1 1 3 3
+92	234541 2285 15 114 1.4 11.2 99 0.973 5.5853893250001 229.09290596708 712.62513658555
+91	236826 2738 15 114 1.4 11.2 99 -1.1147661666386 1.0643074132269 -0.7668429123005 27.485625982208
+90	239564 2593 14 114 1.3 11.2 100 13.760924730215 13.887971211271 1382.7934904755 19121.320211358
+89	242157 2627 13 114 1.2 11.2 101 754.53044266613 891.17433281414 83039.642016897 68436427.425265
+88	244784 2606 13 114 1.2 11.2 101 530.52867605348 538.81453634307 53997.681582696 28869408.67349
+96	247390 26 1585 1585 11.204897355844 11.204897355844 1 1 1 1 1
+95	247416 26 1585 1585 11.204897355844 11.204897355844 1 1 1 1 1
+93	247442 26 1585 1585 11.204897355844 11.204897355844 1 1 1 1 1
+103	247468 2626 15 114 1.4 11.2 99 -0.76950977911249 12.027260755546 467.23554249312 3300.2643157818
+102	250094 2828 15 114 1.4 11.2 99 -1.1711448333925 1.1348781648558 0.86079258611427 30.286094282444
+101	252922 2699 14 114 1.3 11.2 100 27.652687809693 27.779606555924 2771.7075198095 76823.778330017
+100	255621 2728 13 114 1.2 11.2 101 1357.5844510884 1374.1329240251 137960.42916904 188448734.0727
+99	258349 2621 13 114 1.2 11.2 101 485.59032831575 759.47914852671 62738.771318441 39627982.734496
+107	260970 27 2032 2032 11.205091898148 11.205091898148 1 1 1 1 1
+106	260997 27 2032 2032 11.205091898148 11.205091898148 1 1 1 1 1
+104	261024 27 2032 2032 11.205091898148 11.205091898148 1 1 1 1 1
+114	261051 2330 15 114 1.4 11.2 99 0.973 6.0868238801408 239.20911911982 811.2936866059
+113	263381 2818 15 114 1.4 11.2 99 -1.1988147507654 1.2134192711208 0.42468590165955 35.057319167017
+112	266199 2696 14 114 1.3 11.2 100 13.761255937021 13.88991365198 1382.2937052871 19107.50366055
+111	268895 2722 13 114 1.2 11.2 101 142.87050181931 279.45777154246 21259.28455337 4638097.5544641
+110	271617 2726 13 114 1.2 11.2 101 302.14060857533 310.47479226926 30932.910674202 9474320.3895401
+118	274343 26 264 264 11.203745379272 11.203745379272 1 1 1 1 1
+117	274369 53 264 2028 11.203745379272 11.205091894908 2 1 1 2 2
+115	274422 53 264 2028 11.203745379272 11.205091894908 2 1 1 2 2
+125	274475 2382 15 114 1.4 11.2 99 0.973 5.3544730668305 227.50791167367 692.97301182957
+124	276857 2819 15 114 1.4 11.2 99 -4.5 0.99504242271651 -3.94714793819 44.175258398277
+123	279676 2695 14 114 1.3 11.2 100 13.382173863542 13.887208846542 1382.0848080829 19101.905392604
+122	282371 2716 13 114 1.2 11.2 101 781.46584092187 918.07955927052 85895.064832296 73212400.327932
+121	285087 2725 13 114 1.2 11.2 101 913.54870095194 921.79281155015 92688.8512539 85062209.887831
+129	287812 24 902 902 11.2044299675 11.2044299675 1 1 1 1 1
+128	287836 105 902 2096 11.2044299675 11.205099766914 4 1 1 4 4
+126	287941 105 902 2096 11.2044299675 11.205099766914 4 1 1 4 4
+136	288046 2409 15 114 1.4 11.2 99 0.973 5.8111917614048 235.83122791749 714.14703631204
+135	290455 2829 15 114 1.4 11.2 99 -1.0762572985375 1.1311065143906 0.86579592376948 26.48052464536
+134	293284 2697 14 114 1.3 11.2 100 13.76257932476 13.888728922086 1382.2633480375 19106.652009605
+133	295981 2718 13 114 1.2 11.2 101 661.97863567305 798.51467058959 73685.759125931 53921437.826326
+132	298699 2724 13 114 1.2 11.2 101 2039.5178304467 2048.5823484484 206444.46803252 421974168.23118
+140	301423 26 566 566 11.204289216793 11.204289216793 1 1 1 1 1
+139	301449 80 566 1992 11.204289216793 11.205091070811 3 1 1 3 3
+137	301529 80 566 1992 11.204289216793 11.205091070811 3 1 1 3 3
+147	301609 2355 15 114 1.4 11.2 99 0.973 5.9714428406783 238.93157900032 775.32232773492
+146	303964 2830 15 114 1.4 11.2 99 -1.1666998973582 1.1792820251547 0.77445107873064 31.798144492499
+145	306794 2702 14 114 1.3 11.2 100 13.76221128545 13.889651981085 1382.8298695886 19122.352300814
+144	309496 2726 13 114 1.2 11.2 101 726.27078500707 734.61859726686 73770.50437887 53882662.206395
+143	312222 2725 13 114 1.2 11.2 101 667.9127630793 804.53961810467 74428.106482796 55010269.597902
+151	314947 26 582 582 11.204289603259 11.204289603259 1 1 1 1 1
+150	314973 53 582 1996 11.204289603259 11.205091144437 2 1 1 2 2
+148	315026 53 582 1996 11.204289603259 11.205091144437 2 1 1 2 2
+158	315079 2402 15 114 1.4 11.2 99 0.973 9.6140533173383 284.27120068456 1352.1110864896
+157	317481 2808 15 114 1.4 11.2 99 -0.95511643909848 2.4646804874064 27.317568068812 76.839637963584
+156	320289 2698 14 114 1.3 11.2 100 11.053521473231 13.88249653213 1170.2254207045 13802.351180183
+155	322987 2723 13 114 1.2 11.2 101 533.42751530296 567.47931815989 54496.455755382 29411527.985341
+154	325710 2721 13 114 1.2 11.2 101 528.92034319527 613.36302224824 58587.763124438 34064977.630687
+162	328431 26 196 196 11.203744159264 11.203744159264 1 1 1 1 1
+161	328457 157 196 2158 11.203744159264 11.205139034243 6 1 1 6 6
+159	328614 157 196 2158 11.203744159264 11.205139034243 6 1 1 6 6
+169	328771 2408 15 114 1.4 11.2 99 0.973 6.7906433874716 251.60802766344 863.28505951514
+168	331179 2839 15 114 1.4 11.2 99 -1.0921431713039 1.2126279522199 -0.52204694068058 26.9749342771
+167	334018 2701 14 114 1.3 11.2 100 15.520260779534 15.648822200354 1558.0988792361 24276.855064033
+166	336719 2724 13 114 1.2 11.2 101 293.16064620708 447.13102548094 37308.744333909 13988990.83822
+165	339443 2725 13 114 1.2 11.2 101 1205.5798239733 1214.961943646 122232.70892194 147929830.77098
+613	342168 26 208 208 11.203744237161 11.203744237161 1 1 1 1 1
+612	342194 158 208 2162 11.203744237161 11.205139052001 6 1 1 6 6
+610	342352 158 208 2162 11.203744237161 11.205139052001 6 1 1 6 6
+620	342510 2069 30 114 2.9 11.2 84 0.973 6.5476972886519 212.89433954134 729.79867645422
+619	344579 2405 30 114 2.9 11.2 84 -1.1998026878897 1.1499835046717 -0.71206875499337 23.844682684721
+618	346984 2295 29 114 2.8 11.2 85 15.477574900037 15.649380110847 1324.1086241401 20626.755776051
+617	349279 2323 28 114 2.7 11.2 86 293.16064620708 423.77634447642 30764.361495532 11133083.206009
+616	351602 2322 28 114 2.7 11.2 86 1205.5798239733 1213.5387717221 104018.18711297 125811908.06238
+173	353924 26 466 466 11.204003158528 11.204003158528 1 1 1 1 1
+172	353950 105 466 2190 11.204003158528 11.205139602107 4 1 1 4 4
+170	354055 105 466 2190 11.204003158528 11.205139602107 4 1 1 4 4
+180	354160 2195 15 114 1.4 11.2 99 0.973 7.1731091450079 266.72759275209 1093.3210264908
+179	356355 2635 15 114 1.4 11.2 99 -4.5 2.6 -37.618861675293 473.90591121254
+178	358990 2699 14 114 1.3 11.2 100 3.4964773113623 13.889992804453 973.99011393219 10772.202775131
+177	361689 2720 13 114 1.2 11.2 101 656.9751043509 662.91874098543 66701.234595989 44050340.766124
+176	364409 2723 13 114 1.2 11.2 101 1840.4444586468 1936.6496215069 189998.12659983 357495621.51558
+184	367132 26 240 240 11.203744990861 11.203744990861 1 1 1 1 1
+183	367158 185 240 2210 11.203744990861 11.20513989251 7 1 1 7 7
+181	367343 185 240 2210 11.203744990861 11.20513989251 7 1 1 7 7
+191	367528 2186 15 114 1.4 11.2 99 0.973 6.3649998464324 231.02418952865 794.20445571752
+190	369714 2586 15 114 1.4 11.2 99 -4.5 2.6 -56.085958889035 516.54697575897
+189	372300 2698 14 114 1.3 11.2 100 3.1948012828406 13.877448550137 919.92159287736 10049.26429427
+188	374998 2728 13 114 1.2 11.2 101 708.74571125015 717.10906890928 71974.487781623 51290886.615938
+187	377726 2725 13 114 1.2 11.2 101 1005.6925869478 1086.6102349191 104348.86743966 107873948.90673
+195	380451 26 906 906 11.204429974856 11.204429974856 1 1 1 1 1
+194	380477 80 906 1672 11.204429974856 11.204906033787 3 1 1 3 3
+192	380557 80 906 1672 11.204429974856 11.204906033787 3 1 1 3 3
+202	380637 2350 15 114 1.4 11.2 99 0.973 5.951165271263 231.70392664824 742.40348532883
+201	382987 2819 15 114 1.4 11.2 99 -1.1099356815685 1.1735296363244 0.35047480904032 28.81865851776
+200	385806 2694 14 114 1.3 11.2 100 13.760093861592 13.886365800989 1382.0978355355 19102.069673353
+199	388500 2725 13 114 1.2 11.2 101 505.44998181722 642.07747724975 58019.377437924 33492570.795825
+198	391225 2727 13 114 1.2 11.2 101 2034.0975874768 2041.6099898888 205827.03982925 419453665.48377
+206	393952 27 1976 1976 11.205090822514 11.205090822514 1 1 1 1 1
+205	393979 27 1976 1976 11.205090822514 11.205090822514 1 1 1 1 1
+203	394006 27 1976 1976 11.205090822514 11.205090822514 1 1 1 1 1
+213	394033 2239 15 114 1.4 11.2 99 0.973 7.2868870145546 271.26099127204 1137.1613019075
+212	396272 2632 15 114 1.4 11.2 99 -4.5 2.6 -34.511863044661 480.36923070496
+211	398904 2695 14 114 1.3 11.2 100 3.4423785939266 13.888730363841 972.6602420587 10755.984887981
+210	401599 2723 13 114 1.2 11.2 101 755.17048205614 763.26543659746 76655.613439322 58179570.325637
+209	404322 2715 13 114 1.2 11.2 101 250.5762662082 331.27966481109 28117.710585775 7890518.7603942
+217	407037 26 256 256 11.203745154721 11.203745154721 1 1 1 1 1
+216	407063 132 256 1392 11.203745154721 11.204688036475 5 1 1 5 5
+214	407195 132 256 1392 11.203745154721 11.204688036475 5 1 1 5 5
+224	407327 2334 15 114 1.4 11.2 99 0.973 5.9193372732886 236.58816882652 797.16534322873
+223	409661 2836 15 114 1.4 11.2 99 -1.1855440572137 1.1626003205311 0.098125474806867 34.46662444923
+222	412497 2687 14 114 1.3 11.2 100 13.760202274094 13.889820163865 1382.1753455243 19104.260628779
+221	415184 2728 13 114 1.2 11.2 101 775.75595864289 912.31059324181 85312.010661163 72223901.85495
+220	417912 2720 13 114 1.2 11.2 101 1008.0248965132 1016.8221262475 102258.93956894 103534248.49071
+228	420632 26 610 610 11.204289792733 11.204289792733 1 1 1 1 1
+227	420658 52 610 1577 11.204289792733 11.20489706595 2 1 1 2 2
+225	420710 52 610 1577 11.204289792733 11.20489706595 2 1 1 2 2
+235	420762 2401 15 114 1.4 11.2 99 0.973 5.4621712492029 236.79638339711 732.32460619975
+234	423163 2820 15 114 1.4 11.2 99 -1.2523749694228 1.0277458567405 -0.37749752881936 30.204184954857
+233	425983 2693 14 114 1.3 11.2 100 13.760149889628 13.889309693503 1382.9885804765 19126.728906802
+232	428676 2720 13 114 1.2 11.2 101 1141.8617394386 1196.3351244964 116580.008906 134588837.02025
+231	431396 2725 13 114 1.2 11.2 101 754.86043936731 841.38249420562 82078.41011575 66786116.85765
+635	434121 26 894 894 11.204429942484 11.204429942484 1 1 1 1 1
+634	434147 107 894 2100 11.204429942484 11.205099840021 4 1 1 4 4
+632	434254 107 894 2100 11.204429942484 11.205099840021 4 1 1 4 4
+642	434361 1988 31 114 3 11.2 83 0.973 6.0185825014364 183.69053933804 550.09269533161
+641	436349 2380 31 114 3 11.2 83 -0.94366351745556 1.1923058681656 -0.37403207290916 18.073749261095
+640	438729 2261 30 114 2.9 11.2 84 13.762728580637 13.889325349405 1161.5238455696 16061.264269006
+639	440990 2293 29 114 2.8 11.2 85 661.97863567305 776.49386760447 61077.299383485 43984770.342011
+638	443283 2298 29 114 2.8 11.2 85 2039.5178304467 2047.1204049755 173678.28890435 354872758.61744
+239	445581 26 204 204 11.203744222684 11.203744222684 1 1 1 1 1
+238	445607 158 204 2178 11.203744222684 11.205139164539 6 1 1 6 6
+236	445765 158 204 2178 11.203744222684 11.205139164539 6 1 1 6 6
+246	445923 2395 15 114 1.4 11.2 99 0.973 6.1883559645119 232.32729957507 738.27892849158
+245	448318 2830 15 114 1.4 11.2 99 -1.2326899755746 1.2432574890787 0.13609517083969 29.453665359135
+244	451148 2695 14 114 1.3 11.2 100 13.761358360548 13.889990419396 1382.8939112851 19124.096239901
+243	453843 2721 13 114 1.2 11.2 101 557.582765885 694.28741933808 63287.944813845 39820602.705335
+242	456564 2726 13 114 1.2 11.2 101 1184.6300197903 1192.0630997038 120026.72712891 142638257.98774
+250	459290 27 2044 2044 11.205091932071 11.205091932071 1 1 1 1 1
+249	459317 27 2044 2044 11.205091932071 11.205091932071 1 1 1 1 1
+247	459344 27 2044 2044 11.205091932071 11.205091932071 1 1 1 1 1
+257	459371 2319 15 114 1.4 11.2 99 0.973 5.8464843590843 230.22629583758 741.75906564035
+256	461690 2826 15 114 1.4 11.2 99 -1.129531028308 1.1422945427475 -0.079002091591232 29.225598804435
+255	464516 2700 14 114 1.3 11.2 100 13.760191545244 13.888797761106 1382.9187782765 19124.787817707
+254	467216 2727 13 114 1.2 11.2 101 123.21086723243 259.86737713863 19275.541756252 3842050.3276371
+253	469943 2722 13 114 1.2 11.2 101 492.22545203395 500.5152001261 50129.066939575 24881030.647071
+646	472665 27 1002 1002 11.204482767176 11.204482767176 1 1 1 1 1
+645	472692 27 1002 1002 11.204482767176 11.204482767176 1 1 1 1 1
+643	472719 27 1002 1002 11.204482767176 11.204482767176 1 1 1 1 1
+653	472746 1993 31 114 3 11.2 83 0.973 5.441746384745 192.5202217266 581.421406731
+652	474739 2383 31 114 3 11.2 83 -0.96831909203903 1.0207164980005 0.076471498678447 20.408752681183
+651	477122 2267 30 114 2.9 11.2 84 13.760074563604 13.888870310558 1161.4272464748 16058.609838133
+650	479389 2298 29 114 2.8 11.2 85 123.21086723243 237.76031956044 15285.962232649 2846279.4429583
+649	481687 2292 29 114 2.8 11.2 85 492.22545203395 499.17384151194 42131.035347163 20882995.225461
+261	483979 26 654 654 11.204290056956 11.204290056956 1 1 1 1 1
+260	484005 107 654 2052 11.204290056956 11.205091974583 4 1 1 4 4
+258	484112 107 654 2052 11.204290056956 11.205091974583 4 1 1 4 4
+268	484219 2441 15 114 1.4 11.2 99 0.973 5.4842827100628 231.20609258465 695.28421548824
+267	486660 2828 15 114 1.4 11.2 99 -1.1251802465878 1.0348367872182 -0.77068282372784 26.56898699027
+266	489488 2698 14 114 1.3 11.2 100 13.760383974495 13.889929023788 1382.6753404441 19118.049446266
+265	492186 2720 13 114 1.2 11.2 101 1153.5015934786 1208.6776834182 117779.26016124 137372543.76818
+264	494906 2726 13 114 1.2 11.2 101 566.55095530858 652.36547298517 63031.297862267 39419031.882884
+272	497632 26 1656 1656 11.20490549763 11.20490549763 1 1 1 1 1
+271	497658 53 1656 2060 11.20490549763 11.205098849135 2 1 1 2 2
+269	497711 53 1656 2060 11.20490549763 11.205098849135 2 1 1 2 2
+279	497764 2225 15 114 1.4 11.2 99 0.973 6.6068835884371 245.91204414013 910.86150976538
+278	499989 2656 15 114 1.4 11.2 99 -4.4010501998271 2.6 -43.553717399625 463.67406860804
+277	502645 2699 14 114 1.3 11.2 100 3.2692918924262 13.885004694681 957.8321263214 10548.933709562
+276	505344 2708 13 114 1.2 11.2 101 1063.5026 1079.7728217762 107833.06834212 115129501.65133
+275	508052 2714 13 114 1.2 11.2 101 1971.046346234 2056.7896 202203.28244686 404885606.44902
+657	510766 27 1648 1648 11.204905458605 11.204905458605 1 1 1 1 1
+656	510793 53 1648 2068 11.204905458605 11.20509888302 2 1 1 2 2
+654	510846 53 1648 2068 11.204905458605 11.20509888302 2 1 1 2 2
+664	510899 1706 31 114 3 11.2 83 0.973 4.5994359731484 134.89803191212 314.93117754735
+663	512605 2303 31 114 3 11.2 83 -3.7444845226483 2.6 -97.501075397356 307.16593422031
+662	514908 2268 30 114 2.9 11.2 84 3.5712339564745 13.881006254265 761.10216183579 7930.1187154745
+661	517176 2277 29 114 2.8 11.2 85 1063.5026 1068.1426316874 90633.818166183 96641210.636646
+660	519453 2285 29 114 2.8 11.2 85 1981.2310033867 2056.7896 170982.49343205 343984720.61034
+283	521738 26 874 874 11.204429765537 11.204429765537 1 1 1 1 1
+282	521764 80 874 2080 11.204429765537 11.205099568804 3 1 1 3 3
+280	521844 80 874 2080 11.204429765537 11.205099568804 3 1 1 3 3
+290	521924 2342 15 114 1.4 11.2 99 0.973 6.1120651149002 231.77478931038 749.86087144078
+289	524266 2823 15 114 1.4 11.2 99 -1.0773193536559 1.2208630509209 -0.027843629568807 29.608266781127
+288	527089 2698 14 114 1.3 11.2 100 13.760858762173 13.884001860507 1381.8550948277 19095.371292539
+287	529787 2727 13 114 1.2 11.2 101 891.66067499619 1028.2171832454 96886.483126797 93103648.454708
+286	532514 2721 13 114 1.2 11.2 101 1675.819279293 1684.1156447766 169672.62195611 285038212.49789
+294	535235 26 642 642 11.204289968914 11.204289968914 1 1 1 1 1
+293	535261 104 642 1972 11.204289968914 11.2050903279 4 1 1 4 4
+291	535365 104 642 1972 11.204289968914 11.2050903279 4 1 1 4 4
+301	535469 2224 15 114 1.4 11.2 99 0.973 7.4925640181149 263.43846314244 1067.8517623521
+300	537693 2648 15 114 1.4 11.2 99 -4.0547264323705 2.6 -40.005136979208 469.99202943512
+299	540341 2696 14 114 1.3 11.2 100 3.5101817992237 13.889330114706 978.07056822148 10888.573686963
+298	543037 2720 13 114 1.2 11.2 101 752.27023692108 764.7626010609 76243.382740494 57555644.733248
+297	545757 2727 13 114 1.2 11.2 101 351.14065399152 437.06320125171 41061.460494531 16768170.079924
+668	548484 26 650 650 11.204289998161 11.204289998161 1 1 1 1 1
+667	548510 53 650 1627 11.204289998161 11.204898276019 2 1 1 2 2
+665	548563 53 650 1627 11.204289998161 11.204898276019 2 1 1 2 2
+675	548616 1696 31 114 3 11.2 83 0.973 5.261784490421 133.77690735856 310.90508120986
+674	550312 2333 31 114 3 11.2 83 -4.1017724012531 1.3822292637231 -104.68406588507 303.78748449928
+673	552645 2270 30 114 2.9 11.2 84 3.3049742976669 13.888838935613 779.25046197906 8252.4901276549
+672	554915 2299 29 114 2.8 11.2 85 752.54070147797 757.25982934372 64128.424470848 48381992.055796
+671	557214 2299 29 114 2.8 11.2 85 351.14065399152 428.59300681644 33763.962780711 13457775.487941
+305	559513 26 220 220 11.203744767104 11.203744767104 1 1 1 1 1
+304	559539 186 220 2202 11.203744767104 11.205139787504 7 1 1 7 7
+302	559725 186 220 2202 11.203744767104 11.205139787504 7 1 1 7 7
+312	559911 2325 15 114 1.4 11.2 99 0.973 6.2575388978188 231.39912235561 754.16334593184
+311	562236 2820 15 114 1.4 11.2 99 -1.265005651 1.2636852913303 -0.040677052154195 29.991258352719
+310	565056 2696 14 114 1.3 11.2 100 13.761376729279 13.889389587329 1382.8197864517 19122.052010237
+309	567752 2721 13 114 1.2 11.2 101 569.16125762257 705.82849313686 64453.29850486 41294412.913749
+308	570473 2719 13 114 1.2 11.2 101 995.7397820684 1003.5876301978 100969.84239102 100940232.73357
+767	573192 26 890 890 11.204429920983 11.204429920983 1 1 1 1 1
+766	573218 80 890 1644 11.204429920983 11.204905267413 3 1 1 3 3
+764	573298 80 890 1644 11.204429920983 11.204905267413 3 1 1 3 3
+774	573378 1612 47 114 4.6 11.2 67 0.973 5.7216444870455 161.26509315007 510.07825548648
+773	574990 1918 47 114 4.6 11.2 67 -1.2135445572669 1.1039177026833 -0.13072603279724 20.95919230864
+772	576908 1847 46 114 4.5 11.2 68 13.760366650675 13.889416294557 940.17622939395 12999.08706499
+771	578755 1858 45 114 4.4 11.2 69 661.97863567305 754.4050695309 48819.436556653 34593078.468138
+770	580613 1869 45 114 4.4 11.2 69 2039.5178304467 2045.653947363 140935.38562461 287866648.14875
+679	582482 26 224 224 11.203744789332 11.203744789332 1 1 1 1 1
+678	582508 184 224 2206 11.203744789332 11.20513979883 7 1 1 7 7
+676	582692 184 224 2206 11.203744789332 11.20513979883 7 1 1 7 7
+686	582876 2005 31 114 3 11.2 83 0.973 6.0987739345926 199.40721212566 663.22805573574
+685	584881 2379 31 114 3 11.2 83 -1.1416810512776 1.2166858164361 -0.10632904213853 28.645491003721
+684	587260 2260 30 114 2.9 11.2 84 13.760278461787 13.885739132504 1160.1833806245 16024.233999614
+683	589520 2295 29 114 2.8 11.2 85 591.38434054874 705.82849313686 55187.538903362 35928465.92252
+682	591815 2300 29 114 2.8 11.2 85 997.01589904784 1003.5876301978 85028.865308306 85058060.661245
+316	594115 27 1756 1756 11.204933142282 11.204933142282 1 1 1 1 1
+315	594142 54 1756 2084 11.204933142282 11.205099575892 2 1 1 2 2
+313	594196 54 1756 2084 11.204933142282 11.205099575892 2 1 1 2 2
+323	594250 2383 15 114 1.4 11.2 99 0.973 5.9472268907768 231.98761262082 726.56608021996
+322	596633 2833 15 114 1.4 11.2 99 -1.0421515436843 1.1710084776394 -0.37596307552885 28.317780221495
+321	599466 2696 14 114 1.3 11.2 100 13.760213865612 13.889583818009 1382.7363383865 19119.738199164
+320	602162 2719 13 114 1.2 11.2 101 1103.5105995597 1240.1528225697 118286.8840982 138695931.852
+319	604881 2722 13 114 1.2 11.2 101 1593.8307367774 1602.171554699 161393.95766488 257901693.64811
+327	607603 25 252 252 11.20374514703 11.20374514703 1 1 1 1 1
+326	607628 130 252 2118 11.20374514703 11.205138520598 5 1 1 5 5
+324	607758 130 252 2118 11.20374514703 11.205138520598 5 1 1 5 5
+334	607888 2156 15 114 1.4 11.2 99 0.973 5.0326488184633 188.82076366296 509.70346417945
+333	610044 2621 15 114 1.4 11.2 99 -4.5 2.6 -63.367208042176 378.77063422908
+332	612665 2699 14 114 1.3 11.2 100 3.4020833945835 11.178893493533 849.46893722457 8147.8195709784
+331	615364 2727 13 114 1.2 11.2 101 467.01131810193 473.26658122189 47477.618747079 22318345.480332
+330	618091 2720 13 114 1.2 11.2 101 1557.7858818591 1641.8089630931 160835.87134941 256190568.65979
+723	620811 26 260 260 11.203745189905 11.203745189905 1 1 1 1 1
+722	620837 132 260 2122 11.203745189905 11.205138563467 5 1 1 5 5
+720	620969 132 260 2122 11.203745189905 11.205138563467 5 1 1 5 5
+730	621101 1725 33 114 3.2 11.2 81 0.973 5.0507284045455 131.36927270865 298.62242141211
+729	622826 2290 33 114 3.2 11.2 81 -2.9076797214337 1.816356534815 -61.037207841201 165.90726457453
+728	625116 2221 32 114 3.1 11.2 82 4.7648459214733 11.179910098459 718.0580756395 6789.7229599025
+727	627337 2235 31 114 3 11.2 83 467.01131810193 471.36377758885 38967.004426732 18294455.165439
+726	629572 2241 31 114 3 11.2 83 1570.6324663013 1641.8089630931 132916.68135172 212893319.11396
+338	631813 26 878 878 11.204429790415 11.204429790415 1 1 1 1 1
+337	631839 80 878 2076 11.204429790415 11.205099550032 3 1 1 3 3
+335	631919 80 878 2076 11.204429790415 11.205099550032 3 1 1 3 3
+345	631999 2124 15 114 1.4 11.2 99 0.973 5.4620622223372 214.84305711431 692.55457918494
+344	634123 2543 15 114 1.4 11.2 99 -4.5 2.6 -68.884168894623 511.65649247966
+343	636666 2697 14 114 1.3 11.2 100 3.3005179895548 13.88727649152 901.55014026092 9829.7224018105
+342	639363 2718 13 114 1.2 11.2 101 857.5218899212 868.4074739768 86982.090580173 74910245.402798
+341	642081 2720 13 114 1.2 11.2 101 1958.5638230444 2044.279596613 200955.59130023 399904344.57151
+349	644801 26 390 390 11.204002102616 11.204002102616 1 1 1 1 1
+348	644827 132 390 2154 11.204002102616 11.205139032495 5 1 1 5 5
+346	644959 132 390 2154 11.204002102616 11.205139032495 5 1 1 5 5
+356	645091 1690 15 114 1.4 11.2 99 0.973 0.973 96.327 93.726171
+355	646781 1309 15 114 1.4 11.2 99 -1.2636363636364 0 -1.2636363636364 1.5967768595042
+354	648090 1322 14 114 1.3 11.2 100 0 0.12636363636364 0.12636363636364 0.015967768595041
+353	649412 2734 13 114 1.2 11.2 101 496.42449976035 496.42525483304 50138.87598594 24890167.179541
+352	652146 2734 13 114 1.2 11.2 101 1214.2710369069 1214.2836510625 122642.623529 148922902.04066
+360	654880 26 602 602 11.204289754661 11.204289754661 1 1 1 1 1
+359	654906 107 602 2008 11.204289754661 11.205091623053 4 1 1 4 4
+357	655013 107 602 2008 11.204289754661 11.205091623053 4 1 1 4 4
+367	655120 2402 15 114 1.4 11.2 99 0.973 5.7172059245811 233.22035029564 719.28531998108
+366	657522 2828 15 114 1.4 11.2 99 -1.213703567395 1.102995812241 0.65549767557531 26.771164023048
+365	660350 2694 14 114 1.3 11.2 100 13.760909829286 13.887843201431 1383.4309101303 19138.933402914
+364	663044 2723 13 114 1.2 11.2 101 955.33093862633 1092.0421279461 103323.75837521 105864494.93489
+363	665767 2727 13 114 1.2 11.2 101 637.12497994822 645.31485896667 64759.103393307 41522779.611945
+371	668494 27 1589 1589 11.204897454093 11.204897454093 1 1 1 1 1
+370	668521 27 1589 1589 11.204897454093 11.204897454093 1 1 1 1 1
+368	668548 27 1589 1589 11.204897454093 11.204897454093 1 1 1 1 1
+378	668575 2601 15 114 1.4 11.2 99 -0.81790582395629 11.787220450949 454.53509386948 3309.1323809276
+377	671176 2832 15 114 1.4 11.2 99 -0.99807638460771 1.0997732405551 -0.039124339097185 30.913894663808
+376	674008 2693 14 114 1.3 11.2 100 27.652074509396 27.779882573057 2771.4982847662 76812.158956045
+375	676701 2730 13 114 1.2 11.2 101 1351.9167628303 1368.4822413793 137388.39683248 186889248.87556
+374	679431 2725 13 114 1.2 11.2 101 579.29036372225 853.15161533362 72201.430886624 52270607.987528
+382	682156 26 284 284 11.203745450537 11.203745450537 1 1 1 1 1
+381	682182 130 284 2194 11.203745450537 11.205139626905 5 1 1 5 5
+379	682312 130 284 2194 11.203745450537 11.205139626905 5 1 1 5 5
+389	682442 2245 15 114 1.4 11.2 99 0.973 7.4675208061883 261.32496159287 1047.6106071955
+388	684687 2658 15 114 1.4 11.2 99 -3.9658490846667 2.6 -38.964833975353 470.52831082026
+387	687345 2696 14 114 1.3 11.2 100 3.4544908972222 13.888477169403 970.07350678511 10733.607764
+386	690041 2725 13 114 1.2 11.2 101 892.29346108904 898.18919149632 90467.553811022 81033741.389553
+385	692766 2718 13 114 1.2 11.2 101 1381.5274746257 1477.3601308717 143595.47655297 204232371.2648
+400	695484 2333 15 114 1.4 11.2 99 0.973 5.7832501625755 225.31804289122 681.83775523977
+399	697817 2832 15 114 1.4 11.2 99 -1.2013148732018 1.1231326078065 0.21459256529344 23.587317763695
+398	700649 2691 14 114 1.3 11.2 100 13.762243373205 13.887647473484 1381.7689584186 19092.964665702
+397	703340 2724 13 114 1.2 11.2 101 1855.3924313739 1991.9294633738 194358.60381167 374175692.49786
+396	706064 2724 13 114 1.2 11.2 101 409.92702391867 418.25934447772 41827.613135682 17322877.108568
+404	708788 26 280 280 11.203745440682 11.203745440682 1 1 1 1 1
+403	708814 158 280 2198 11.203745440682 11.205139655791 6 1 1 6 6
+401	708972 158 280 2198 11.203745440682 11.205139655791 6 1 1 6 6
+411	709130 2303 15 114 1.4 11.2 99 0.973 10.128010636376 364.88660215718 2071.956872602
+410	711433 2620 15 114 1.4 11.2 99 -4.3139004052157 2.6 8.1389245682644 516.44261721882
+409	714053 2684 14 114 1.3 11.2 100 3.399466265923 13.881192991924 924.34304924673 9664.3546756102
+408	716737 2729 13 114 1.2 11.2 101 902.85327248355 908.42772102161 91514.633132467 82920320.387478
+407	719466 2724 13 114 1.2 11.2 101 1268.3716502947 1359.42088494 131966.9277418 172492578.15577
+415	722190 26 454 454 11.204002838466 11.204002838466 1 1 1 1 1
+414	722216 79 454 2182 11.204002838466 11.205139265209 3 1 1 3 3
+412	722295 79 454 2182 11.204002838466 11.205139265209 3 1 1 3 3
+422	722374 2333 15 114 1.4 11.2 99 0.973 5.5832201086001 232.5834643234 746.96626318952
+421	724707 2833 15 114 1.4 11.2 99 -1.2540790681029 1.0643880398711 -0.35595031604171 30.201457265659
+420	727540 2697 14 114 1.3 11.2 100 13.760611056471 13.889212129954 1382.8390463694 19122.57029973
+419	730237 2727 13 114 1.2 11.2 101 472.28047739201 608.92870826645 54531.104376238 29605357.524958
+418	732964 2726 13 114 1.2 11.2 101 1744.1611576504 1752.5138403506 176577.81109413 308710742.76418
+426	735690 26 296 296 11.203745699147 11.203745699147 1 1 1 1 1
+425	735716 79 296 2000 11.203745699147 11.205091374895 3 1 1 3 3
+423	735795 79 296 2000 11.203745699147 11.205091374895 3 1 1 3 3
+433	735874 2355 15 114 1.4 11.2 99 0.973 6.1832759860999 240.60050863004 810.9235105776
+432	738229 2823 15 114 1.4 11.2 99 -1.1186280913651 1.2418880417012 0.78572542865295 34.710682697788
+431	741052 2690 14 114 1.3 11.2 100 13.76124106969 13.889768337631 1382.3346458132 19108.643645781
+430	743742 2723 13 114 1.2 11.2 101 586.54535610488 723.12977553594 66204.983106141 43560258.070894
+429	746465 2725 13 114 1.2 11.2 101 712.76729733068 721.34049432535 72426.610612919 51937414.642297
+437	749190 26 268 268 11.203745386089 11.203745386089 1 1 1 1 1
+436	749216 79 268 2020 11.203745386089 11.205091663423 3 1 1 3 3
+434	749295 79 268 2020 11.203745386089 11.205091663423 3 1 1 3 3
+444	749374 2358 15 114 1.4 11.2 99 0.973 6.3111193218377 239.1297170697 800.15220607554
+443	751732 2831 15 114 1.4 11.2 99 -1.2349244583165 1.2797982199816 0.00080527062527477 35.239266992685
+442	754563 2690 14 114 1.3 11.2 100 13.760544011767 13.888523833766 1382.4322408442 19111.336228196
+441	757253 2719 13 114 1.2 11.2 101 580.76514613851 717.37926103405 65624.164996902 42802185.337646
+440	759972 2724 13 114 1.2 11.2 101 807.19408844525 815.51975535939 81951.185458399 66495624.172716
+455	762696 2046 15 114 1.4 11.2 99 0.973 7.6544044743609 233.99807927334 927.12260540273
+454	764742 2510 15 114 1.4 11.2 99 -4.5 2.6 -128.0233133562 888.56100152116
+453	767252 2694 14 114 1.3 11.2 100 3.2254883913883 22.827113662703 1002.5375096491 13119.139323382
+452	769946 2724 13 114 1.2 11.2 101 1323.1279290497 1331.2434818482 134061.79556891 177946704.14328
+451	772670 2723 13 114 1.2 11.2 101 1138.3246993034 1219.6589862563 117344.46788679 136387945.99917
+862	775393 446 89 114 8.8 11.2 25 0.973 0.973 24.325 23.668225
+861	775839 694 89 114 8.8 11.2 25 -4.5 -2.0325318732973 -86.781767931066 311.45664238185
+860	776533 721 88 114 8.7 11.2 26 13.77248987356 22.450666666667 471.28537712907 8719.208363049
+859	777254 746 87 114 8.6 11.2 27 1323.1279290497 1325.8903115711 35763.089278667 47370336.936084
+858	778000 747 87 114 8.6 11.2 27 1173.9883118067 1219.6589862563 32292.034104841 38626805.945058
+459	778747 26 228 228 11.203744829467 11.203744829467 1 1 1 1 1
+458	778773 105 228 1764 11.203744829467 11.204933203028 4 1 1 4 4
+456	778878 105 228 1764 11.203744829467 11.204933203028 4 1 1 4 4
+466	778983 2127 15 114 1.4 11.2 99 0.973 4.6854593828566 190.227000912 526.16049956655
+465	781110 2624 15 114 1.4 11.2 99 -4.5 2.6 -63.830110765346 384.72855169427
+464	783734 2695 14 114 1.3 11.2 100 3.4581044996304 11.176804986738 852.8829054075 8191.5530996747
+463	786429 2720 13 114 1.2 11.2 101 472.80036550293 479.02701548074 48061.316608573 22870480.478098
+462	789149 2727 13 114 1.2 11.2 101 1462.7552502098 1547.1190159759 151261.61951898 226605954.43168
+734	791876 26 232 232 11.203744872727 11.203744872727 1 1 1 1 1
+733	791902 130 232 2110 11.203744872727 11.205138246472 5 1 1 5 5
+731	792032 130 232 2110 11.203744872727 11.205138246472 5 1 1 5 5
+741	792162 1685 33 114 3.2 11.2 81 0.973 4.2547876660601 125.40108667236 258.67831573173
+740	793847 2300 33 114 3.2 11.2 81 -3.6482946510607 1.6451735645044 -61.176712140913 175.32031038131
+739	796147 2216 32 114 3.1 11.2 82 4.7993368922776 11.172671618795 720.3382698516 6823.7400608706
+738	798363 2236 31 114 3 11.2 83 472.80036550293 477.14520877937 39447.23296155 18748150.841343
+737	800599 2245 31 114 3 11.2 83 1475.7146565188 1547.1190159759 125050.78193746 188446016.55256
+778	802844 26 236 236 11.203744920798 11.203744920798 1 1 1 1 1
+777	802870 132 236 2114 11.203744920798 11.205138294425 5 1 1 5 5
+775	803002 132 236 2114 11.203744920798 11.205138294425 5 1 1 5 5
+785	803134 1309 50 114 4.9 11.2 64 0.973 4.1140747838816 89.982959788422 167.59675153246
+784	804443 1816 50 114 4.9 11.2 64 -2.7906500488058 0.86915450252127 -53.137975471375 99.887255802179
+783	806259 1759 49 114 4.8 11.2 65 5.7829111370573 11.179854896194 576.22376440509 5358.6673451568
+782	808018 1790 48 114 4.7 11.2 66 472.80036550293 476.27174541442 31331.249080078 14873515.008338
+781	809808 1788 48 114 4.7 11.2 66 1490.1773149676 1547.1190159759 100036.08258396 151644168.93027
+470	811596 27 1792 1792 11.204933309134 11.204933309134 1 1 1 1 1
+469	811623 27 1792 1792 11.204933309134 11.204933309134 1 1 1 1 1
+467	811650 27 1792 1792 11.204933309134 11.204933309134 1 1 1 1 1
+477	811677 2353 15 114 1.4 11.2 99 0.973 11.131497783408 454.6425771594 2992.5665458102
+476	814030 2510 15 114 1.4 11.2 99 -4.5 2.6 45.230450711628 600.75719620144
+475	816540 2699 14 114 1.3 11.2 100 3.1102051038098 16.01731403859 865.81228993773 8865.4336742795
+474	819239 2723 13 114 1.2 11.2 101 1320.3949078498 1325.2316585839 133613.35370938 176757919.85322
+473	821962 2721 13 114 1.2 11.2 101 1210.8749934783 1266.7450197436 126184.5992298 157670821.47337
+481	824683 26 216 216 11.203744551308 11.203744551308 1 1 1 1 1
+480	824709 104 216 2126 11.203744551308 11.205138574554 4 1 1 4 4
+478	824813 104 216 2126 11.203744551308 11.205138574554 4 1 1 4 4
+488	824917 2416 15 114 1.4 11.2 99 0.973 6.1573134939783 231.37796393109 708.30243611985
+487	827333 2833 15 114 1.4 11.2 99 -1.1975819705985 1.2341393903596 1.0883655044716 25.229195792203
+486	830166 2698 14 114 1.3 11.2 100 13.762655477161 13.887864147935 1382.4221275217 19111.028366344
+485	832864 2719 13 114 1.2 11.2 101 546.22995072577 682.82952068618 62135.734827572 38389492.253898
+484	835583 2717 13 114 1.2 11.2 101 1372.3950740626 1380.7776185671 139039.408061 191406129.58703
+492	838300 26 200 200 11.203744214351 11.203744214351 1 1 1 1 1
+491	838326 158 200 2130 11.203744214351 11.205138818415 6 1 1 6 6
+489	838484 158 200 2130 11.203744214351 11.205138818415 6 1 1 6 6
+499	838642 2235 15 114 1.4 11.2 99 0.973 7.6268968283816 289.7788263478 1251.3867253773
+498	840877 2552 15 114 1.4 11.2 99 -4.5 2.6 -10.630447869556 507.69920943017
+497	843429 2699 14 114 1.3 11.2 100 3.2088091670849 11.179774081798 799.70075837617 7129.9751819294
+496	846128 2719 13 114 1.2 11.2 101 486.74285934012 492.1097683889 49431.014305486 24192595.561767
+495	848847 2720 13 114 1.2 11.2 101 1279.1391766667 1320.5858573183 131760.07544758 171902515.52736
+503	851567 27 1601 1601 11.204897983506 11.204897983506 1 1 1 1 1
+502	851594 27 1601 1601 11.204897983506 11.204897983506 1 1 1 1 1
+500	851621 27 1601 1601 11.204897983506 11.204897983506 1 1 1 1 1
+510	851648 2587 15 114 1.4 11.2 99 -0.66258392874325 12.355658933173 469.02644938699 3224.6229046844
+509	854235 2825 15 114 1.4 11.2 99 -1.1631912444951 1.1840219932143 0.24829286204184 29.470066166084
+508	857060 2700 14 114 1.3 11.2 100 27.650727897547 27.779744921199 2771.1553297517 76793.17787174
+507	859760 2722 13 114 1.2 11.2 101 1379.7652171336 1396.3018907961 140199.55924342 194615424.82368
+506	862482 2725 13 114 1.2 11.2 101 118.7103500473 392.54440570499 25681.058694912 7185998.2081697
+514	865207 26 934 934 11.204430093712 11.204430093712 1 1 1 1 1
+513	865233 80 934 1711 11.204430093712 11.204932538096 3 1 1 3 3
+511	865313 80 934 1711 11.204430093712 11.204932538096 3 1 1 3 3
+521	865393 2185 15 114 1.4 11.2 99 0.973 7.3348350635128 275.55854730701 1208.6623316294
+520	867578 2652 15 114 1.4 11.2 99 -4.4188549706506 2.6 -35.461179421198 487.70542034269
+519	870230 2696 14 114 1.3 11.2 100 3.5309043772301 13.886782099754 978.63751505357 10876.15108228
+518	872926 2723 13 114 1.2 11.2 101 1092.5842160279 1099.1354197152 110742.18546351 121424449.18409
+517	875649 2725 13 114 1.2 11.2 101 1488.2919753913 1584.9118466899 154437.65681338 236226852.20837
+690	878374 26 926 926 11.204430066226 11.204430066226 1 1 1 1 1
+689	878400 53 926 1312 11.204430066226 11.204687066225 2 1 1 2 2
+687	878453 53 926 1312 11.204430066226 11.204687066225 2 1 1 2 2
+697	878506 1656 31 114 3 11.2 83 0.973 6.1679414786456 133.75390949152 336.61786677622
+696	880162 2320 31 114 3 11.2 83 -3.666335648003 2.6 -101.17563515672 306.29663843145
+695	882482 2267 30 114 2.9 11.2 84 3.4090169672239 13.884800935276 770.2424526079 8091.9013675174
+694	884749 2294 29 114 2.8 11.2 85 1092.5842160279 1097.9083846053 93139.796831467 102059296.17343
+693	887043 2297 29 114 2.8 11.2 85 1508.4325689645 1584.9118466899 130837.08982893 201437000.65026
+525	889340 27 1065 1065 11.204483631907 11.204483631907 1 1 1 1 1
+524	889367 54 1065 2036 11.204483631907 11.205091909765 2 1 1 2 2
+522	889421 54 1065 2036 11.204483631907 11.205091909765 2 1 1 2 2
+532	889475 2190 15 114 1.4 11.2 99 0.973 7.4819634082158 266.48008002181 1112.7101894386
+531	891665 2654 15 114 1.4 11.2 99 -4.0723302470093 2.6 -36.559926443957 482.48938204894
+530	894319 2699 14 114 1.3 11.2 100 3.4336287714061 13.885670398574 967.61953323296 10671.839655382
+529	897018 2717 13 114 1.2 11.2 101 1181.3387181119 1187.1884711185 119564.53521846 141541651.20539
+528	899735 2720 13 114 1.2 11.2 101 95.570321432808 191.13607700755 15232.706474467 2373222.3525536
+701	902455 27 1076 1076 11.204483670706 11.204483670706 1 1 1 1 1
+700	902482 54 1076 2048 11.204483670706 11.205091948564 2 1 1 2 2
+698	902536 54 1076 2048 11.204483670706 11.205091948564 2 1 1 2 2
+708	902590 1665 31 114 3 11.2 83 0.973 5.4069147796397 132.73511117608 313.87870771382
+707	904255 2303 31 114 3 11.2 83 -3.7570970349827 2.6 -99.304679339711 312.2783142133
+706	906558 2268 30 114 2.9 11.2 84 3.310570604286 13.88621699892 756.60496229224 7858.9553057639
+705	908826 2296 29 114 2.8 11.2 85 1182.5902169171 1187.1884711185 100676.58874199 119244578.83668
+704	911122 2292 29 114 2.8 11.2 85 95.570321432808 170.70490221865 11954.039293549 1724136.1622159
+536	913414 26 244 244 11.203745031092 11.203745031092 1 1 1 1 1
+535	913440 132 244 2134 11.203745031092 11.205138892724 5 1 1 5 5
+533	913572 132 244 2134 11.203745031092 11.205138892724 5 1 1 5 5
+543	913704 2228 15 114 1.4 11.2 99 0.973 6.6607790370267 249.43801877748 925.72616386194
+542	915932 2640 15 114 1.4 11.2 99 -4.5 2.6 -44.061669614594 456.48861301586
+541	918572 2693 14 114 1.3 11.2 100 3.3080902422443 13.889843015617 958.21581782482 10546.97120095
+540	921265 2718 13 114 1.2 11.2 101 685.32715329118 693.78118027011 69669.73942565 48058710.107055
+539	923983 2722 13 114 1.2 11.2 101 1389.6792190252 1471.0313526318 145746.51068691 210382002.51207
+712	926705 26 248 248 11.203745055967 11.203745055967 1 1 1 1 1
+711	926731 132 248 2138 11.203745055967 11.205138902181 5 1 1 5 5
+709	926863 132 248 2138 11.203745055967 11.205138902181 5 1 1 5 5
+719	926995 1697 31 114 3 11.2 83 0.973 4.7288422544105 130.83889192162 295.80562884348
+718	928692 2326 31 114 3 11.2 83 -3.5861821229792 2.6 -102.01783039099 304.19225933847
+717	931018 2263 30 114 2.9 11.2 84 3.3135933330616 13.888975066657 761.23591688518 7944.1976834044
+716	933281 2297 29 114 2.8 11.2 85 688.89619359213 693.78118027011 58722.686869106 40569052.015935
+715	935578 2295 29 114 2.8 11.2 85 1389.6792190252 1465.2852878828 121972.12927724 175069478.26074
+547	937873 25 184 184 11.20374402056 11.20374402056 1 1 1 1 1
+546	937898 156 184 2166 11.20374402056 11.205139053056 6 1 1 6 6
+544	938054 156 184 2166 11.20374402056 11.205139053056 6 1 1 6 6
+554	938210 2096 15 114 1.4 11.2 99 0.973 5.5480304329631 180.25827730419 491.45551862884
+553	940306 2737 15 114 1.4 11.2 99 -3.5128912341315 2.6 -7.5515114451923 291.41927231566
+552	943043 2738 14 114 1.3 11.2 100 0.053939764571677 7.5869046561265 293.68749154454 1434.7476087387
+551	945781 2723 13 114 1.2 11.2 101 496.79469254012 502.08901060071 50282.537150427 25033226.407396
+550	948504 2728 13 114 1.2 11.2 101 1181.5548274976 1208.1251904274 120961.85253148 144879911.05801
+565	951232 2364 15 114 1.4 11.2 99 0.973 5.5646938927958 232.03426478377 713.53961535366
+564	953596 2833 15 114 1.4 11.2 99 -1.0927216941723 1.0587125296006 0.85790723729879 25.247449824068
+563	956429 2694 14 114 1.3 11.2 100 13.760270722052 13.886757185177 1382.0474594862 19100.682349124
+562	959123 2729 13 114 1.2 11.2 101 805.30321874164 813.99411615679 81761.738827552 66188597.97776
+561	961852 2727 13 114 1.2 11.2 101 2757.2599809003 2893.7996440069 285446.81556425 806894709.06692
+576	964579 2044 15 114 1.4 11.2 99 0.973 7.1599537502485 229.45421811797 877.33340512902
+575	966623 2524 15 114 1.4 11.2 99 -4.5 2.6 -128.77525443424 877.16250139706
+574	969147 2687 14 114 1.3 11.2 100 3.1693843693752 22.703723840673 995.60898321284 12970.258193891
+573	971834 2719 13 114 1.2 11.2 101 1325.2589517238 1336.6420754717 134516.65632072 179156840.26157
+572	974553 2721 13 114 1.2 11.2 101 1050.9309787736 1131.9087585759 111962.15907087 124167693.92169
+580	977274 26 574 574 11.204289413577 11.204289413577 1 1 1 1 1
+579	977300 80 574 1988 11.204289413577 11.205090959026 3 1 1 3 3
+577	977380 80 574 1988 11.204289413577 11.205090959026 3 1 1 3 3
+587	977460 2383 15 114 1.4 11.2 99 0.973 6.0907026403756 241.50424984655 794.07333587993
+586	979843 2822 15 114 1.4 11.2 99 -1.2134106710786 1.2143059045076 -0.064800263149661 34.835642195047
+585	982665 2696 14 114 1.3 11.2 100 13.762509042441 13.889029118798 1383.0230907016 19127.678676248
+584	985361 2725 13 114 1.2 11.2 101 541.39048363508 678.05082569023 61514.855134036 37629531.235199
+583	988086 2726 13 114 1.2 11.2 101 611.77069645469 620.11172784124 62205.977310121 38313317.813558
+591	990812 27 1980 1980 11.205090862883 11.205090862883 1 1 1 1 1
+590	990839 27 1980 1980 11.205090862883 11.205090862883 1 1 1 1 1
+588	990866 27 1980 1980 11.205090862883 11.205090862883 1 1 1 1 1
+598	990893 2346 15 114 1.4 11.2 99 0.973 10.116254564612 287.41548871499 1419.1580405948
+597	993239 2806 15 114 1.4 11.2 99 -1.2002563906135 2.5752004221547 27.234549560468 85.213011883534
+596	996045 2697 14 114 1.3 11.2 100 11.051361739393 13.882803679097 1163.2598297815 13629.884226063
+595	998742 2723 13 114 1.2 11.2 101 544.8398002574 575.23301960125 55576.502625429 30586629.276644
+594	1001465 2722 13 114 1.2 11.2 101 338.36061626275 425.5581376448 39404.592379735 15457482.36023
+0	1004187 890 2 112 0.1 11.1 81 1 1 81 81
+2	1005077 1867 114 2044 11.2 11.205091932071 75 1 75 2850 143450
+3	1006944 6627 184 2210 11.20374402056 11.20513989251 255 1 255 32640 5559680
+4	1013571 6627 184 2210 11.20374402056 11.20513989251 255 1 255 32640 5559680
